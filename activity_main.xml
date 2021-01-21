@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/Select_raga"
+        android:text="@string/Select_raga"
+        android:textColor="#EA1001"
+        android:visibility="visible"
+        android:layout_width="247dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/Select_sruti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="8dp"/>
+
+    <Spinner
+        android:id="@+id/Select_sruti"
+        android:spinnerMode="dropdown"
+        android:textColor="#EA1001"
+        android:visibility="visible"
+        android:entries="@array/srutis"
+        android:layout_width="247dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="419dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Select_raga"
+        />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:text="@string/play_ragam"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Select_sruti" />
+</androidx.constraintlayout.widget.ConstraintLayout>
