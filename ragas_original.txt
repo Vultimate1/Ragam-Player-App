@@ -1,0 +1,976 @@
+Kanakangi	S0	R1	G1	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G1	R1	S0											
+Kanakambari	S0	R1	M1	P	D1	S1	S1	N1	D1	P	M1	G1	R1	S0													
+Kanakatodi	S0	R1	G1	M1	P	D1	S1	S1	N1	D1	P	M1	R1	S0													
+Karnataka-shuddha-saveri	S0	R1	M1	P	D1	S1	S1	D1	P	M1	R1	S0															
+Latantapriya	S0	R1	G1	M1	P	D1	S1	S1	D1	P	M1	R1	S0														
+Lavangi	S0	R1	M1	D1	S1	S1	D1	M1	R1	S0																	
+Megha	S0	R1	M1	P	D1	N1	D1	P	S1	S1	N1	D1	P	M1	R1	S0											
+Rishabhavilasa	S0	R1	M1	P	D1	S1	S1	D1	P	M1	R1	M1	R1	S0													
+Sarvashree	S0	M1	P	S1	S1	P	M1	S0																			
+Suddha-mukhari	S0	R1	M1	P	D1	S1	S1	N1	D1	P	M1	G1	R1	S0													
+Tatillatika	S0	R1	M1	P	D1	S1	S1	D1	P	M1	R1	S0															
+Vageeshwari	S0	R1	G1	M1	P	D1	S1	S1	D1	M1	P	G1	R1	S0													
+Rathnangi	S0	R1	G1	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G1	R1	S0											
+Phenadhyuti	S0	R1	M1	P	D1	P	N2	S1	S1	N2	D1	P	M1	G1	R1	S0											
+Ganamukhari	S0	R1	M1	D1	S1	S1	N2	D1	M1	R1	S0																
+Ratnavarali	S0	R1	M1	P	N2	D1	S1	S1	N2	P	M1	R1	G1	R1	S0												
+Revati	S0	R1	M1	P	N2	S1	S1	N2	P	M1	R1	S0															
+Shreemani	S0	R1	G1	P	D1	S1	S1	N2	D1	P	G1	R1	S0														
+Shreemati	S0	R1	G1	P	D1	S1	S1	N2	D1	P	G1	R1	S0														
+Ganamoorti	S0	R1	G1	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G1	R1	S0											
+Ganasamavarali	S0	R1	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G1	R1	S0												
+Bhinnapanchamam	S0	R1	G1	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G1	R1	S0											
+Nadharanjani	S0	R1	M1	D1	N3	S1	S1	N3	D1	M1	G1	R1	S0														
+Poorvavarali	S0	R1	M1	P	D1	S1	S1	N3	D1	P	M1	G1	R1	S0													
+Samavarali	S0	R1	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G1	R1	G1	S0											
+Vanaspati	S0	R1	G1	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G1	R1	S0											
+Bhanumati	N2	S0	M1	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0													
+Rasali	S0	R1	M1	P	D2	N2	S1	S1	D2	P	M1	R1	S0														
+Vanavali	S0	R1	M1	P	D2	N2	S1	S1	D2	P	M1	R1	S0														
+Vittalapriya	S0	R1	M1	P	D2	S1	S1	D2	P	M1	R1	S0															
+Manavati	S0	R1	G1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G1	R1	S0											
+Manoranjani	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G1	R1	S0												
+Ghanashyamala	S0	G1	M1	P	D2	S1	S1	D2	N3	P	M1	G1	R1	S0													
+Kunjari	S0	R1	M1	P	D2	P	S1	S1	N3	D2	P	M1	G1	R1	S0												
+Tanaroopi	S0	R1	G1	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G1	R1	S0											
+Tanukeerti	S0	R1	M1	P	N3	S1	S1	N3	D3	N3	P	M1	G1	M1	R1	S0											
+Senavati	S0	R1	G2	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G2	R1	S0											
+Senagrani	S0	R1	G2	R1	M1	G2	M1	P	N1	D1	S1	S1	N1	D1	P	M1	G2	M1	G2	R1	S0						
+Bhogi	S0	G2	M1	P	D1	N1	D1	S1	S1	N1	D1	P	M1	G2	S0												
+Chitthakarshani	S0	R1	G2	M1	D1	S1	S1	D1	M1	G2	R1	S0															
+Navarasa-Mala	S0	R1	G2	M1	P	D1	S1	S1	N1	D1	P	M1	R1	S0													
+Sindhu-gowri	S0	R1	G2	M1	P	D1	N1	S1	S1	N1	D1	M1	G2	M1	R1	S0											
+Hanumatodi	S0	R1	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R1	S0											
+Janatodi	S0	R1	G2	M	P	D1	N2	S1	S1	N2	D1	P	M	G2	R1	S0											
+amrita-dhanyasi	S0	R1	G2	M1	P	N2	S1	S1	N2	P	M1	G2	R1	S0													
+Asaveri	S0	R1	M1	P	D1	S1	S1	N2	S0	P	D1	M1	P	R1	G2	R1	S0										
+Bhanuchandrika	S0	M1	D1	N2	S1	S1	N2	D1	M1	G1	S0																
+Bhadratodi	S0	R1	G2	M1	D1	S1	S1	N2	D1	P	G2	S0															
+Bhoopalam	S0	R1	G2	P	D1	S1	S1	D1	P	G2	R1	S0															
+Chandrikatodi	S0	G2	M1	P	D1	S1	S1	D1	P	M1	G2	S0															
+Deshikatodi	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Dhanyasi	S0	G2	M1	P	N2	S1	S1	N2	D1	P	M1	G2	R1	S0													
+Divyamalati	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	S0													
+Ghanta	S0	G2	R2	M1	P	N2	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Kalasaveri	S0	R1	G2	P	N2	S1	S1	N2	P	G2	R1	S0															
+Kanakasaveri	S0	R1	M1	P	D1	S1	S1	N2	D1	P	M1	G2	R1	S0													
+Nagavarali	S0	R1	G2	M1	P	M1	D1	N2	S1	S1	N2	D1	P	M1	G2	R1	S0										
+Prabhupriya	S0	G2	M1	P	D1	S1	S1	D1	P	M1	G2	S0															
+Punnagatodi	N1	S0	R1	G2	M1	P	P	M1	G2	R1	S0	N2	D1														
+Punnagavarali	N2	","	S0	R1	G2	M1	P	D1	N2	N2	D1	P	M1	G2	R1	S0	N2										
+Shravanamallika	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Sowjanya	S0	R1	M1	D1	S1	S1	D1	M1	R1	S0																	
+shuddha-seemantini	S0	R1	G2	M1	P	D1	S1	S1	D1	P	M1	G2	R1	S0													
+shuddha-todi	S0	R1	G2	M1	D1	N2	S1	S1	N2	D1	M1	G2	R1	S0													
+Swarnamalli	S0	G2	M1	P	D1	N1	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Dhenuka	S0	R1	G2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G2	R1	S0											
+Dhunibhinnashadjam	S0	R1	G2	R1	P	M1	P	N3	S1	S1	D1	P	M1	G2	R1	S0											
+Bhinnashadjam	S0	R1	G2	R1	P	M1	P	N3	S1	S1	D1	P	M1	G2	R1	S0											
+Mohananata	S0	G2	M1	P	D1	P	M1	P	N3	S1	S1	N3	P	D1	P	M1	G2	S0									
+udhaya-ravi-candrika	S0	G2	M1	P	N3	S1	S1	N3	P	M1	G2	S0															
+Vasanthatodi	S0	R1	G2	M1	D1	N3	S1	S1	N3	D1	M1	R1	S0														
+Natakapriya	S0	R1	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R1	S0											
+Natabharanam	S0	R1	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R1	S0											
+Alankarapriya	S0	R1	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	R1	S0													
+Bhagyashabari	S0	R1	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	R1	S0													
+Deeparamu	S0	R1	G2	M1	P	D2	N2	S1	S1	N2	D2	N2	P	M1	G2	R1	S0										
+Gunavati	S0	R1	M1	P	D2	S1	S1	D2	P	M1	R1	S0															
+Hindoladeshikam	S0	M1	R1	G2	M1	P	D2	N2	S1	S1	P	N2	D2	M1	G2	R1	S0										
+Kanakadri	S0	R1	G2	P	D2	S1	S1	N2	D2	P	M1	G2	R1	S0													
+Matangakamini	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	S0													
+Natyadharana	S0	R1	M1	P	D2	S1	S1	N2	D2	P	M1	R1	S0														
+Niranjana	S0	R1	G2	M1	P	D2	S1	S1	N2	D2	P	M1	G2	R1	S0												
+Shanthabhashini	S0	R1	G2	M1	P	D2	S1	S1	N2	D2	P	M1	S0														
+Shivashakti	S0	G2	M1	D2	S1	S1	N2	D2	M1	G2	S0																
+sindhu-bhairavi	S0	R2	G2	M1	G2	P	D1	N2	S1	N2	D1	P	M1	G2	R1	S0	N2	S0									
+Kokilapriyaa	S0	R1	G2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R1	S0											
+Kokilaravam	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R2	S0												
+Chitramani	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R1	S0												
+Jnanachintamani	S0	R1	M1	D2	N3	S1	S1	N3	D2	P	M1	R1	S0														
+Kowmari	S0	R1	G2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	R1	S0												
+shuddha-lallitha	S0	P	M1	D2	N3	S1	S1	N3	S0	D2	P	M1	G2	R1	S0												
+Vardhani	S0	G2	M1	P	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R1	S0										
+Vasantamalli	S0	G2	M1	P	N3	S1	S1	D2	P	M1	G2	S0															
+Vasantanarayani	S0	R1	G2	M1	P	S1	S1	N3	D2	P	M1	G2	R1	S0													
+Rupavati	S0	R1	G2	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G2	R1	S0											
+Rowpyanaka	S0	M1	P	D3	N3	S1	S1	N3	P	M1	G2	R1	S0														
+Shyamakalyani	S0	M1	G2	M1	P	D3	N3	S1	S1	N3	P	D3	N3	P	M1	G2	R1	S0									
+Gayakapriya	S0	R1	G3	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R1	S0											
+geya-hejjajji	S0	R1	M1	G3	M1	P	D1	S1	S1	N3	D1	P	M1	G3	R1	S0											
+Hejjajji	S0	R1	G3	M1	P	D1	S1	S1	N1	D1	P	M1	G3	R1	S0												
+Kalakanti	S0	R1	G3	M1	D1	N1	S1	S1	N1	D1	P	G3	R1	S0													
+Kalkada	S0	R1	G3	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R1	S0												
+Kalpanadharini	S0	G3	M1	P	D1	S1	S1	N1	D1	P	M1	G3	R1	S0													
+Vakulabharanam	S0	R1	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R1	S0											
+Vatee-Vasantabhairavi	S0	R1	G3	M1	D1	N2	S1	S1	N2	D1	M1	G3	R1	S0													
+ahiri	S0	R1	S0	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R1	S0										
+Amudhasurabhi	S0	M1	G3	M1	P	D1	S1	S1	N2	D1	P	M1	R1	S0													
+Devipriya	S0	G3	P	N2	S1	S1	N2	D1	P	M1	G3	R1	S0														
+Kalindaja	S0	R1	G3	M1	P	N2	S1	S1	N2	P	M1	G3	R1	S0													
+Kuvalayabharanam	S0	R1	G3	M1	D1	N1	S1	S1	N1	D1	M1	G3	R1	S0													
+Sallapa	S0	G3	M1	D1	N2	S1	S1	N2	D1	M1	G3	S0															
+Soma	S0	R1	P	M1	D1	N2	S1	S1	N2	D1	M1	P	M1	G3	R1	S0											
+Shuddha-kamboji	S0	G3	R1	M1	P	N2	S1	S1	N2	P	M1	G3	R1	S0													
+Vasantabhairavi	S0	R1	G3	M1	D1	N2	S1	S1	N2	D1	M1	G3	R1	S0													
+vasanta-mukhari	S0	M1	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R1	S0											
+Vijayollasini	S0	R1	G3	M1	P	M1	D1	N2	S1	S1	N2	D1	P	M1	G3	R1	S0										
+Mayamalava-gowla	S0	R1	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0											
+Ardhradesi	S0	R1	G3	M1	P	D1	N3	S1	S1	D1	P	M1	G3	R1	S0												
+Bhavini	S0	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	S0													
+Bibhas	S0	R1	G3	P	D1	S1	S1	D1	P	M1	R1	S0															
+Bowli	S0	R1	G3	P	D1	S1	S1	N3	D1	P	G3	R1	S0														
+Bowli-ramakriya	S0	R1	G3	P	D1	S1	S1	N3	P	D1	P	M1	G3	R1	S0												
+Charuvardhani	S0	R1	M1	P	D1	N3	S1	S1	D1	P	M1	G3	R1	S0													
+Chayagowla	S0	R1	M1	G3	M1	P	N3	S1	S1	N3	D1	P	M1	G3	R1	S0											
+Chandrachooda	S0	M1	G3	M1	P	D1	S1	S1	N3	D1	P	M1	G3	S0													
+Deshyagowla	S0	R1	P	D1	N3	S1	S1	N3	D1	P	R1	S0															
+Devaranji	S0	M1	P	D1	P	N3	S1	S1	N3	D1	P	M1	S0														
+Ekakshari	S0	R1	G3	M1	P	D1	N3	S1	S1	N1	P	M1	R1	G3	M1	R1	S0										
+Ghanasindhu	S0	M1	G3	M1	P	D1	N3	D1	S1	S1	N3	D1	P	M1	G3	R1	S0										
+Gowla	S0	R1	M1	P	N3	S1	S1	N3	P	M1	R1	G3	M1	R1	S0												
+Gowlipantu	S0	R1	M1	P	N3	S1	S1	N3	D1	P	M1	D1	M1	G3	R1	S0											
+Gowri	S0	R1	M1	P	N3	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Gummakambhoji	S0	R1	G3	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Gundakriya	S0	R1	M1	P	N3	S1	S1	N3	P	D1	P	M1	G3	R1	S0												
+Gurjari	S0	R1	G3	M1	P	D1	N3	S1	S1	D1	N3	P	M1	G3	R1	S0											
+Jaganmohini	S0	G3	M1	P	N3	S1	S1	N3	P	M1	G3	R1	S0														
+Kalyanakesari	S0	R1	G3	P	D1	S1	S1	D1	P	G3	R1	S0															
+Kannadabangala	S0	R1	M1	G3	M1	D1	P	D1	S1	S1	D1	P	M1	G3	R1	S0											
+Karnataka-saranga	S0	R1	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	R1	S0												
+Lalita	S0	R1	G3	M1	D1	N3	S1	S1	N3	D1	M1	G3	R1	S0													
+Lalitapanchamam	S0	R1	G3	M1	D1	N3	S1	S1	N3	D1	M1	P	M1	G3	R1	S0											
+Malavakurinji	S0	G3	P	D1	N3	S1	S1	N3	D1	M1	R1	S0															
+Malavapanchamam	S0	R1	G3	M1	P	N3	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Margadesi	S0	R1	G3	R1	G3	D1	M1	P	D1	S1	S1	D1	P	M1	G3	R1	S0										
+Malahari	S0	R1	M1	P	D1	S1	S1	D1	P	M1	G3	R1	S0														
+Mallikavasantam	S0	G3	M1	P	N3	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Mangalakaishiki	S0	R1	M1	G3	D1	P	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Manolayam	S0	R1	M1	P	D1	S1	S1	N3	D1	P	M1	R1	S0														
+Maruva	S0	G3	M1	D1	N3	S1	S1	N3	D1	P	G3	M1	G3	R1	S0	R1	G3	R1	S0								
+Mechabowli	S0	R1	G3	P	D1	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Megharanjani	S0	R1	G3	M1	N3	S1	S1	N3	M1	G3	R1	S0															
+Nadhanamakriya	S0	R1	G3	M1	P	D1	N3	N3	D1	P	M1	G3	R1	S0	N3												
+Padi	S0	R1	M1	P	N3	S1	S1	N3	P	D1	P	M1	R1	S0													
+Pharaju-(paras)	S0	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Poornalalita	S0	R1	G3	M1	P	D1	S1	S1	D1	P	M1	G3	R1	S0													
+Poorvi	S0	R1	G3	M1	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Poorvikavasanta	S0	M1	G3	M1	D	N3	S1	S1	N3	D1	M1	P	M1	G3	R1	S0											
+Pratapadhanyasi	S0	G3	M1	P	N3	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Prataparanjani	S0	R1	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0												
+Puranirmai	S0	R1	G3	P	D1	S1	S1	N3	D1	P	G3	R1	S0														
+Ramakali	S0	R1	G3	P	D1	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Ramakriya	S0	G3	M1	P	D1	N3	S1	S1	N3	P	D1	P	M1	G3	R1	S0											
+Revagupti	S0	R1	G3	P	D1	S1	S1	D1	P	G3	R1	S0															
+Rukhmambari	S0	R1	G3	P	N3	S1	S1	N3	P	G3	R1	S0															
+Samantadeepara	S0	R1	G3	M1	P	N3	S1	S1	N3	P	M1	G3	R1	S0													
+Saranga-nata	S0	R1	M1	P	D1	S1	S1	N3	S0	D1	P	M1	G3	R1	S0												
+Saveri	S0	R1	M1	P	D1	S1	S1	N3	D1	P	M1	G3	R1	S0													
+Salanganata	S0	R1	M1	P	D1	S1	S1	D1	P	G3	R1	S0															
+Satyavati	S0	G3	R1	G3	P	D1	S1	S1	N3	D1	N3	P	D1	P	G3	R1	S0										
+Sindhu-ramakriya	S0	G3	M1	P	D1	N3	S1	S1	N3	P	M1	G3	R1	G3	S0												
+Surasindhu	S0	M1	G3	M1	P	D1	N3	D1	S1	S1	N3	D1	P	M1	R1	G3	R1	S0									
+Tarakagowla	S0	G3	M1	D1	N3	S1	S1	N3	D1	M1	G3	S0															
+Takka	S0	R1	S0	G3	M1	G3	P	M1	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0								
+Ushavali	S0	R1	M1	P	D1	S1	S1	N3	D1	M1	P	M1	R1	S0													
+Visharada	S0	R1	M1	P	N3	S1	S1	N3	P	M1	R1	S0															
+Chakravakam	S0	R1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R1	S0											
+Toyavegavahini	S0	R1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R1	S0											
+ahir-bhairavi	S0	R1	G3	M1	P	N2	D2	M1	P	D2	S1	S1	N2	D2	P	M1	P	G3	R1	S0							
+Bhakthapriya	S0	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	R1	M1	G3	S0											
+Bhujangini	S0	R1	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	R1	S0													
+Bindhumalini	S0	G3	R1	G3	M1	P	N2	S1	S1	N2	S0	D2	P	G3	R1	S0											
+Chakranarayani	S0	R1	M1	P	D2	N2	S1	S1	N2	D2	P	M1	R1	S0													
+Ghoshini	S0	M1	G3	M1	P	D2	N2	D2	S1	S1	N2	D2	P	M1	G3	R1	S0										
+Guhapriya	S0	R1	G3	M1	P	P	M1	D2	N2	S1	S1	N2	D2	P	M1	G3	S0	R1	S0								
+Kalavati	S0	R1	M1	P	D2	S1	S1	D2	P	M1	G3	R1	S0														
+Kokila	S0	R1	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	R1	S0													
+Malayamarutam	S0	R1	G3	P	D2	N2	S1	S1	N2	D2	P	G3	R1	S0													
+Mukthangi	S0	R1	G3	M1	P	D2	N2	S1	S1	D2	N2	P	M1	G3	R1	S0											
+Mukundamalini	S0	R1	G2	P	D2	S1	S1	D2	P	G2	R1	S0															
+Poornapanchamam	P	M1	S0	R1	S0	M1	P	D2	D2	P	M1	G3	R1	S0	N2												
+Pravritti	S0	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	S0													
+Ragamanjari	S0	R1	M1	P	D2	S1	S1	N2	D2	M1	R1	S0															
+Rasikaranjani	S0	R1	G3	P	S1	S1	D2	P	G3	R1	S0																
+shree-nabhomargini	S0	G3	M1	P	D2	N2	S1	S1	D2	P	M1	G3	R1	S0													
+Shyamali	S0	G3	P	D2	N2	S1	S1	N2	D2	P	G3	R1	S0														
+Subhashini	S0	D2	N2	D	R1	G3	M1	P	M1	G3	R1	S0	N2	D2	N2	S0											
+Valaji	S0	G3	P	D2	N2	S1	S1	N2	D2	P	G3	S0															
+Veenadhari	S0	R1	G3	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R1	S0												
+Vegavahini	S0	R1	G3	M1	D2	N2	D2	S1	S1	N2	D2	P	M1	G3	R1	S0											
+Sooryakantam	S0	R1	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R1	S0											
+Chayavathi	S0	R1	G3	M1	D2	N3	S1	S1	N3	D2	P	M1	G3	R1	S0												
+Bhairavam	S0	R1	G3	M1	P	D2	N3	S1	S1	D2	P	M1	G3	R1	S0												
+Haridarpa	S0	R1	G3	M1	P	D2	N3	S1	S1	D2	P	M1	R1	S0													
+Jayasamvardhani	S0	G3	M1	P	D2	N3	S1	S1	N3	P	M1	G3	R1	S0													
+Jeevantika	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	R1	S0													
+Kusumamaruta	S0	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R1	G3	M1	S0											
+Nagachoodamani	S0	R1	G3	M1	P	D2	S1	S1	D2	N2	D2	P	M1	G3	M1	R2	S0										
+Rohini	S0	R1	G2	M1	M2	D2	N2	S1	S1	N2	D2	M2	M1	G2	R1	S0											
+Samakannada	S0	R2	M1	G2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	R1	S0											
+Sowrashtram	S0	R1	G3	M1	P	M1	D2	N3	S1	S1	N3	D2	N2	D2	P	M1	G3	R1	S0								
+Suddha-gowla	S0	R1	M1	P	N3	S1	S1	N3	P	M1	R1	S0															
+Supradeepam	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	M1	R1	S0											
+Vasantha	S0	M1	G3	M1	D2	N3	S1	S1	N3	D2	M1	G3	R1	S0													
+Hatakambari	S0	R1	G3	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G3	R1	S0											
+Jayashuddhamalavi	S0	R1	G3	M1	P	N3	S1	S1	N3	D3	P	M1	G3	R1	S0												
+Hamsanantini	S0	G3	M1	P	S1	S1	P	M1	G3	R1	S0																
+Kallola	S0	P	D3	N3	S1	S1	N3	D3	P	M1	G3	R1	S0														
+Simhala	S0	R1	G3	M1	P	D3	N3	S1	S1	N3	D3	N3	P	M1	G3	R1	S0										
+Jhankaradhvani	S0	R2	G2	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G2	R2	S0											
+Jhankarabhramari	S0	R2	G2	M1	P	D1	N1	D1	P	D1	S1	S1	N1	D1	P	M1	G2	R2	S0								
+Jhankarabhramari	S0	R2	G2	M1	P	D1	S1	S1	N1	D1	P	M1	G2	R2	S0												
+Jhankarabhramari	S0	R2	G2	M1	P	D1	N1	D1	S1	S1	D1	P	M1	G2	R2	S0											
+Jhankarabhramari	S0	R2	G2	M1	P	D1	N1	D1	S1	S1	N1	D1	P	M1	G2	R2	S0										
+Jhankarabhramari	S0	G	R2	G2	M1	P	D1	N1	D1	S1	S1	N1	D1	P	M1	G2	R2	G	R2	S0							
+Jhankarabhramari	S0	R2	G2	M1	P	D1	N1	D1	S1	D1	N1	D1	P	M1	G2	R2	S0										
+Bharati	S0	R2	G2	M1	P	S1	S1	P	M1	G2	R2	S0															
+Jalmika	S0	R2	G1	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G1	S0	R2	S0										
+Lalitabhairavi	S0	G2	M1	P	D1	S1	S1	N1	D1	P	M1	G2	R2	S0													
+Poornalalita	S0	G2	R2	M1	P	S1	S1	N1	D1	P	M1	G2	R2	S0													
+Poornalalita	S0	G2	R2	G2	R2	M1	P	S1	S1	N1	D1	P	M1	G2	R2	S0											
+Poornalalita	S0	R2	G2	R2	M1	P	S1	S1	N1	D1	P	M1	G2	R2	S0												
+Poornalalita	S0	R2	G2	M1	P	S1	S1	N1	D1	P	M1	G2	R2	S0													
+Poornalalita	S0	G2	R2	G2	M1	P	S1	S1	N1	D1	P	M1	G2	R2	S0												
+Poornalalita	S0	R2	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R2	S0											
+Nareretigowla	S0	R1	G2	M1	P	D1	N2	S1	S1	R2	D1	P	M1	G2	R2	S0											
+Anandabhairavi	S0	G2	R2	G2	M1	P	D2	P	S1	S1	N2	D2	P	M1	G2	R2	S0										
+Amrithavahini	S0	R2	M1	P	D1	N2	S1	S1	N2	D1	M1	G2	R2	S0													
+Bhairavi	S0	G2	R2	G2	M1	P	D2	N2	S1	S1	N2	D1	P	M1	G2	R2	S0										
+Bhuvanagandhari	S0	R2	M1	P	N2	S1	S1	N2	D1	P	M1	G2	S0														
+Chapagantarva	S0	G2	M1	P	N2	D1	M1	G2	R2	S0	N2																
+darbari-kanada	N2	S0	R2	G2	R2	S0	M1	P	D1	N2	S1	S1	D1	N2	P	M1	P	G2	M1	R2	S0						
+Devakriya	S0	R2	M1	P	N2	S1	S1	N2	D1	N	P	M1	G2	R2	S0												
+Dhanashree	N2	S0	G2	M1	P	N2	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Dharmaprakashini	S0	R2	M1	P	N2	S1	S1	N2	D1	M1	G2	R2	S0														
+dilipika-vasantha	S0	G2	M1	P	D1	P	N2	S1	S1	D1	P	M1	R2	S0													
+Divyagandhari	S0	G2	M1	P	D1	N2	S1	S1	N2	P	M1	G2	S0														
+Gopikavasantam	S0	R2	G2	M1	P	D1	P	N2	S1	N2	D1	P	M1	G2	R2	S0											
+Hindolam	S0	G2	M1	D1	N2	S1	S1	N2	D1	M1	G2	S0															
+Hindolavasanta	S0	G2	M1	P	D1	N2	D1	S1	S1	N2	D1	P	M1	D2	M1	G2	S0										
+Indughantarava	S0	G2	M1	P	D1	P	N2	D1	P	M1	G2	R2	S0	N2													
+Jayanthashri	S0	G2	M1	D1	N2	S1	S1	N2	D1	M1	P	M1	G2	S0													
+Jingala	S0	R2	G2	M1	P	D1	N2	D1	P	S1	S1	N2	D1	P	M1	G2	R2	S0									
+Jonpuri	S0	R2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R2	S0												
+Katyayani	S0	R2	G2	P	D2	S1	S1	D2	P	G2	R2	S0															
+Kanakavasantham	S0	G2	M1	P	N2	D1	S1	S1	N2	D1	P	M1	G2	R2	S0												
+Kshanika	S0	G2	M1	P	D1	S1	S1	D1	P	M1	G2	S0															
+Manji	S0	R2	G2	M1	P	D2	N2	S1	S1	N2	D1	P	M1	P	M1	P	G2	R2	S0								
+Mahati	S0	P	P	D1	N2	S1	S1	N2	P	G2	R2	S0															
+Malkosh	S0	G2	M1	D1	N2	S1	S1	N2	D1	M1	G2	S0															
+Nagagandhari	S0	R2	M1	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R2	S0										
+Navarathna-vilasam	S0	R2	G2	M1	P	D1	P	S1	S1	D1	P	M1	G2	M1	R2	S0											
+Nilamati	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	M1	G2	S0														
+Nilaveni	S0	R2	G2	M1	P	D1	N2	D1	S1	S1	D1	P	M1	G2	R2	S0											
+Poornashadjam	S0	R2	G2	M1	N2	S1	S1	N2	P	M1	G2	R2	S0														
+Rajarajeshwari	S0	R2	M1	P	D1	S1	S1	N2	D1	P	M1	G2	R2	S0													
+Saramati	S0	R2	G2	M1	P	D1	N2	S1	S1	N2	D1	M	G2	S0													
+saranga-kapi	S0	R1	P	M1	R1	P	R1	M1	P	N2	S1	S1	N2	D1	P	M1	G2	R1	S0								
+Sharadapriya	S0	R2	G2	P	N2	S1	S1	N2	P	G2	R2	S0															
+Shree-navarasachandrika	S0	R2	G2	M1	P	D1	S1	S1	D1	P	M1	G2	R2	S0													
+sindhu-dhanyasi	S0	G2	M1	P	N2	S1	S1	N2	D1	M1	P	M1	G2	R2	S0												
+shuddha-desi	S0	R2	G2	R2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R2	S0										
+shuddha-salavi	S0	G2	M1	P	N2	S1	S1	N2	P	M1	R2	S0															
+Sukumari	S0	G2	M1	P	N2	D1	N2	S1	S1	N2	P	M1	G2	M1	R2	S0											
+Sushama	S0	R2	M1	P	D1	S1	S1	D1	P	M1	R2	S0															
+Sutradhari	(Also	27)	S0	R2	M1	P	D1	S1	S1	D1	P	M1	R2	S0													
+Tarkshika	S0	R2	M1	P	N2	S1	S1	N2	D1	P	M1	R2	G2	R2	S0												
+Udayaraga	S0	G2	M1	P	N2	S1	S1	N2	P	M1	G2	S0															
+Vasantavarali	S0	R2	M1	P	D1	S1	S1	N2	D1	P	G2	R2	S0														
+Keeravani	S0	R2	G2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G2	R2	S0											
+Keeranavali	S0	R2	G2	M1	P	D1	N3	S1	S1	P	M1	G2	R2	S0													
+Aymmukhan	S0	G2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G2	S0													
+Bhanupriya	S0	R2	G2	D1	N3	S1	S1	N3	D1	G2	R2	S0															
+Chandrika	S0	R2	G2	P	D1	N3	S1	S1	N3	D1	P	G2	R2	S0													
+Gaganabhoopalam	S0	M1	G2	M1	P	D1	N3	S1	N3	D1	M1	G2	R2	S0													
+Hamsapancama	S0	G2	M1	P	N3	D1	N3	P	S1	S1	N3	D1	M1	G2	R2	S0											
+Hamsavahini	S0	R2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	R2	S0													
+Jayashree	S0	R2	G2	M1	P	D1	N3	D1	S1	S1	N3	D1	P	M1	G2	R2	S0										
+Kadaram	S0	G2	M1	D1	N3	S1	S1	N3	D1	M1	G2	S0															
+Kalyana-vasantam	S0	G2	M1	D1	N3	S1	S1	N3	D1	P	M1	G2	R2	S0													
+Kusumavali	S0	G2	M1	P	D1	S1	S1	N3	D1	P	M1	G2	M1	R1	S0												
+Madhavi	S0	M1	G2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	S0	M1	G2	R1	S0									
+Mishramanolayam	S0	R2	M1	P	D1	S1	S1	D2	D1	P	M1	R2	S0														
+Priyadarshani	S0	R2	M1	D1	N3	S1	S1	N3	D1	M1	R2	S0															
+Rishipriya	S0	R2	G2	M1	P	D1	N3	S1	S1	N3	P	M1	G2	R2	S0												
+Samapriya	S0	R2	M1	P	D1	S1	S1	D1	P	M1	R2	S0															
+Shrothasvini	S0	G2	M1	P	N3	S1	S1	N3	P	M1	G2	S0															
+Vasanthamanohari	S0	R2	G2	M1	D1	N3	S1	S1	N3	D1	M1	G2	R2	S0													
+Kharaharapriya	S0	R2	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0											
+Shree	S0	R2	M1	P	N2	S1	S1	N2	P	D2	N2	P	M1	R2	G2	R2	S0										
+Abheri	S0	G2	M1	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0													
+Abhogi	S0	R2	G2	M1	D2	S1	S1	D2	M1	G2	R2	S0															
+adi-kapi	S0	R2	M1	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0										
+aryamati	S0	R2	G2	P	D2	S1	S1	N2	D2	P	D2	M1	G2	R2	S0												
+Agnikopa	S0	G2	M1	P	N2	S1	S1	N2	P	M1	G2	R2	S0														
+Asaveri	S0	R2	G2	M1	D2	N2	S1	S1	N2	D2	M1	P	D2	M1	G2	R2	S0										
+Balachandrika	S0	G2	M1	P	D2	N2	S1	S1	N2	D2	M1	G2	R2	S0													
+Basant-bahar	S0	M2	P	G3	M2	N3	D1	N3	S1	R2	S0	N2	D2	P	M1	G2	M1	G2	R2	S0							
+Bhageshri	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	P	D2	G2	M1	R2	S0											
+Bhagavatapriya	S0	R2	G2	M1	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0												
+Bhagavathpriya	S0	R2	G2	M1	R2	M	P	D2	N	S1	S1	N2	D2	P	M1	R2	S0										
+Bhimpalas	N2	S0	G2	M1	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0												
+Brindavana-saranga	S0	R2	M1	P	N3	S1	S1	N2	P	M1	R2	G2	R2	S0													
+Brindavani	S0	R2	M1	P	N3	S1	S1	N2	P	M1	R2	S0															
+Chakrapradipta	S0	R2	G2	M1	P	M1	D2	N2	S1	S1	N2	D2	M1	G2	S0												
+Chitta-ranjani	S0	R2	G2	M1	P	D2	N2	N2	D2	P	M1	G2	R2	S0													
+Darbar	S0	R2	M1	P	D2	N2	S1	R2	S0	N2	S0	D2	P	M1	R2	G2	G2	R2	S0								
+Dayavati	S0	R2	G2	P	N2	S1	S1	N2	P	M1	G2	S0															
+Devamruthavarshani	S0	R2	G2	M1	N2	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0											
+Deva-manohari	S0	R2	M1	P	D2	N2	S1	S1	N2	D2	N2	P	M1	R2	S0												
+Dhanakapi	S0	R2	M1	P	N2	S0	(Varies)	S1	N2	D2	N2	P	M1	G2	R2	S0											
+Dilipika	S0	R2	G2	M1	P	N2	D2	N2	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0							
+Durga	S0	R2	M1	D2	P	D2	S1	S1	D2	P	M1	R2	S0														
+Gowla-kannada	S0	R2	G2	M1	P	D2	N2	S1	S1	N2	P	M1	G2	S0													
+Hamsa-abheri	S0	G2	P	M1	P	N2	S1	S1	N2	D2	P	M1	G2	S0													
+Haridasapriya	S0	P	M1	G3	M1	P	N2	S1	S1	N2	D2	N2	P	M1	G2	R2	S0										
+Harinarayani	S0	R2	G2	M1	P	M1	D2	N2	S1	S1	N2	P	M1	G2	R2	S0											
+Hindustani-kapi	S0	R2	M1	P	N2	S1	S1	N2	D2	N2	P	M1	G2	M1	D2	P	G2	R2	S0	N2	S1						
+Huseni	S0	R2	G2	M1	P	N2	D2	N2	S1	S1	N2	D1	P	M1	G2	R2	S0										
+Huseni	S0	R2	G3	M1	P	N3	D2	M1	P	N3	S1	S1	N3	S0	P	D2	M1	P	G3	R2	S0						
+Jayamanohari	S0	R2	G2	M1	D2	S1	S1	N2	D2	M1	G2	R2	S0														
+Jayanarayani	S0	R2	G2	M1	P	D2	S1	S1	N2	D2	P	M1	G2	R2	S0												
+Jayanthasena	S0	G2	M1	P	D2	S1	S1	N2	D2	P	M1	G2	S0														
+Kanada	S0	R2	G2	M1	D	N2	S1	S1	N2	P	M1	G2	M1	R2	S0												
+Kapi	S0	R2	M1	P	N3	S1	S1	N2	D2	N2	P	M1	G2	R2	S0												
+Kapijingala	S0	N2	S0	R2	G2	M1	M1	G2	R2	S0	N2	D2	N2	S0													
+Kalanidhi	S0	R2	G2	M1	S0	P	M1	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0									
+Kalika	S0	R2	G2	P	D2	N2	S1	S1	N2	D2	P	G2	R2	S0													
+Kannadagowla	S0	R2	G2	M1	P	N2	S1	S1	N2	D2	P	M1	G2	S0													
+Karnataka-hindolam	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	S0															
+Karnataka-kapi	S0	R2	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0											
+Karnaranjani	S0	R2	G2	M1	G2	P	D2	S1	S1	N2	D2	P	M1	G2	R2	S0											
+Kowmodaki	S0	R2	G2	M1	P	D2	N2	S1	S1	D2	P	G2	S0														
+Kowshika	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	M1	R2	S0													
+Lalitamanohari	S0	G2	M1	P	D2	N2	S1	S1	N2	P	M1	G2	R2	S0													
+Madhavamanohari	S0	R2	G3	M1	P	N2	D2	N2	S1	S1	N2	D2	M1	G2	R2	S0											
+Malavashree	S0	G2	M1	P	N2	D2	N2	P	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0								
+Margahindolam	S0	R2	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	S0												
+Mayapradeeptam	S0	M1	G2	M1	P	D2	N2	S1	S1	D2	P	M1	G2	R2	S0												
+Madhyamaravali	S0	R2	G2	P	D2	N2	S1	S1	N2	D2	P	G2	R2	S0													
+Madhyamavathi	S0	R2	M1	P	N2	S1	S1	N2	P	M1	R2	S0															
+Mahanandhi	S0	R2	G2	P	D2	S1	S1	D2	P	G2	R2	S0															
+Mandamari	S0	R2	M1	P	D2	S1	S1	N2	S0	D2	P	M1	G2	R2	S0												
+Mangalavathi	S0	R2	M1	P	D2	S1	S1	D2	P	M1	G2	R2	S0														
+Manirangu	S0	R2	M1	P	N2	S1	S1	N2	P	M1	G2	R2	S0														
+Manjari	S0	G2	R2	G2	M1	P	N2	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0									
+Manohari	S0	G2	R2	G2	M1	P	D2	S1	S1	D2	P	M1	G2	R2	S0												
+Manorama	S0	R2	G2	M1	P	D1	P	S1	S1	N2	D1	P	M1	G2	R2	S0											
+Maruvadhanyasi	S0	G2	M1	P	D2	S1	S1	N2	D2	P	M1	D2	M1	G2	R2	S0											
+Mishramanolayam	S0	R2	M1	P	D1	S1	S1	D2	D1	P	M1	R2	S0														
+Mishrashivaranjani	S0	R2	G2	P	D2	S1	S1	D2	P	G3	G2	R2	S0														
+Miyan-malhar	S0	R2	P	M1	P	N2	D2	N2	S1	S1	N2	P	M1	P	G2	M1	R2	S0									
+Moorthee	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	S0															
+Mukhari	S0	R2	M1	P	N2	D2	S1	S1	N2	D1	P	M1	G2	R2	S0												
+Nadachintamani	S0	R2	G2	M1	N2	D2	N2	S1	S1	N2	D2	P	M1	G2	R2	S0											
+Nadatarangini	S0	P	M1	R2	G2	S1	S1	P	N2	D2	P	M1	G2	R2	G2	S0											
+Nadavarangini	S0	P	M1	N2	D2	N2	S1	S1	P	N2	D2	P	M1	G2	R2	G2	S0										
+Nagari	S0	R2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G2	S0													
+Nagavalli	S0	R2	M1	D2	N2	S1	S1	N2	D2	M1	R2	S0															
+Nayaki	S0	R2	M1	P	D2	N2	D2	P	S1	S1	N2	D2	P	M1	R2	G2	R2	S0									
+Nigamagamini	M1	G2	S0	G2	M1	N2	S1	S1	N2	M1	G2	M1	G2	S0													
+Nirmalangi	S0	R2	M1	P	N2	S1	S1	N2	P	M1	R2	S0															
+Omkari	S0	R2	G2	M1	P	D2	S1	S1	D2	P	M1	G2	R2	S0													
+Panchamam	S0	R2	D2	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0													
+Patadeep	N2	S0	G2	M1	P	N2	S1	S1	N2	D2	P	M1	G2	R2	S0	N2	S0	G2	R2	S0							
+Phalamanjari	S0	G2	M1	D2	S1	S1	N2	D2	P	M1	G2	M1	R2	S0													
+Phalaranjani	S0	G2	M1	P	M1	D2	S1	S1	N2	D2	P	M1	G2	M1	R2	S0											
+Peeloo	N2	S0	G3	M1	P	N2	D2	P	S1	S1	N2	D2	P	D2	P	M1	G2	R2	S0	N2	S0						
+Poornakalanidhi	S0	G2	M1	P	D2	N2	S1	S1	D2	P	M1	G2	R2	S0													
+Pushpalathika	S0	R2	G2	M1	P	N2	S1	S1	N2	P	M1	G2	R2	S0													
+Ratipatipriya	S0	R2	G2	P	N2	S1	S1	N2	P	G2	R2	S0															
+Reethi-gowla	S0	G2	R2	G2	M1	N2	D2	M1	N2	N2	S1	S1	N2	D2	M1	G2	M1	P	M1	G2	R2	S0					
+Rudrapriya	S0	R2	G2	M1	N2	S1	S1	N2	P	M1	G2	R2	S0														
+Salagabhairavi	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	G2	R2	S0													
+Sarang	S0	R2	M1	P	N2	S1	S1	N2	P	M1	R2	S0															
+Saindhavi	N2	D2	N2	S0	R2	G2	M1	P	D2	N2	D2	P	M1	G2	R2	S0	N2	D2	N2	S0							
+Sangrama	S0	R2	M1	D2	N2	P	S1	S1	N2	D2	G2	R2	S0														
+Sankrandanapriya	S0	R2	G2	P	D2	S1	S1	D2	P	G2	R2	S0															
+Sarvachoodamani	S0	R2	M1	G2	M1	P	D2	N2	S1	S1	N2	P	D2	N2	D2	P	M1	G2	R2	G2	R2	S0					
+Shivapriya	S0	R2	G2	P	D2	S1	S1	D2	P	G2	R2	S0															
+Shivaranjani	S0	R2	G2	P	D2	S1	S1	D2	P	G2	R2	S0															
+Shree-manohari	S0	G2	R2	G2	M1	P	D2	S1	S1	D2	P	M1	G2	R2	S0												
+Shree-manoranjani	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	R2	S0														
+Shree-ranjani	S0	R2	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	R2	S0													
+Siddhasena	S0	G2	R2	G2	M1	P	D2	S1	S1	N2	D2	M1	P	M1	R2	G2	R2	S0									
+Suddha-bangala	S0	R2	M1	P	D2	S1	S1	D2	P	M1	R2	G2	R2	S0													
+Suddha-bharavi	S0	G2	M1	P	N2	D2	S1	S1	N2	D2	M1	G2	R2	S0													
+Suddha-dhanyasi	S0	G2	M1	P	N2	S1	S1	N2	P	M1	G2	S0															
+Suddha-hindolam	S0	G2	M1	D2	N2	S1	S1	N2	D2	M1	G2	S0															
+Suddha-manohari	S0	R2	G2	M1	P	D2	S1	S1	N2	P	M1	R2	G2	S0													
+Suddha-velavali	S0	R2	M1	P	N2	S1	S1	N2	D2	N2	P	M1	G2	R2	S0												
+Sugunabhooshani	S0	G2	M1	P	M1	D2	N2	S1	S1	N2	D2	P	M1	D2	M1	R2	S0										
+Swarabhooshani	S0	G2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	R2	S0													
+Swarakalanidhi	S0	M1	G2	M1	P	D2	N2	S1	S1	N2	D2	N2	P	M1	G2	R2	S0										
+Swararanjani	S0	R2	G2	M1	D2	N2	S1	S1	N2	P	M1	G2	M1	R2	S0												
+Tavamukhari	S0	R2	G2	P	D2	S1	S1	N2	D2	P	M1	G2	R2	S0													
+Vajrakanti	S0	G2	M1	P	N2	S1	S1	N2	D1	P	M1	G2	R2	S0													
+gowri-manohari	S0	R2	G2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R2	S0											
+Gowrivelavali	S0	R2	G2	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	R2	S0										
+Gowrivelavali	S0	R2	G1	G2	S0	R2	M1	M1	P	D2	D2	S1	S1	N3	D2	P	M1	G1	G2	R2	S0						
+Gowrishankar	S0	R2	G2	M1	P	N3	S1	S1	N3	D2	P	M1	G2	R2	S0												
+Hamsadeepika	S0	R2	G2	M1	D2	S1	S1	N3	D2	P	M1	G2	R2	S0													
+Hrudkamali	S0	R2	M1	D2	N3	S1	S1	N3	D2	M1	R2	S0															
+Lavanthika	S0	R2	M1	P	N3	S1	S1	N3	P	M1	R2	S0															
+Sundaramanohari	S0	R2	M1	P	N3	S1	S1	N3	D2	P	M1	G2	R2	S0													
+Vasantashree	S0	R2	G2	M1	D2	N3	S1	S1	N3	D2	M1	G2	R2	S0													
+Velavali	S0	G2	M1	D2	N3	S1	S1	N3	D2	P	M1	G2	R2	S0													
+Velavali	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	R2	S0													
+Velavali	S0	R2	G2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	S0													
+Velavali	S0	G2	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	R2	S0												
+Velavali	S0	R2	G2	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G2	R2	S0										
+Velavali	S0	R2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G2	R2	S0												
+Varunapriyaa	S0	R2	G2	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G2	R2	S0											
+Veeravasantham	S0	R2	G2	M1	P	S1	S1	N3	D3	P	M1	G2	R2	S0													
+Mararanjani	S0	R2	G3	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R2	S0											
+Sharavathi	S0	R2	G3	M1	P	D1	N1	D1	S1	S1	N1	D1	P	M1	G3	R2	S0										
+Devasalaga	S0	G3	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R2	S0													
+Jana-sammodhini	S0	R2	G3	P	D1	S1	S1	D1	P	G3	R2	S0															
+Kesari	S0	R2	G3	M1	P	M1	D1	P	D1	S1	S1	D1	N1	D1	P	M1	G2	R2	S0								
+Rajathilaka	S0	R2	G3	M1	P	S1	S1	P	M1	G3	R2	S0															
+Charukeshi	S0	R2	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R2	S0											
+Tarangini	S0	R2	G3	P	D1	N2	D1	S1	S1	D1	P	M1	G3	R2	S0												
+Tarangini	S0	R2	G3	P	D1	N2	D1	P	D1	S1	S1	D1	P	G3	R2	S0	G3	M1	R2	G3	S0						
+Chirswaroopi	S0	R2	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R2	S0											
+Maravi	S0	G3	M1	P	N2	S1	S1	N2	D1	P	M1	G3	R2	S0													
+Poorvadhanyasi	S0	M1	G3	M1	N2	S1	S1	N2	D1	P	M1	G3	R2	S0													
+Shiva-manohari	S0	M1	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R2	S0											
+Shukrajyothi	S0	R2	G3	M1	P	D1	N2	S1	S1	N2	P	D1	M1	G3	R2	S0											
+Sarasangi	S0	R2	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R2	S0											
+Sowrasena	S0	R2	M1	P	D1	S1	S1	N3	D1	P	M1	G3	R2	S0													
+Haripriya	S0	R1	G3	M1	P	S1	S1	N3	D1	P	M1	G3	S0														
+Kamala-manohari	S0	G3	M1	P	N3	S1	S1	N3	D1	P	M1	G3	S0														
+Madhulika	S0	R2	G3	M1	N3	S1	S1	N3	M1	G3	R2	S0															
+Nalinakanthi	S0	G3	R2	M1	P	N3	S1	S1	N3	P	M1	G3	R2	S0													
+Neelamani	S0	R2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	R2	S0													
+Salavi	S0	G3	R2	G3	M1	P	D1	N3	D1	S1	S1	N3	D1	P	M1	G3	R2	S0									
+Sarasanana	S0	R2	G3	M1	D1	N3	S1	S1	N3	D1	M1	G3	R2	S0													
+Saraseeruha	S0	R2	G3	M1	D1	N1	D1	S1	S1	N1	D1	M1	G3	R2													
+Simhavahini	S0	G2	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R2	S0												
+Surasena	S0	R2	M1	P	D1	S1	S1	N3	D1	P	M1	G3	S0	R2	S0												
+Sutradhari	(Also	20)	S0	R2	M1	P	D1	S1	S1	D1	P	M1	R2	S0													
+Vasanthi	S0	R2	G3	P	D1	S1	S1	D1	P	G3	R2	S0															
+Harikambhoji	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Harikedaragowla	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Andolika	S0	R2	M1	P	N2	S1	S1	N2	D2	M1	R2	S0															
+Ambhojini	S0	R2	G3	M1	D2	S1	S1	D2	M1	G3	R2	S0															
+Andhali	S0	R2	M1	P	N2	S1	S1	N2	P	M1	R2	G3	M1	R2	S0												
+Aparoopam	S0	R2	G3	M1	P	N2	D2	N2	S1	S1	D2	M1	G3	R2	G3	S0											
+Balahamsa	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	R2	M1	G3	S0												
+Bahudari	S0	G3	M1	P	D2	N2	S1	S1	N2	P	M1	G3	S0														
+Bhoopali	S0	R2	G3	P	D2	S1	S1	D2	P	G3	R2	S0															
+Chayalagakhamas	S0	M1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Chayatarangini	S0	R2	M1	G3	M1	P	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Chandrahasitham	S0	R2	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	R2	S0													
+Dasharatipriya	S0	M1	G3	M1	P	D2	N2	D2	S1	S1	N2	D2	P	M1	G3	M1	R2	S0									
+Dayaranjani	S0	R2	M1	P	D2	S1	S1	N2	D2	M1	G3	S0															
+Desh	S0	R2	M1	P	N3	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Deshakshi	S0	R2	G3	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Deshkar	S0	R2	G3	P	D2	S1	S1	D2	P	G3	R2	S0															
+S0	G3	M1	D2	N2	S1	S1	N2	D2	M1	P	G3	R2	S0														
+S0	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	R2	S0															
+Dwijavanthi	S0	R2	M1	G3	M1	P	D2	S1	S1	N2	D2	P	M1	G3	M1	R2	G2	R2	S0	N2	D2	N2	S1				
+Eeshamanohari	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	R2	M1	G3	R2	S0									
+Eeshaivaridhi	S0	R2	M1	D2	N2	S1	S1	N2	P	M1	R2	S0															
+Gandharalola	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	G3	M1	G3	R2	S0											
+Gavathi	S0	M1	P	N3	S1	S1	D2	M1	P	G3	M1	R2	N3	S0													
+Guhamanohari	S0	R2	M1	D2	N2	S1	S1	N2	D2	M1	R2	S0															
+Guharanjani	S0	R2	S0	M1	P	D2	N2	S1	S1	N2	D2	N2	P	M1	G3	S0											
+Hamsaroopini	S0	R2	G3	P	D2	S1	S1	N2	P	M1	R2	S0															
+Haridasapriya	S0	P	M1	G3	M1	P	N2	S1	S1	N2	D2	N2	P	M1	G2	R2	S0										
+Harikedaram	S0	R2	G3	M1	P	D2	N2	S0	N2	S1	S1	N2	S0	D2	N2	D2	P	M1	G3	R2	S0						
+Harini	S0	G3	M1	P	D2	N2	D2	S1	S1	N2	S0	N2	D2	P	M1	G3	M1	G2	R2	S0							
+Harithapriya	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	G3	R2	G3	R2	S0											
+Hemasaranga	S0	R2	G3	M1	P	D2	N2	D2	S1	S1	P	M1	G3	R2	S0												
+Jaijaivanthi	S0	R2	G3	R2	S0	D2	N2	P	R2	G3	M1	P	N2	S1	N2	S0	N2	D2	P	D2	M1	G3	R2	G3	R2	S0	
+Jaithshree	S0	R2	G3	P	D2	S1	S1	D2	P	G3	R2	S0															
+Jana-sammodhini	S0	R2	G3	P	D2	N2	S1	S1	N2	D2	P	G3	R2	S0													
+Jayarama	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	S0												
+Jhinjothi	D2	S0	R2	G3	M1	P	D2	N2	D2	P	M1	G3	R2	S0	N2	D2	P	D2	S0								
+Jog	S0	G3	M1	P	N3	S1	S1	N2	P	M1	G3	M1	G3	S0	G3	S0											
+Jujahuli	S0	M1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	S0												
+Kambhoji	S0	R2	G3	M1	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0	N3.	P.	D2.	S0								
+Kambhoji	S0	R2	G3	M1	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0	N3	P	D2	S0								
+Kapi	S0	R2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0												
+Kamas	S0	M1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Karnataka-behag	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	D2	N2	P	D2	M1	G3	R2	S0									
+Karnataka-devagandhari	S0	G3	M1	P	N2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Karnataka-khamas	S0	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	S0													
+Kedara-gowla	S0	R2	M1	P	N2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Keshavapriya	S0	R2	S0	M1	P	D2	N2	S1	S1	N2	S0	P	M1	G3	R2	S0											
+Kokiladhwani	S0	R2	G3	M1	D2	N2	D2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Kokilavarali	S0	R2	M1	P	D2	S1	S1	N2	D2	M1	P	M1	G3	R2	G3	S0											
+Kunthala-varali	S0	M1	P	D2	N2	D2	S1	S1	N2	D2	P	M1	S0														
+Malavi	S0	R2	G3	M1	P	M1	D2	N2	S1	S1	N2	D2	P	M1	G3	M1	R2	S0									
+Madhurakokila	S0	R2	G3	D2	N2	S1	S1	N2	D2	G3	R2	S0															
+Mahathi	S0	G3	P	N2	S1	S1	N2	P	G3	S0																	
+Mahuri	S0	R2	M1	G3	R2	G3	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0	R2	G3	R2	S0						
+Manoharam	S0	R2	G3	M1	D2	N2	S1	S1	N2	P	M1	R2	S0														
+Mattakokila	S0	R2	P	D2	N2	D2	S1	S1	D2	N2	D2	P	R2	S0													
+Meghana	S0	M1	G3	M1	P	D2	S1	S1	N2	D2	M1	G3	S0														
+Mohanam	S0	R2	G3	P	D2	S1	S1	D2	P	G3	R2	S0															
+Nadavalli	S0	R2	M1	D2	N2	S1	S1	N2	D2	M1	R2	S0															
+Nagaswaravali	S0	G3	M1	P	D2	S1	S1	D2	P	M1	G3	S0															
+Narayana-gowla	S0	R2	M1	P	N2	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	G3	S0										
+Narayani	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	R2	S0														
+Nattai-kurunji	S0	R2	G3	M1	N2	D2	N2	P	D2	N2	S1	S1	N2	D2	M1	G3	M1	P	G3	R2	S0						
+Nattai-kurunji	S0	R2	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	S0														
+Nattai-kurunji	S0	R2	G3	M1	N2	D2	N2	P	D2	N2	S1	S1	N2	D2	M1	G3	M1	P	M1	G3	R2	S0					
+Nattai	S0	R2	G3	M1	D2	N2	D2	S1	S1	N2	D2	P	M1	G3	M1	R2	S0										
+Nandhkowns	S0	G3	M1	P	M1	D2	N2	S1	S1	N2	D2	P	M1	G3	S0	G3	S0										
+Narani	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	R2	S0														
+Navarasa-kalanidhi	S0	R2	M1	P	S0	N2	S1	S1	N2	D2	P	M1	G3	R2	S0												
+Navarasa-kannada	S0	G3	M1	P	S1	S1	N2	D2	M1	G3	R2	S0															
+Neela	S0	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	S0															
+Parsi	S0	R2	G3	M1	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0												
+Parameshwarapriya	S0	R2	G3	M1	P	N2	S1	S1	N2	P	M1	R2	S0														
+Pashupathipriya	S0	R2	M1	P	M1	D2	S1	S1	D2	M1	P	R2	M1	S0													
+Poornakambhoji	S0	R2	G3	M1	P	N2	S1	S1	D2	P	M1	G3	R2	S0													
+Pratapa-nattai	S0	R2	G3	M1	D2	P	D2	N3	S1	S1	N3	D2	P	M1	G3	S0											
+Pratapavarali	S0	R2	M1	P	D2	P	S1	S1	D2	P	M1	G3	R2	S0													
+Pravalajyoti	S0	R2	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	S0													
+Ragapanjaramu	S0	R2	M1	P	D2	N2	D2	S1	S1	N2	D2	M1	R2	S0													
+Ragavinodini	S0	R2	G3	M1	D2	S1	S1	D2	M1	G3	R2	S0															
+Rageshree	S0	G3	M1	D2	N3	S1	S1	N2	D2	M1	G3	R2	S0														
+Rageshree	S0	G3	M1	D2	N3	S1	S1	N3	D2	M1	G3	R2	S0														
+Rageshree	S0	G3	M1	D2	N3	S1	S1	N3	D2	N3	D2	M1	G3	R2	S0												
+Ravi-chandrika	S0	R2	G3	M1	D2	N2	D2	S1	S1	N2	D2	M1	G3	R2	S0												
+Savithri	S0	G3	M1	P	N2	S1	S1	N2	P	M1	G3	S0															
+Sahana	S0	R2	G3	M1	P	M1	D2	N2	S1	S1	N2	S0	D2	N2	D2	P	M1	G3	M1	R2	G3	R2	S0				
+Saraswathi-manohari	S0	R2	G3	M1	D2	S1	S1	D2	N2	P	M1	G3	R2	S0													
+Sathvamanjari	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	N2	D2	M1	R2	S0											
+Shakunthala	S0	R2	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	S0														
+Shankaraharigowla	S0	R2	G3	M1	P	D2	N3	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Shenchukambhoji	S0	P	M1	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Chenjurutti	D2	S0	R2	G3	M1	P	D2	N2	N2	D2	P	M1	G3	R2	S0	N2	D2	P	D2	S0							
+Shiva-kambhoji	S0	R2	G3	M1	N2	S1	S1	N2	P	M1	G3	R2	S0														
+Surutti	S0	R2	M1	P	N2	S1	S1	N2	D2	P	M1	G3	P	M1	R2	S0											
+Shyama	S0	R2	M1	P	D2	S1	S1	D2	P	M1	G3	R2	S0														
+Shyama	S0	R2	G3	S0	R2	P	M1	D2	D2	S1	S1	D2	P	M1	G3	R2	S0										
+Simhavikrama	S0	R2	G3	R2	M1	P	D2	P	N2	S1	S1	N2	D2	P	M1	G3	R2	S0									
+Sindhu-kannada	S0	M1	G3	M1	R2	G3	M1	P	D2	P	S1	S1	N2	D2	P	M1	G3	R2	S0								
+Sindhu-surutti	S0	R2	M1	P	N2	S0	S0	N2	S1	S1	N2	D2	P	M1	R2	M1	G3	R2	S0								
+Suddha-khamas	S0	M1	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Suddha-varali	S0	R2	G3	M1	D2	N2	S1	S1	N2	D2	N2	P	M1	G3	S0												
+Suddha	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	R2	S0														
+Suddhatarangini	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+Sumanapriya	S0	R2	G3	M1	P	D2	P	S1	S1	D2	S0	P	M1	G3	R2	S0											
+Suposhini	S0	R2	S0	M1	P	N2	D2	S1	S1	D2	P	M1	R2	M1	S0												
+Suvarnakriya	S0	R2	G3	P	N2	D2	S1	S1	N2	P	G3	R2	S0														
+Swaravali	S0	M1	G3	M1	P	N2	D2	N2	S1	S1	N2	D2	P	M1	G3	R2	S0										
+Swaravedi	S0	M1	G3	M1	P	N2	D2	N2	S1	S1	N2	D2	P	M1	G3	S0											
+Tilakavathi	S0	R2	G3	M1	P	D2	P	S1	S1	D2	P	M1	R2	S0													
+Thilang	S0	G3	M1	P	N3	S1	S1	N2	P	M1	G3	S0															
+Umabharanam	S0	R2	G3	M1	P	D2	N2	S1	S1	N2	P	M1	R2	G3	M1	R2	S0										
+Vaishnavi	S0	R2	G3	M1	P	D2	S1	S1	D2	P	M1	G3	R2	S0													
+Veenavadini	S0	R2	G3	P	N2	S1	S1	N2	P	G2	R2	S0															
+Vivardhani	S0	R2	M	P	S1	S1	N2	D2	P	M1	G3	R2	S0														
+Yadukula-khambohi	S0	R2	M1	P	D2	S1	S1	N2	D2	P	M1	G3	R2	S0													
+dheera-shankarabharanam	S0	R2	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0											
+anandharoopa	S0	R2	G3	P	D2	N3	S1	S1	N3	D2	P	G3	R2	S0													
+arabi	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+arabi	S0	R2	M1	P	D2	S1	S1	D2	P	M1	G3	R2	S0														
+Atana	S0	R2	M1	P	N3	S1	S1	N3	D2	P	M1	P	G3	R2	S0												
+Bangala	S0	R2	G3	M1	P	M1	R2	P	S1	S1	N3	P	M1	R2	G3	R2	S0										
+Begada	S0	G3	R2	G3	M1	P	D2	N2	D2	P	S1	S1	N3	D2	P	M1	G3	R2	S0								
+Behag	S0	G3	M1	P	N3	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0											
+Behag-deshikam	S0	R2	G3	M1	M2	P	D2	N3	S1	S1	N3	D2	P	M2	M1	G3	R2	S0									
+Bilahari	S0	R2	G3	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Buddhamanohari	S0	R2	G3	M1	S0	P	S1	S1	P	M1	G3	R2	S0														
+Buddharanjani	S0	R2	G3	M1	P	S1	S1	N3	P	M1	G3	M1	R2	S0													
+Chaya	S0	P	M1	P	D2	P	N3	R2	S1	S1	D2	P	M1	P	D2	P	G3	M1	R2	S0							
+Chayashankarabharanam	S0	R1	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R1	S0												
+Devagandhari	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Dharmalakhi	S0	M1	P	D2	N3	S1	S1	N3	D2	P	M1	S0															
+Dhurvanki	S0	R2	M1	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Gajagowri	S0	R2	M1	G3	M1	N3	P	D2	S1	S1	N3	D2	P	M1	P	M1	G3	R2	S0								
+Garudadhvani	S0	R2	G3	M1	P	D2	N3	S1	S1	D2	P	G3	R2	S0													
+Gowdamallar	S0	R2	M1	P	D2	S1	S1	N3	M1	G3	R2	S0															
+Hamsadhwani	S0	R2	G3	P	N3	S1	S1	N3	P	G3	R2	S0															
+Hamsavinodhini	S0	R2	G3	M1	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0												
+Hemant	N3	S0	D2	N3	S0	G3	G3	M1	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0								
+Hindustani-behag	S0	G3	M1	P	N3	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Janaranjani	S0	R2	G3	M1	P	D2	N3	S1	S1	D2	P	M1	R2	S0													
+Julavu	P	D2	N3	S0	R2	G3	M1	P	M1	G3	R2	S0	N3	D2	P	M1											
+Kamaripriya	S0	G3	M1	D2	N3	S1	S1	N3	D2	M1	M1	G3	M1	R2	S0												
+Kannada	S0	R2	G3	M1	P	M1	D2	N3	S1	S1	N3	S0	D2	P	M1	G3	M1	G3	M1	R2	S0						
+Kathanakuthoohalam	S0	R2	M1	D2	N3	G3	P	S1	S1	N3	D2	P	M1	G3	R2	S0											
+Kedaram	S0	M1	G3	M1	P	N3	S1	S1	N3	P	M1	G3	R2	S0													
+Kokilabhashani	S0	R2	G3	M1	P	D2	N3	S1	S1	N3	P	M1	G3	M1	R2	S0											
+Kolahalam	S0	P	M1	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0										
+Kurinji	S0	N3	S0	R2	G3	M1	P	D2	D2	P	M1	G3	R2	S0	N3	S0											
+Kusumavichithra	S0	G3	R2	G3	M1	P	N3	P	D2	N3	S1	S1	D2	N3	D2	M1	G3	P	M1	G3	R2	S0					
+Kutuhala	S0	R2	M1	N3	D2	P	N3	S1	S1	N3	D2	P	M1	G3	R2	S0											
+Lahari	S0	R2	G3	P	D2	S1	S1	D2	P	M1	G3	R2	S0														
+Mand	S0	G3	M1	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Mayadravila	S0	R2	G3	M1	P	D2	N3	S1	S1	N2	P	M1	P	G3	M1	R2	S0										
+Mohanadhwani	S0	R2	G3	P	D2	S1	S1	N3	P	D2	P	G3	R2	S0													
+Nagabhooshani	S0	R2	M1	P	D2	N3	S1	S1	D2	P	M1	R2	S0														
+Nagadhwani	S0	R2	S0	M1	G3	M1	P	N3	D2	N3	S1	S1	N3	D2	N3	P	M1	G3	S0								
+Narayanadeshakshi	S0	R2	M1	G3	R2	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0								
+Navaroj	P	D2	N3	S0	R2	G3	M1	P	M1	G1	R3	S0	N2	D2	P												
+Neelambari	S0	R2	G3	M1	P	D2	P	N3	S1	S1	N3	P	M1	G3	R2	G3	S0										
+Niroshta	S0	R2	G3	D2	N3	S1	S1	N3	D2	G3	R2	S0															
+Pahadi	S0	R2	G3	P	D2	P	D2	S1	N3	D2	P	G3	M1	G3	R2	S0	N3	D2	P	D2	S0						
+Poornachandrika	S0	R2	G3	M1	P	D2	P	S1	S1	N3	P	M1	R2	G3	M1	R2	S0										
+Poornagowla	S0	R2	G3	M1	P	N3	D2	N3	P	D2	N3	S1	S1	N3	D2	N3	P	M1	G3	R2	S0						
+Poorvagowla	S0	G3	R2	G3	S0	R2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R2	S0								
+Rathnabhooshani	S0	R2	G3	M1	P	S1	S1	P	M1	G3	R2	S0															
+Reetuvilasa	S0	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	S0													
+Saranga-mallar	S0	R2	M1	P	D2	N3	S1	S1	N3	D2	P	M1	R2	S0	N3	S0											
+Shankara	S0	G3	P	S1	S1	N3	D2	P	G3	P	R2	G3	S0														
+Shankaraharigowla	S0	R2	G3	M1	P	D2	N3	S1	S1	N2	D2	P	M1	G3	R2	S0											
+Shankaramohana	S0	R2	G3	P	N3	D2	S0	N3	S1	D2	P	G3	R2	S0													
+Shankari	S0	G3	P	N3	S1	S1	N3	P	G3	S0																	
+Sindhu	S0	M1	P	D2	S1	S1	N3	D2	M1	P	M1	G3	R2	S0													
+Sindhu-mandari	S0	R2	G3	M1	P	S1	S1	N3	D2	P	G3	M1	P	M1	R2	S0											
+Suddha-malavi	S0	R2	G3	M1	P	N3	S1	S1	D2	N3	P	M1	G3	R2	S0												
+Suddha-sarang	S0	R2	G3	M1	P	D2	N3	D2	S1	S1	D2	P	M1	R2	G3	R2	S0										
+Suddha-saveri	S0	R2	M1	P	D2	S1	S1	D2	P	M1	R2	S0															
+Suddha-vasantha	S0	R2	G3	M1	P	N3	S1	S1	N3	D2	N3	P	M1	G3	S0												
+Suranandini	S0	R2	G3	P	D2	N3	S1	S1	N3	D2	P	G3	R2	S0													
+Suraranjani	S0	G3	P	R2	M1	D2	S1	S1	N3	D2	P	M1	G3	R2	S0												
+Tandavam	S0	G3	P	D2	N3	S1	S1	N3	D2	P	G3	S0															
+Vallabhi	S0	R2	G3	M1	P	D2	N3	S1	S1	N3	D2	N3	D2	P	M1	P	G3	M1	R2	S0							
+Vasanthamalai	S0	R2	M1	P	N3	S1	S1	D2	P	M1	R2	S0															
+Vedhandhagamana	S0	G3	M1	P	N3	S1	S1	N3	P	M1	G3	S0															
+Veerapratapa	S0	G3	M1	P	D2	S1	S1	N3	D2	P	M1	G3	R2	S0													
+Vilasini	S0	R2	G3	M1	P	N3	S1	S1	N3	P	M1	G3	R2	S0													
+Naganandhini	S0	R2	G3	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G3	R2	S0											
+Nagabharanam	S0	R2	G2	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G2	R2	S0											
+Gambheeravani	S0	G3	P	M1	D3	N3	S1	S1	N3	P	M1	G3	R2	G3	R2	S0											
+Lalithagandharva	S0	R2	G3	M1	P	D3	N3	S1	S1	N3	P	G3	R2	S0													
+Samanta	S0	R2	G3	M1	P	D3	N3	S1	S1	N3	D3	N3	D3	P	M1	G3	R2	S0									
+Thilang	S0	G3	M1	P	N3	S1	S1	N2	P	M1	G3	S0															
+Yagapriya	S0	R3	G3	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R3	S0											
+Kalavathi	S0	R3	G3	M1	P	D1	N1	S1	S1	N1	D1	P	M1	G3	R3	S0											
+Damarugapriya	S0	R3	G3	P	D1	N1	S1	S1	N1	D1	P	G3	R3	S0													
+Desharanjani	S0	R3	M1	P	D1	N1	S1	S1	N1	D1	P	M1	R3	S0													
+Deshyathodi	S0	G2	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G2	R1	S0												
+Ganavaridhi	S0	M1	R3	G3	M1	P	D2	N2/N3	S1	S1	D2	N2/N3	P	M1	R3	S0											
+Kalahamsa	S0	R3	G3	M	P	D1	S1	S1	N1	D1	P	M1	G3	R3	S0												
+Niranjani	S0	R3	M1	D1	N1	S1	S1	N1	D1	M1	R3	S0															
+Prathapahamsi	S0	G3	M1	P	N1	D1	N1	S1	S1	N1	D1	P	M1	G3	M1	R3	S0										
+Ragavardhani	S0	R3	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R3	S0											
+Ragachoodamani	S0	R3	G3	M1	P	N2	S1	S1	N2	D1	M1	R3	G3	S0													
+Amudagandhari	S0	G3	M1	P	D1	N2	S1	S1	N2	D1	P	M1	G3	R3	S0												
+Dhowmya	S0	R3	G3	M1	P	D1	N2	P	S1	S1	N2	D1	P	M1	G3	R3	S0										
+Ganavaridhi	S0	M1	R3	G3	M1	P	D2	N2/N3	S1	S1	D2	N2/N3	P	M1	R3	S0											
+Hindoladarbar	S0	G3	M1	P	S1	S1	N2	D1	P	M1	R3	S0															
+Ramya	S0	R3	G3	M1	P	D1	N2	P	S1	S1	N2	D1	P	M1	G3	R3	S0										
+Samantajingala	S0	R3	G3	M1	P	D1	N2	S1	S1	N2	P	D1	N2	P	M1	G3	M1	R3	G3	S0							
+Gangeyabhushani	S0	R3	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R3	S0											
+Gangatarangini	S0	R3	G3	M1	P	D1	N3	S1	S1	N3	D1	P	M1	M1	G3	M1	R3	S0									
+Vagadeeshwari	S0	R3	G3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	G3	R3	S0											
+Bhogachaya-nattai	S0	R3	G3	R3	G3	Mi	P	N2	N2	S1	S1	N2	D2	N2	P	S0	N2	P	M1	M1	R3	S0					
+Bhanumanjari	S0	R3	G3	M1	P	N2	S1	S1	N2	P	M1	R3	G3	R3	S0												
+Chayanattai	S0	R3	G3	M1	P	M1	P	S1	S1	N2	D2	N2	P	M1	R3	S0											
+Maghathi	S0	R3	M1	P	D2	N2	S1	S1	N2	D2	P	M1	R3	S0													
+Mohanangi	S0	R3	G3	P	D2	S1	S1	D2	P	G3	P	D2	P	G3	R3	S0											
+Murali	S0	R3	G3	M1	D2	N2	S1	S1	N2	D2	M1	G3	R3	S0													
+Sharadabharana	S0	M1	G3	M1	P	M1	D2	N2	S1	S1	N2	D2	M1	P	M1	R3	S0										
+Vikhavathi	S0	R3	G3	P	D2	S1	S1	D2	P	G3	R3	S0															
+Shulini	S0	R3	G3	M1	P	D2	N3	S1	S1	N3	D2	P	M1	G3	R3	S0											
+Shailadeshakshhi	S0	M1	G3	P	D2	S1	S1	N3	D2	S0	N3	P	M1	G3	S0												
+Dheerahindolam	S0	G3	M1	D2	N3	S1	S1	N3	D2	P	M1	G3	R3	S0													
+Shokavarali	S0	G3	D2	N3	D2	P	M1	G3	R3	S0																	
+Chalanattai	S0	R3	G3	M1	P	D3	N3	S1	S1	N3	D3	P	M1	G3	R3	S0											
+Devanattai	S0	G3	M1	P	S1	S1	N3	D3	P	M1	G3	R3	S0														
+Gambheeranattai	S0	G3	M1	P	N3	S1	S1	N3	P	M1	G3	S0															
+Ganaranjani	S0	R3	G3	M1	P	M1	D3	N3	S1	S1	N3	D3	P	M1	P	M1	R3	S0									
+Nattai	S0	R3	G3	M1	P	D3	N3	S1	S1	N3	P	M1	R3	S0													
+Salagam	S0	R1	G1	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G1	R1	S0											
+Sowgandhini	S0	R1	M2	P	D1	S1	S1	N1	D1	P	M2	G1	R1	S0													
+Bhogasaveri	S0	R1	M2	D1	N1	D1	P	M2	G1	R1	S0																
+Jalarnavam	S0	R1	G1	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G1	R1	S0											
+Jaganmohinam	S0	R1	G1	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G1	R1	S0											
+Jaganmohana	S0	R1	G1	M2	P	D2	S1	S1	N2	D1	P	M2	G1	R1	S0												
+Jhalavarali	S0	R1	G1	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G1	R1	S0											
+Dhalivarali	S0	R1	G1	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G1	R1	S0											
+Bhoopalapanchamam	S0	G1	R1	G1	P	M2	D1	S1	S1	P	D1	M	G1	R1	S0												
+Godari	S0	R1	G1	R1	M2	G1	M2	P	D1	N3	S1	S1	N3	D1	P	M2	R1	S0									
+Jalasugandhi	S0	R1	G1	M2	P	D1	S1	S1	D1	P	M2	G1	R1	S0													
+Janavali	S0	G2	R1	G2	M2	P	D1	N3	D1	S1	S1	N3	D1	P	M2	G2	R1	S0									
+Karunamritavarshini	S0	R1	G1	M2	P	D1	N3	P	S1	S1	N3	D1	M2	G1	R1	S0											
+Kokilapanchamam	S0	G1	R1	G1	P	D1	N3	S1	S1	N3	D1	P	M2	G1	R1	S0											
+Varali	S0	G1	R1	G1	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G1	R1	S0										
+Navaneetham	S0	R1	G1	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G1	R1	S0											
+Nabhomani	S0	G1	R1	G1	M2	P	S1	S1	N2	D2	P	M2	G1	R1	S0												
+Pavani	S0	R1	G1	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G1	R1	S0											
+Kumbhini	S0	G1	R1	G1	M2	P	N3	D2	N3	S1	S1	N3	D2	P	M2	G1	R1	S0									
+Chandrajyothi	S0	R1	G1	M2	P	D2	S1	S1	D2	P	M2	G1	R1	S0													
+Prabhavali	S0	R1	M2	P	D2	N3	S1	S1	N3	D2	M2	P	M2	R1	G1	R1	S0										
+Poornalalitha	S0	R1	M2	G1	R1	M2	P	N3	D2	N3	S1	S1	N3	D2	P	M2	G1	R1	S0								
+Poornapanchamam	(See	"15,"	16)	S0	R1	G1	M2	P	D2	D2	P	M2	G1	R1	S0												
+Raghupriyaa	S0	R1	G1	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G1	R1	S0											
+ravi-kriya	S0	G1	R1	G1	M2	P	D3	N3	S1	S1	N3	P	M2	G1	R1	S0											
+Gandharva	M2	P	D3	N3	S0	R1	G1	R1	S0	N3	P	M2	P														
+Gomathi	S0	R1	G1	M2	P	D3	N3	P	M2	G1	R1	S0															
+Raghuleela	S0	M2	R1	P	M2	G1	M2	P	M2	R1	M2	P	N3	S1	S1	N3	D3	N3	P	M2	G1	M2	R1	M2	G1	R1	S0
+Ghavambhodi	S0	R1	G2	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	R1	S0											
+Geervani	S0	R1	G2	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	R1	S0											
+Kanchanabowli	S0	G2	M2	P	D1	S1	S1	N1	D1	P	M1	G2	R1	S0													
+Mahathi	S0	G2	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	S0													
+Mechagandhari	S0	R3	G3	M1	P	D2	N2	S1	S1	N2	D2	N2	P	M1	G3	M1	R3	S0									
+Suvarnadeepakam	S0	R1	G2	M2	P	D1	S1	S1	D1	P	M2	G2	R1	S0													
+Vijayabhooshavali	S0	R1	G3	M2	P	S1	S1	N3	D3	P	M2	G3	R1	S0													
+Bhavapriya	S0	R1	G2	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G2	R1	S0											
+Bhavani	S0	R1	G2	M2	P	D1	P	N2	S1	S1	N2	D1	P	M2	G2	R1	S0										
+Kanchanavathi	S0	R1	G2	M2	P	N2	S1	S1	N2	P	M2	G2	R1	S0													
+Shubhapanthuvarali	S0	R1	G2	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G2	R1	S0											
+Shivapanthuvarali	S0	R1	G2	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G2	R1	S0											
+Arunangi	S0	R1	M2	P	N3	D1	S1	S1	N3	D1	M2	R1	G2	R1	S0												
+Bandhuvarali	S0	M2	S0	N3	D1	P	M2	D1	M2	G2	R1	S0															
+Bhanudhanyasi	S0	R1	G2	M2	N3	D1	N3	D1	P	M2	G2	R1	S0	N3	S0												
+Bhanukeeravani	S0	R1	G2	M2	P	D1	N3	S1	S1	N3	D1	M2	G2	R1	S0												
+Chayaranjani	S0	G2	M2	P	N2	S1	S1	N2	D1	P	M2	G2	S0														
+Dhowreyani	S0	R1	G2	M2	N3	S1	S1	N3	D1	P	M2	G2	R1	S0													
+Hindusthani-todi	N3	R1	G2	M2	D1	N3	S1	S1	N3	D1	P	M2	G2	R1	S0												
+Jalakesari	S0	R1	M2	P	D1	N3	S1	S1	D1	P	M2	R1	S0														
+Kumudhachandrika	S0	G2	M2	D1	S1	S1	N3	D1	M2	G2	R1	S0															
+Mahanandhini	S0	M2	G2	M2	P	D1	N3	S1	S1	D1	N3	D1	P	M2	G2	R1	S0										
+Parpathi	S0	G2	M2	P	N3	S1	S1	N3	P	M2	G2	S0															
+Shekharachandrika	S0	R1	G2	M2	D1	N3	S1	S1	N3	D1	M2	G2	R1	S0													
+Shadvidhamargini	S0	R1	G2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G2	R1	S0											
+Sthavarajam	S0	R1	M2	P	D2	S1	S1	N2	D2	M2	G2	S0															
+Ganahemavati	S0	G2	M2	P	N2	S1	S1	N2	D2	P	M2	G2	S0														
+Indhudhanyasi	S0	G2	M2	D2	N2	S1	S1	N2	D2	P	D2	M2	G2	R1	S0												
+Shreekanti	S0	G2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G2	S0													
+Teevravahini	S0	R1	G2	M2	P	D2	P	N2	S1	S1	N2	D2	P	M2	G2	R1	G2	M2	R1	S0							
+Suvarnangi	S0	R1	G2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G2	R1	S0											
+Sowveeram	S0	R1	G2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G2	R1	S0											
+Abhiru	S0	R1	G2	R1	M2	P	N3	S1	S1	D2	P	M2	G2	R1	G2	S0											
+Rathika	S0	M2	G2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G2	R1	S0											
+Vijayashree	S0	R1	G2	M2	P	N2	S1	S1	N2	P	M2	G2	R1	S0													
+Divyamani	S0	R1	G2	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G2	R1	S0											
+Jeevanthika	S0	M2	P	D3	N3	S1	S1	N3	P	M2	G2	S0															
+Deshamukhari	S0	R1	G2	M2	P	D3	N3	D3	S1	S1	D3	N3	D3	P	M2	G2	R1	S0									
+Dundubi	S0	R1	G2	M2	P	D3	N3	S1	S1	N3	P	M2	G2	R1	S0												
+Jeevanthini	S0	M2	P	D3	N3	S1	S1	N3	P	M2	G2	S0															
+suddha-gandhari	S0	R1	G2	M2	N3	S1	S1	N3	D3	N3	S0	N3	P	M2	R1	S0											
+Dhavalambari	S0	R1	G3	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G3	R1	S0											
+Dhavalangam	S0	R1	G3	M2	P	D1	S1	S1	N1	D1	P	M2	G3	R1	S0												
+Abhiramam	S0	R1	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	R1	S0												
+Bhinnapauarali	S0	M2	P	D1	N1	D1	S1	S1	N1	D1	P	M2	G3	S0													
+Dharmini	S0	R1	G3	M2	D1	N1	S1	S1	N1	D1	M2	G3	R1	S0													
+Sudharmini	S0	R1	M2	P	D1	N1	S1	S1	N1	D1	M1	G3	R2	S0													
+Namanarayani	S0	R1	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	R1	S0											
+Namadeshi	S0	R1	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	R1	S0											
+Mandari	S0	R1	G3	M2	P	N2	S1	S1	N2	P	M2	G3	R1	S0													
+Narmada	S0	R1	G3	M2	D1	N2	S1	S1	N2	D1	M2	P	M2	G3	R1	S0											
+Swaramanjari	S0	G3	M2	P	D1	S1	S1	N2	D1	P	M2	G3	S0														
+Panthuvarali	S0	R1	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G3	R1	S0											
+Kashiramakriya	S0	G3	R1	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M1	G3	R1	S0										
+adhi-panchama	S0	R1	P	D1	N3	S1	S1	N3	D1	N3	P	M2	G3	R1	S0												
+basant-bahar	S0	M2	P	G3	M2	N3	D1	N3	S1	R2	S0	N2	D2	P	M1	G2	M1	G2	R2	S0							
+Bhogavasantha	S0	R1	G3	M2	D1	N3	S1	S1	N3	D1	M2	G3	R1	S0													
+Deepakam	S0	R2	M2	P	D1	P	S1	S1	N3	D1	N3	P	M2	G3	R1	S0											
+Gamakapriya	S0	R1	G3	M2	P	N3	D1	S1	S1	D1	P	M2	G3	R1	S0												
+Gamanapriya	S0	R1	G3	M2	P	N3	D1	S1	S1	D1	P	M2	G3	R1	S0												
+Hamsanarayani	S0	R1	G3	M2	P	S1	S1	N3	P	M2	G3	R1	S0														
+Indumathi	S0	G3	M2	D1	N3	S1	S1	N3	D1	P	M2	G3	S0														
+Kamalaptapriya	S0	R1	G3	M2	P	D1	S1	S1	D1	P	M2	G3	R1	S0													
+Kumudhakriya	S0	R1	G3	M2	D1	S1	S1	N3	D1	M2	G3	R1	S0														
+Maruthi	S0	R1	M2	P	N3	S1	S1	N3	D1	P	M2	G3	R1	S0													
+Ponni	S0	G3	M2	P	N3	S1	S1	N3	P	M2	G3	R1	S0														
+Prathapa	S0	G3	M2	D1	N3	S1	S1	N3	D	P	M2	G3	R1	S0													
+Puriya-dhanashree	N3	R1	G3	M2	P	D1	P	N3	S1	R1	N3	D1	P	M2	G3	M2	R1	G3	R1	S0							
+Tandavapriya	S0	R1	G3	M2	P	S1	S1	P	M2	G3	R1	S0															
+Ramapriya	S0	R1	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R1	S0											
+Ramamanohari	S0	R1	G3	M2	P	D2	S1	S1	N2	D2	P	M2	G3	R1	S0												
+Chintaramani	S0	G3	M2	P	D2	N2	S1	S1	D2	P	M2	G3	R1	S0													
+Hamsagamini	S0	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	D2	P	M2	G3	R1	S0									
+Lokaranjani	S0	G3	M2	P	M2	D2	N2	S1	S1	N2	D2	N2	P	M2	G3	R1	S0										
+Meghashyamala	S0	G3	M2	P	D2	N2	D2	P	S1	S1	N2	D2	P	M2	G3	R1	S0										
+Patalambari	S0	R1	G3	M2	D2	S1	S1	D2	M2	G3	R1	S0															
+Raktimargini	S0	P	M2	D2	N2	S1	S1	N2	D2	P	M2	P	G3	R1	S0												
+Rasavinodini	S0	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	S0													
+Reethi-chandrika	S0	R1	G3	M2	P	D2	S1	S1	N2	D2	P	M2	G3	R1	S0												
+Seemantinipriya	S0	R1	G3	M2	D2	N2	S1	S1	N2	D2	M2	G3	R1	S0													
+Sukhakari	S0	R1	S0	P	D2	N2	S1	S1	N2	D2	P	M2	G3	S0	R1	S0											
+Vedhaswaroopi	S0	R1	G3	M2	P	D2	N3	P	S1	S1	N3	D2	Pn3	P	M2	G3	S0										
+Gamanashrama	S0	R1	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R1	S0											
+Gamakakriya	S0	R1	G3	M2	P	D2	S1	S1	N3	D2	P	M2	G3	R1	S0												
+Alankari	S0	G3	M2	D2	N3	D2	S1	S1	N3	D2	M2	G3	S0														
+Bhatiyar	S0	D2	P	D2	M2	P	G3	M2	D2	S1	R1	N3	D2	P	M2	P	G3	R1	S0								
+Dvigandharabhooshani	S0	R1	G2	G3	G2	P	D2	S1	S1	D2	P	G2	G3	G2	R1	S0	D2	S0									
+Hamsanandi	S0	R1	G3	M2	D2	N3	S1	S1	N3	D2	M2	G3	R1	S0													
+Mechakangi	S0	R1	G3	M2	P	D2	P	N3	S1	S1	N3	P	D2	P	M2	G3	R1	S0									
+Padmakalyani	S0	G3	P	N3	S1	S1	N3	D2	P	M2	G3	S0															
+poorvi-kalyani	S0	R1	G3	M2	P	D2	P	S1	S1	N3	D2	P	M2	G3	R1	S0											
+Sharabadhvaja	S0	R1	G3	M2	P	D2	S1	S1	D2	P	G3	R1	S0														
+Sohini	S0	G3	M2	D2	N3	S1	S1	N3	D2	M2	G3	R1	S0														
+Vaishaka	S0	R1	G3	M2	P	D2	N3	S1	S1	N3	D2	N3	P	M2	G3	M2	R1	S0									
+Vishvambhari	S0	R1	G3	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G3	R1	S0											
+Vamshavathi	S0	R1	G3	M2	P	D3	N3	S1	S1	N3	P	M2	G3	R1	S0												
+Hemangi	S0	R1	G3	M2	D3	S1	S1	D3	M2	G3	R1	S0															
+Pooshakalyani	S0	R1	G3	M2	P	D3	N3	S1	S1	N3	P	M2	G3	R1	S0												
+Sharadhyuthi	S0	R1	G3	M2	P	D3	N3	D3	S1	S1	N3	D3	P	M2	G3	R1	S0										
+Suddhakriya	S0	R1	M2	M2	P	D3	S1	S1	D3	P	M2	G3	R1	S0													
+Sundarangi	S0	R1	G3	P	D3	N3	S1	S1	N3	D3	P	G3	R1	S0													
+Vijayavasantham	S0	M2	P	D3	N3	S1	S1	N3	P	M2	G3	S0															
+Shyamalangi	S0	R2	G2	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	R2	S0											
+Shyamalam	S0	R2	G2	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G2	R2	S0											
+Deshavali	S0	R2	G2	M2	D1	N1	D1	S1	S1	N1	D1	M2	G2	R2	S0												
+Vijayamalavi	S0	R2	M2	P	D1	S1	S1	N1	D1	P	M2	R2	S0														
+Shanmukhapriyaa	S0	R2	G2	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G2	R2	S0											
+Chamaram	S0	R2	G2	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G2	R2	S0											
+Bhashini	S0	G2	R2	G2	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G2	R1	S0										
+Chintamani	S0	G2	R2	G2	M2	G2	R2	G2	P	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G2	R2	S0					
+Dhanakari	S0	G2	P	D1	N2	S1	S1	N2	D1	M2	G2	S0															
+Garigadya	N2	S0	G2	M2	P	D1	N2	D1	P	M2	G2	R2	S0														
+Gopikathilakam	S0	R2	G2	M2	P	N2	S1	S1	N2	P	M2	G2	R2	S0													
+Kokilanandhi	S0	G2	M2	D1	N2	S1	S1	N2	D1	P	M2	G2	S0														
+Rajeshwari	S0	R2	G2	P	N2	S1	S1	N2	D1	P	M1	G2	S0														
+Samudrapriya	S0	G2	M2	P	N2	S1	S1	N2	P	M2	G2	S0															
+Shanmukhi	S0	R1	G2	M2	D1	N2	S1	S1	N2	D1	M2	G2	R1	S0													
+Sumanesharanjani	S0	G2	M2	P	N2	S1	S1	N2	P	M2	G2	S0															
+Vasukari	S0	G2	M2	P	D1	N2	S1	S1	N2	D1	M2	G2	S0														
+simhendra-madhyamam	S0	R2	G2	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G2	R2	S0											
+Sumadyuthi	S0	R2	G2	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G2	R2	S0											
+anandavalli	S0	G2	M2	P	N3	S1	S1	N3	P	M2	G2	S0															
+Ghantana	S0	R2	G2	M2	D1	N3	S1	S1	N3	D1	M2	G2	R2	S0													
+Jayachoodamani	S0	G2	M2	P	D1	S1	S1	N3	D1	P	M2	G2	R2	S0													
+Pranavapriya	S0	R2	M2	P	N3	S1	S1	N3	P	M2	G2	R2	S0														
+Sarvangi	S0	R2	M2	D1	N3	S1	S1	N3	D1	M2	G2	S0	R3	S0													
+Seshanadam	S0	R2	G2	M2	P	D1	S1	S1	N3	D1	P	M2	G2	R2	S0												
+Suddha	S0	R2	G2	M2	P	N3	S1	S1	N3	P	M2	G2	R2	S0													
+Sunadapriya	S0	R2	G2	M2	P	S1	S1	N3	D1	P	M2	G2	R2	S0													
+Urmika	S0	R2	G2	M2	P	N3	S1	S1	N3	P	M2	G2	R2	S0													
+Vijayasaraswathi	S0	G2	M2	P	D1	N3	S1	S1	N3	P	M2	G2	R2	S0													
+Hemavathi	S0	R2	G2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G2	R2	S0											
+Deshisimharavam	S0	R2	G2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G2	R2	S0											
+Chandrarekha	S0	R2	G2	M2	P	D2	S1	S1	N2	D2	M2	G2	R2	S0													
+Hamsabhramari	S0	R2	G2	M2	P	D2	S1	S1	N2	D2	P	M2	G2	R2	S0												
+Hemambari	S0	R2	G2	M2	P	D2	N2	S1	S1	P	M2	G2	R2	S0													
+Hemapriya	S0	R2	G2	M2	D2	S1	S1	D2	M2	G2	R2	S0															
+Kshemakari	S0	R2	M2	D2	N2	S1	S1	N2	D2	M2	R2	S0															
+Madhukowns	S0	G2	M2	P	N2	P	S1	S1	N2	P	M2	G3	S0														
+Shakthiroopini	S0	G2	M2	D2	S1	S1	N2	D2	M2	G2	S0																
+Simharava	S0	R2	M2	P	N2	S1	S1	N2	P	M2	R2	G2	R2	S0													
+Vijayasaranga	S0	R2	G2	M2	P	D2	S1	S1	N2	D2	M2	G2	R2	S0													
+Vijayashrangi	S0	R2	G2	M2	P	D2	S1	S1	N2	D2	M2	G2	R2	S0													
+Yagini	S0	R2	M2	P	N2	S1	S1	N2	P	M2	R2	S0															
+Dharmavathi	S0	R2	G2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G2	R2	S0											
+Dhamavathi	S0	R2	G2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G2	R2	S0											
+Gowrikriya	S0	G2	M2	P	D2	N3	S1	S1	N3	D2	N3	P	M2	G2	S0												
+Karmukhavati	S0	R2	G2	M2	D2	N3	S1	S1	N3	D2	M2	G2	R2	S0													
+Karpoora-bharani	S0	R2	G2	P	M2	P	D2	S1	S1	D2	P	M2	P	G2	R2	S0											
+Lalitasimharavam	S0	R2	G2	M2	P	S1	S1	N3	P	M2	G2	R2	S0														
+Madhumalathi	N3	S0	G2	M2	P	S1	S1	N3	D2	P	M2	G2	R2	S0													
+Madhuvanthi	S0	G2	M2	P	N3	S1	S1	N3	D2	P	M2	G2	R2	S0													
+Moharanjani	S0	R2	G2	P	D2	S1	S1	N3	D2	M2	G2	S0															
+Ranjani	S0	R2	G2	M2	D2	S1	S1	N3	D2	M2	G2	S0	R2	G2	S0												
+Varada	S0	R2	M2	P	N3	S1	S1	N3	P	M2	R2	S0															
+Vijayanagari	S0	R2	G2	M2	P	D2	S1	S1	D2	P	M2	G2	R2	S0													
+Vishveshwarapriya	S0	R2	M2	P	N3	S1	S1	N3	D2	P	M2	R2	S0														
+Neethimathi	S0	R2	G2	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G2	R2	S0											
+Nisshadham	S0	R2	G2	M2	P	D3	N3	S1	S1	N3	P	M2	G2	R2	S0												
+Amarasenapriya	S0	R2	M2	P	N2	S1	S1	N3	P	M2	G2	R2	S0														
+Deshyaganavaridhi	S0	R2	G2	M2	P	D3	N3	P	S1	S1	N3	S0	P	M2	G2	R2	S0										
+S0	R2	M2	P	D3	N3	S1	S1	N3	D3	P	M2	R2	S0														
+S0	R2	M2	P	N3	S1	S1	N3	P	M2	R2	S0																
+Kaikavashi	S0	R2	G2	M2	P	D3	N3	S1	S1	N3	P	M2	G2	R2	S0												
+Nuthanachandrika	S0	R2	G2	M2	P	D3	N3	S1	S1	N3	P	D3	N3	P	M2	G2	S0										
+Rathnasaranga	S0	R2	G2	M2	P	N3	S1	S1	N3	D3	P	M2	G2	R2	S0												
+Kanthamani	S0	R2	G3	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G3	R2	S0											
+Kunthalam	S0	R2	G3	M2	P	D1	S1	S1	N1	D1	P	M2	G3	R2	S0												
+Kanakakusumavali	S0	R2	G3	M2	P	D2	S1	S1	D2	P	M2	G3	R2	S0													
+Shruthiranjani	S0	R2	G3	M2	P	D1	N1	N1	D1	P	M2	G3	R2	S0													
+Rishabhapriya	S0	R2	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	R2	S0											
+Rathipriya	S0	R2	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	R2	S0											
+Gopriya	S0	R2	G3	M2	D1	N2	S1	S1	N3	D1	M2	G3	R2	S0													
+Poornasaveri	S0	R2	M2	P	D1	S1	S1	N2	D1	P	M2	G3	R2	S0													
+Rathnabhanu	S0	R2	M2	P	N2	D1	N2	S1	S1	N2	D1	P	M2	G3	R2	S0											
+suddha-saranga	S0	G	M2	P	N2	S1	S1	D1	P	M2	G3	S0															
+Lathangi	S0	R2	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G3	R2	S0											
+Geethapriya	S0	R2	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G3	R2	S0											
+Chitrachandrika	S0	G3	R2	G3	M2	P	N3	D1	S1	S1	N3	D1	M2	G3	R2	S0											
+Hamsalatha	S0	R2	G3	P	N3	S1	S1	N3	D1	P	M2	G3	R2	S0													
+Kananapriya	S0	R2	G3	M2	P	M2	D1	N3	S1	S1	D1	N3	P	M2	G3	R2	S0										
+Karunakari	S0	M2	P	D1	N3	D1	S1	S1	N3	D1	P	M2	S0														
+Lalithangi	S0	R2	G3	M2	D1	N3	S1	S1	N3	D1	M2	G3	R2	S0													
+Ramani	S0	G3	M2	P	N3	S1	S1	N3	D1	P	M2	G3	S0														
+Rathnakanthi	S0	R2	G3	M2	P	N3	S1	S1	N3	P	M2	G3	R2	S0													
+Raviswaroopini	S0	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G3	S0													
+Sajjananandhi	S0	R2	G3	M2	P	D1	N3	S1	S1	N3	D1	M2	G3	R2	S0												
+Skandamanorama	S0	R2	M2	P	N3	S1	S1	N3	P	M2	R2	S0															
+Vachaspathi	S0	R2	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R2	S0											
+Bhooshavathi	S0	R2	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R2	S0											
+Bhagavataranjana	S0	R2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R2	S0												
+Bhogeeshwari	S0	R2	G3	P	D2	N2	D2	S1	S1	N2	D2	P	M2	G3	R2	S0											
+Bhooshavali	S0	R2	G3	M2	P	D2	S1	S1	N2	D2	P	M2	G3	R2	S0												
+Dwigandharabhooshani	S0	R1	G2	G3	G2	P	D2	S1	S1	D2	P	G2	G3	G2	R1	S0	D2	S0									
+Gaganamohini	S0	G3	P	D2	N2	S1	S1	N2	P	M2	G3	S0															
+Gurupriya	S0	R2	G3	M2	D2	N2	S1	S1	N2	D2	M2	G3	R2	S0													
+Hrdhini	S0	G3	M2	P	N2	S1	S1	N2	P	M2	G3	S0															
+Mangalakari	S0	R2	P	M2	P	D2	N2	S1	S1	N2	D2	P	G3	R2	S0												
+Mukthidayini	S0	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	S0													
+Nadhabrahma	S0	P	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	S0													
+Pranavakari	P	N2	D2	N2	S0	R2	G3	M2	P	M2	G3	R2	S0	N2	D2	N2	P										
+Saraswathi	S0	R2	M2	P	D2	S1	S1	N2	D2	P	M2	R2	S0														
+Triveni	S0	R2	M2	P	D2	N2	S1	S1	N2	D2	P	M2	R2	S0													
+Utthari	S0	G3	M2	P	D2	N2	S1	S1	N2	D2	M2	G3	S0														
+Vivahapriya	S0	R2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	R2	S0													
+Mechakalyani	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R2	S0											
+Shanthakalyani	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R2	S0											
+amritha-behag	S0	M2	G3	P	N3	S1	D	N3	D2	M2	G3	S0															
+Aprameya	S0	R2	M2	P	D2	S1	S1	N3	D2	M2	G3	M2	R2	S0													
+Bhoopkalyani	S0	R2	G3	P	D2	S1	S1	N3	D2	P	M2	G3	R2	S0													
+Chandrakantha	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	N3	P	M2	G3	R2	S0										
+hameer-kalyan	S0	R2	S0	G3	M1	D2	N3	D2	S1	S1	N3	D2	N2	P	G3	M1	D2	M2	P	D2	P	G3	M1	R2	S1		
+hameer-kalyani	S0	P	M2	P	D2	N3	S1	S1	N3	D2	P	M2	M1	G3	P	M1	R2	S0									
+hameer-kalyani	S0	R2	S0	P	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	M1	G3	R2	S0								
+hameer-kalyani	S0	R2	S0	P	M2	N3	D2	S0	N3	S1	S1	N3	D2	P	M2	G	M1	R2	S0								
+hameer-kalyani	S0	R2	G3	M2	P	D2	N3	P	D2	P	S1	S1	N3	D2	P	G3	M1	G3	R2	S0							
+hameer-kalyani	S0	P	M2	P	D2	N3	S1	S1	N3	D2	P	G3	M1	G3	R2	S0											
+Hamsakalyani	S0	R2	G3	P	N3	S1	S1	N3	D2	P	M2	G3	R2	S0													
+Kalyanadayini	S0	R2	G3	M2	D2	N3	S1	S1	N3	D2	M2	G3	R2	S0													
+Kannadamaruva	S0	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	S0													
+Kowmoda	S0	R2	G3	M2	N3	S1	S1	N3	P	M2	G3	S0															
+Kunthalashreekanti	S0	G3	M2	P	D2	N3	S1	S1	N3	P	M2	G3	R2	S0													
+mohana-kalyani	S0	R2	G3	P	D2	S1	S1	N3	D2	P	M2	G3	R2	S0													
+Mrganandhana	S0	R2	G3	D2	N3	S1	S1	N3	D2	M2	D2	G3	R2	S0													
+Nadhakalyani	S0	G3	M2	D2	N3	S1	S1	N3	D2	M2	G3	M2	R2	S0													
+Pramodhini	S0	G3	M2	P	D2	S1	S1	D2	P	M2	G3	S0															
+Saranga	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	R2	G3	M1	R2	S0									
+Saranga	S0	R2	S0	P	M2	P	D2	N3	S1	S1	N3	S0	D2	P	M2	R2	G3	M1	R2	S0							
+Saranga	S0	P	M2	P	D2	N3	S1	S1	N3	D2	P	M2	R2	G3	M1	R2	S0										
+Saranga	S0	R2	M2	P	D2	N3	S1	S1	N3	D2	P	M2	R2	S0													
+Shilangi	S0	G2	M2	P	N3	S1	S1	N3	P	M2	G2	S0															
+Suddha	S0	G3	M2	P	S1	S1	N3	D2	M2	G3	R2	S0															
+Sunadavinodini	S0	G3	M2	D2	N3	S1	S1	N3	D2	M2	G3	S0															
+Swayambhooshwara	S0	G3	P	S1	S1	P	G3	S0																			
+Vandanadharini	S0	R2	M2	P	D2	S1	S1	D2	P	M2	R2	S0															
+Yaman	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R2	S0											
+Yaman	S0	R2	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	M1	G3	R2	S0									
+Yamuna	S0	R2	G3	P	M2	P	D2	S1	S1	D2	P	M2	P	G3	R2	S0											
+Chitrambari	S0	R2	G3	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G3	R2	S0											
+Chaturangini	S0	R2	G3	M2	P	N3	S1	S1	N3	D3	N3	P	G3	M2	G3	R2	S0										
+Amritavarshini	S0	G3	M2	P	N3	S1	S1	N3	P	M2	G3	S0															
+Chitrasindhu	S0	G3	M2	P	N3	S1	S1	N3	D3	P	M2	G3	R2	S0													
+Churnikavinodhini	S0	R2	G3	M2	P	D3	N3	S1	S1	N3	D3	N3	P	M2	G3	R2	S0										
+Vijayakoshalam	S0	R2	G3	M2	P	S1	S1	N3	P	M2	G3	S0															
+Sucharitra	S0	R3	G3	M2	P	D1	N1	S1	S1	N1	D1	P	M2	G3	R3	S0											
+Santhana	S0	R3	G3	M2	P	D1	S1	S1	N1	D1	P	M2	R3	S0													
+Jyothiswaroopini	S0	R3	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	R3	S0											
+Jyothi	S0	R3	G3	M2	P	D1	N2	S1	S1	N2	D1	P	M2	G3	S0												
+Deepavarali	S0	R3	M2	P	N2	S1	S1	N2	P	M2	G3	R3	S0														
+Jyothishmathi	S0	R3	G3	M2	P	S1	S1	N2	D1	M2	P	M2	G3	R3	S0												
+Ramagiri	S0	R3	M2	G3	M2	P	D1	N2	S1	S1	D1	N2	D1	P	M2	G3	R3	S0									
+Dhatuvardhani	S0	R3	G3	M2	P	D1	N3	S1	S1	N3	D1	P	M2	G3	R3	S0											
+Dhowtha-panchamama	S0	R3	G3	M2	P	N3	P	S1	S1	N3	D1	P	M2	R3	G3	M2	R3	S0									
+Dhwithiyapanchamam	S0	R3	G3	M2	P	N3	P	S1	S1	N3	D1	P	M2	R3	M3	G3	R3	S0									
+Sumukham	S0	R3	M2	N3	S1	S1	N3	M2	R3	S0																	
+Tavapriya	S0	R3	M2	P	N3	S1	S1	N3	D1	P	M2	G3	R3	S0													
+Nasikabhooshhani	S0	R3	G3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R3	S0											
+Nasamani	S0	R3	G3	M2	P	D2	N2	S1	S1	N3	D2	P	M2	G3	R3	S0											
+Marakathagowla	S0	R3	M2	P	D2	N2	S1	S1	N2	D2	P	M2	G3	R3	S0												
+Thilakamandari	S0	R3	M2	P	D2	S1	S1	D2	P	M2	G3	R3	S0														
+Kosalam	S0	R3	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R3	S0											
+Kusumakaram	S0	R3	G3	M2	P	D2	N3	S1	S1	N3	D2	P	M2	G3	R3	S0											
+Ayodhya	S0	G3	M2	P	N3	S1	S1	D2	P	M2	G3	M2	R3	S0													
+Rasikapriya	S0	R3	G3	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G3	R3	S0											
+Rasamanjari	S0	R3	G3	M2	P	D3	N3	S1	S1	N3	D3	P	M2	G3	R3	S0											
+Hamsagiri	S0	R3	G3	M2	P	D3	N3	S1	S1	N3	P	D3	N3	P	M2	G3	S0										
+Ishtarangini	S0	R3	M2	P	N3	S1	S1	N3	D3	P	M2	G3	R3	S0													
+Nagagiri	S0	G3	M2	P	D2	P	S1	S1	D2	P	M2	G3	S0														
