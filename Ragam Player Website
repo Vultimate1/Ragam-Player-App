@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raga player</title>
+</head>
+<body>
+    <h2>Raga player</h2>
+
+    <label for="sruthi">select sruthi:</label>
+    <select name="sruthi" id="sruthi" onclick=getSruthiFrequency()>
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+	
+    <h2> </h2>    <label for="raga">select raga:</label>
+    <select name="raga" id="raga" onclick=getAAnotes()>
+        <option value="none" selected disabled hidden>Select an Option</option>
+        <option value= "Shankarabharanam" selected>Shankarabharanam </option>
+        <option value= "Mayamalavagoula">Mayamalavagoula </option>
+        <option value= "Mohanam">Mohanam </option> 
+        <option value= "Abhogi">Abhogi </option>
+    </select>
+    
+	<h2> </h2>    <label for="AAnotes">Aroganam+Avaroganam notes:</label>
+	<input name="AAnotes" id="AAnotes" text="notes" size=80>
+    
+    <script type="text/JavaScript">  
+        function getAAnotes() {
+            var ragaselect = document.getElementById("raga").value;
+            switch (ragaselect) {
+                case "Mohanam":
+                    var notesText = "S R2 G3 P D2 S2 S2 D2 P G3 R2 S";
+                    break;
+                case "Shankarabharanam":
+                    var notesText = "S R2 G3 M1 P D2 N3 S2 S2 N3 D2 P M1 G3 R2 S";
+                    break;
+                case "Mayamalavagoula":
+                    var notesText = "S R1 G3 M1 P D1 N3 S2 S2 N3 D1 P M1 G3 R1 S";
+                    break;
+                case "Abhogi":
+                    var notesText = "S R2 G2 M1 D2 S2 S2 D2 M1 G2 R2 S";
+                    break;
+                default:
+                    var notesText = "notes";
+                    break;
+            }
+            document.getElementById("AAnotes").value = notesText;
+		}
+
+        function getSruthiFrequency() {
+            var sruthiletter = document.getElementById("sruthi").value;
+            switch (sruthiletter) {
+                case "A":
+                    freq= 220;
+                    break;
+                case "B":
+                    freq= 247;
+                    break;
+                case "C":
+                    freq= 261;
+                    break;
+                case "D":
+                    freq= 294;
+                    break;
+
+            }
+			//document.getElementById("freqText").value=freq;
+			return freq;
+        }  
+
+        //this section is code for setting frequency
+
+        var context = null;
+        var usingWebAudio = true;
+        if (typeof AudioContext !== 'undefined') {
+        context = new AudioContext();
+        } else if (typeof webkitAudioContext !== 'undefined') {
+        context = new webkitAudioContext();
+        } else {
+        usingWebAudio = false;
+        }
+
+        var playing = false;
+        var osc = null;
+        var freq = getSruthiFrequency();
+        var STEP_CONSTANT = Math.pow(2.0, 1.0/12.0);
+		var noteslist = "";
+        var notesfreqarray = [];
+		var duration = 0.3;
+		function toggle() {
+			var button = document.getElementById("toggle");
+			var prevraga = document.getElementById("AAnotes").value;
+			if (playing && osc) {
+				playing = false;
+				osc.stop(0);
+				button.value = "Play";
+				//window.location.reload();
+			} else {
+				playing = true;
+				 button.text = "Playing";
+				 noteslist = document.getElementById("AAnotes").value ;
+				 let array_notestext = noteslist.split(" ");
+				 let notesfreqarray = [];
+				 for (let i = 0; i <= array_notestext.length ; i++) {
+					//calculate frequency based on swara and sruthiletter
+					switch (array_notestext[i]) {
+						case "S":
+							freq2= freq*1; break;
+						case "R1":
+							freq2= freq*16/15; break;
+						case "R2":
+							freq2= freq*9/8; break;
+						case "R3":
+							freq2= freq*6/5; break;
+						case "G1":
+							freq2= freq*9/8; break;
+						case "G2":
+							freq2= freq*6/5; break;
+						case "G3":
+							freq2= freq*5/4; break;
+						case "M1":
+							freq2= freq*4/3; break;
+						case "M2":
+							freq2= freq*17/12; break;
+						case "P":
+							freq2= freq*3/2; break;
+						case "D1":
+							freq2= freq*8/5; break;
+						case "D2":
+							freq2= freq*5/3; break;
+						case "D3":
+							freq2= freq*9/5; break;
+						case "N1":
+							freq2= freq*5/3; break;
+						case "N2":
+							freq2= freq*9/5; break;
+						case "N3":
+							freq2= freq*15/8; break;
+						case "S2":
+							freq2= freq*2; break;
+					}
+
+					console.log(freq2);
+					osc = context.createOscillator();
+					osc.connect(context.destination);
+					osc.frequency.value = freq2;
+					osc.start(duration*i);
+					osc.stop(duration*(i+1));
+				}	
+				button.value = "Play";
+				playing = false;
+				osc.stop(0);
+				noteslist = prevraga;
+				//window.location.reload();
+			}
+        }
+
+        function updateFreq(newFreq) {
+        freq = getSruthiFrequency();
+        if (osc) {
+            osc.frequency.value = freq;
+        }
+        var text = document.getElementById("freqText").value = freq;
+        var range = document.getElementById("freqRange").value = freq;
+        }
+
+        function textToNumber() {
+            intext=document.getElementById("freqText").value;
+            num1=parseFloat(intext);
+            return num1;
+        }
+
+        window.onload = function() {
+        if (!usingWebAudio) {
+            document.getElementById("audioControls").innerHTML = "<p>Web audio required.</p>"
+        }
+        }
+
+    //END OF CODE TO GENERATE FREQUENCY TONE
+    </script>
+	</input>
+
+    <div id="audioControls">
+		<br>
+        <input id="toggle" type="button" value="Play" onclick="toggle()"/>
+    </div>
+
+
+</body>
+</html>
