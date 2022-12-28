@@ -971,8 +971,9 @@
     
 	<h2> </h2>    <label for="AAnotes">Aroganam+Avaroganam notes:</label>
 	<input name="AAnotes" id="AAnotes" text="notes" size=80>
-
-    <input id="playragam" type="button" text="Playragam" onclick="toggle()"/>
+    <div>
+        <input id="playragam" type="button" text="Playragam" onclick="toggle()"/>
+    </div>
 
     <script type="text/JavaScript">  
         function getAAnotes() {
@@ -2134,10 +2135,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
