@@ -972,7 +972,7 @@
 	<h2> </h2>    <label for="AAnotes">Aroganam+Avaroganam notes:</label>
 	<input name="AAnotes" id="AAnotes" text="notes" size=80>
     <div>
-        <input id="playragam" type="button" text="Playragam" onclick="toggle()"/>
+        <input id="playragam" type="button" value="Play" onclick="toggle()"/>
     </div>
 
     <script type="text/JavaScript">  
@@ -2027,17 +2027,18 @@
 		var noteslist = "";
         var notesfreqarray = [];
 		var duration = 0.3;
+        button.text = "Play";
 		function toggle() {
 			var button = document.getElementById("playragam");
 			var prevraga = document.getElementById("AAnotes").value;
 			if (playing && osc) {
 				playing = false;
 				osc.stop(0);
-				button.textContext = "Play";
+				button.value = "Play";
 				//window.location.reload();
 			} else {
 				playing = true;
-				 button.textContext = "Playing";
+				 button.value = "Playing";
 				 noteslist = document.getElementById("AAnotes").value;
 				 let array_notestext = noteslist.split(" ");
 				 let notesfreqarray = [];
