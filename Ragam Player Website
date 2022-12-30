@@ -2117,10 +2117,11 @@
 				button.value = "Play";
 				playing = false;
 				osc.stop(0);
-				history.go(0);
+				//history.go(0);
 			}
         }
     //END OF CODE TO GENERATE FREQUENCY TONE
+		
     </script>
 	</input>
 
