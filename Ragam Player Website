@@ -12,7 +12,6 @@
 
     <label for="sruthi">select sruthi:</label>
     <select name="sruthi" id="sruthi" onclick=getSruthiFrequency()>
-        <option value="none" selected disabled hidden>Select an Option</option>
         <option value="A">A</option>
         <option value="A#">A#</option>
         <option value="B">B</option>
