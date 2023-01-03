@@ -9,7 +9,7 @@
 <body>
     <h2>Raga player</h2>
 
-	<label>If anything is changed, hit refresh, then the play button.</label><br>
+	<label>Hit refresh, then make your changes, then hit the play button.</label><br>
     <label for="sruthi">select sruthi:</label>
     <select name="sruthi" id="sruthi" onclick=getSruthiFrequency()>
         <option value="A">A</option>
