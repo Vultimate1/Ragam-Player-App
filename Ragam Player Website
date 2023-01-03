@@ -1972,10 +1972,10 @@
 					default:var notesText = "notes"; var notesText2= "notes"; break;
 				}
 			}
-			var notesText3 = notesText.concat(" ",notesText2);
+//			var notesText3 = notesText.concat(" ",notesText2);
 			document.getElementById("arohanam").value = notesText;
 			document.getElementById("avarohanam").value = notesText2;
-			document.getElementById("AAnotes").value = notesText3;
+//			document.getElementById("AAnotes").value = notesText3;
 		}
         function getSruthiFrequency() {
             var sruthiletter = document.getElementById("sruthi").value;
@@ -2034,14 +2034,16 @@
         var freq = getSruthiFrequency();
         var STEP_CONSTANT = Math.pow(2.0, 1.0/12.0);
 		var noteslist = "";
-		var duration = parseFloat(document.getElementById("duration").value);
-
+		var duration = 0.6;//parseFloat(document.getElementById("duration").value);
+		
 		var button = document.getElementById("playragam");
         button.text = "Play";
 		console.log("before toggle");
 		function toggle() {
 			console.log("entering toggle");
-			var prevraga = document.getElementById("AAnotes").value;
+			var arohanam = document.getElementById("arohanam").value;
+			var avarohanam = document.getElementById("avarohanam").value;
+			var prevraga = arohanam.concat(" zz ",avarohanam);
 			if (playing && osc) {
 				playing = false;
 				osc.stop(0);
@@ -2050,15 +2052,15 @@
 			} else {
 				playing = true;
 				button.value = "Playing";
-				noteslist = document.getElementById("AAnotes").value;
+				noteslist = prevraga;
 				let array_notestext = noteslist.split(" ");
                 let prev_note = " ";
                 let prev_freq = freq;
-				for (var i = 0; i <= array_notestext.length ; i++) {
+				for (var i = 0; i < array_notestext.length ; i++) {
                     
 					//calculate frequency based on swara and sruthiletter
 					switch (array_notestext[i]) {
-							case "S0":
+						case "S0":
 							freq2= freq*1; break;
 						case "R1":
 							freq2= freq*16/15; break;
@@ -2127,21 +2129,15 @@
 						default:
 							break;
 					}
-                    if ((i > 0 && prev_freq >= freq*9/5 && freq2<=freq*9/8) || (prev_freq > freq*2 && freq2 >= prev_freq)) {
-                        freq2 = freq2 + freq;
-                    }
-                    if ((i > 0 && prev_freq <= freq*9/8 && freq2>=freq*9/5) || (prev_freq < freq && freq2 <= prev_freq)) {
-                        freq2 = freq2 - freq;
-                    }
-                    prev_note = array_notestext[i-1];
-                    prev_freq = freq2;
+                   
+                    
 					console.log("here");
 					osc = context.createOscillator();
 					osc.connect(context.destination);
 					osc.frequency.value = freq2;
-					console.log(duration);document.getElementById("duration").onchange = function(){
+					/*console.log(duration);document.getElementById("duration").onchange = function(){
                         duration = parseFloat(document.getElementById("duration").value);
-                    }
+                    }*/
 					osc.start(duration*i);
 					osc.stop(duration*(i+1));
                     //window.location.reload();
