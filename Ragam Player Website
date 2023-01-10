@@ -977,12 +977,13 @@
     <div>
 		<!--<label>Note duration (seconds):</label>-->
 		<!--<input id="duration" type="range" class="slider"  min="0.1" max="2" value="0.3" step="0.1" />--><br><br>
-		<input type="button" value = "Refresh" onclick="history.go(0)" />
         <input id="playragam" type="button" value="Play" onclick="toggle()"/><br>
     </div>
 
-    <script type="text/JavaScript">  
-        function getAAnotes() {
+    <script type="text/JavaScript"> 
+		var button = document.getElementById("playragam");
+        button.text = "Play";
+		function getAAnotes() {
 			var ragaselect = document.getElementById("raga").value;
 			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
 			if (pattern.test(ragaselect[0])) {
@@ -2017,30 +2018,29 @@
                     break;
             }
 			return freq;
-        }  
-
-        //this section is code for setting frequency
-        var context = null;
-        var usingWebAudio = true;
-        if (typeof AudioContext !== 'undefined') {
-            context = new AudioContext();
-        } else if (typeof webkitAudioContext !== 'undefined') {
-            context = new webkitAudioContext();
-        } else {
-            usingWebAudio = false;
-        }
-        var playing = false;
-        var osc = null;
-        var freq = getSruthiFrequency();
-        var STEP_CONSTANT = Math.pow(2.0, 1.0/12.0);
-		var noteslist = "";
-		var duration = 0.6;//parseFloat(document.getElementById("duration").value);
-		
-		var button = document.getElementById("playragam");
-        button.text = "Play";
-		console.log("before toggle");
+        }      
 		function toggle() {
+			var context = null;
+			var usingWebAudio = true;	
+			//this section is code for setting frequency
+			
+			if (typeof AudioContext !== 'undefined') {
+				context = new AudioContext();
+			} else if (typeof webkitAudioContext !== 'undefined') {
+				if (navigator.appCodeName == "Firefox" || navigator.appCodeName == "Chrome") {
+					context = new webkitAudioContext();
+				} 
+			} else {
+				usingWebAudio = false;
+			}
+			var playing = false;
+			var osc = null;
+			//var freq = getSruthiFrequency();
+			var noteslist = "";
+			var duration = 0.6;//parseFloat(document.getElementById("duration").value);
+			getAAnotes();
 			console.log("entering toggle");
+			var freq = getSruthiFrequency();
 			var arohanam = document.getElementById("arohanam").value;
 			var avarohanam = document.getElementById("avarohanam").value;
 			var prevraga = arohanam.concat(" zz ",avarohanam);
@@ -2048,14 +2048,11 @@
 				playing = false;
 				osc.stop(0);
 				button.value = "Play";
-				//window.location.reload();
 			} else {
 				playing = true;
 				button.value = "Playing";
 				noteslist = prevraga;
 				let array_notestext = noteslist.split(" ");
-                let prev_note = " ";
-                let prev_freq = freq;
 				for (var i = 0; i < array_notestext.length ; i++) {
                     
 					//calculate frequency based on swara and sruthiletter
@@ -2135,17 +2132,12 @@
 					osc = context.createOscillator();
 					osc.connect(context.destination);
 					osc.frequency.value = freq2;
-					/*console.log(duration);document.getElementById("duration").onchange = function(){
-                        duration = parseFloat(document.getElementById("duration").value);
-                    }*/
 					osc.start(duration*i);
 					osc.stop(duration*(i+1));
-                    //window.location.reload();
 				}	
 				button.value = "Play";
 				playing = false;
 				osc.stop(0);
-				window.location.reload(true);
 			}
         }
     //END OF CODE TO GENERATE FREQUENCY TONE
@@ -2157,10 +2149,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
