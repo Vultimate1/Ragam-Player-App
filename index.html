@@ -975,8 +975,10 @@
 	<label for="AAnotes">Avarohanam:</label><input name="avarohanam" id="avarohanam" text="avarohanam" size=80><br>
 
     <div>
-		<!--<label>Note duration (seconds):</label>-->
-		<!--<input id="duration" type="range" class="slider"  min="0.1" max="2" value="0.3" step="0.1" />--><br><br>
+		<label>Note duration (seconds):</label> 
+		<input id="duration" type="range" class="slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="durationchange()" /> 
+		<label id="durationvalue" type="text" text="0.5">0.5</label>  
+		<br><br>
         <input id="playragam" type="button" value="Play" onclick="toggle()"/><br>
     </div>
 
@@ -2019,6 +2021,9 @@
             }
 			return freq;
         }      
+		function durationchange() {
+				document.getElementById("durationvalue").innerHTML = document.getElementById("duration").value;
+		}
 		function toggle() {
 			var context = null;
 			var usingWebAudio = true;	
@@ -2037,7 +2042,8 @@
 			var osc = null;
 			//var freq = getSruthiFrequency();
 			var noteslist = "";
-			var duration = 0.6;//parseFloat(document.getElementById("duration").value);
+			var duration = parseFloat(document.getElementById("duration").value);
+			
 			getAAnotes();
 			console.log("entering toggle");
 			var freq = getSruthiFrequency();
