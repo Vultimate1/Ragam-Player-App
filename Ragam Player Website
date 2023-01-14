@@ -5,11 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raga player</title>
+	<style>
+		body {
+			background-color:cornsilk;
+			background-image: url("https://www.hancocks-paducah.com/Images/Item%20images/PB%20299%20Y_main-1.jpg?resizeid=5&resizeh=500&resizew=500");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+        img {
+            src: "C:\Users\srira\Documents\Raga Player App\violin.jpg";
+			alt: "violin"
+        }
+		.button {
+			background-color: #FFFFFF;
+			color:black;
+			padding: 10px;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			margin:10px;
+			text-align: center;
+		}
+		
+		.small-btn {
+			width: 50px;
+			height: 25px;
+		}
+		
+		.medium-btn {
+			width: 70px;
+			height: 30px;
+		}
+		
+		.big-btn {
+			width: 90px;
+			height: 40px;
+		}
+	</style>
 </head>
 <body>
     <h2>Raga player</h2>
-
-	<label>Hit refresh, then make your changes, then hit the play button.</label><br>
+	<label style="text-align: center; font-size: 15px;">Select your raga and sruthi, then hit the play button.</label><br><br>
     <label for="sruthi">select sruthi:</label>
     <select name="sruthi" id="sruthi" onclick=getSruthiFrequency()>
         <option value="A">A</option>
@@ -28,7 +67,8 @@
     </select>
 	
     <h2> </h2>    <label for="raga">select raga:</label>
-    <select name="raga" id="raga" onclick=getAAnotes()>
+    <input type="text" name="raganame" id="raganame" list="raga" oninput = "populate()"><br>    
+    <datalist id="raga">
         <option value= "Abheri">Abheri</option>
         <option value= "Abhiramam">Abhiramam</option>
         <option value= "Abhiru">Abhiru</option>
@@ -60,7 +100,6 @@
         <option value= "Ardhradesi">Ardhradesi</option>
         <option value= "Arunangi">Arunangi</option>
         <option value= "aryamati">aryamati</option>
-        <option value= "Asaveri">Asaveri</option>
         <option value= "Asaveri">Asaveri</option>
         <option value= "Atana">Atana</option>
         <option value= "Aymmukhan">Aymmukhan</option>
@@ -226,7 +265,6 @@
         <option value= "Gajagowri">Gajagowri</option>
         <option value= "Gamakakriya">Gamakakriya</option>
         <option value= "Gamakapriya">Gamakapriya</option>
-        <option value= "Gamanapriya">Gamanapriya</option>
         <option value= "Gamanashrama">Gamanashrama</option>
         <option value= "Gambheeranattai">Gambheeranattai</option>
         <option value= "Gambheeravani">Gambheeravani</option>
@@ -384,7 +422,6 @@
         <option value= "Kamaripriya">Kamaripriya</option>
         <option value= "Kamas">Kamas</option>
         <option value= "Kambhoji">Kambhoji</option>
-        <option value= "Kambhoji">Kambhoji</option>
         <option value= "Kanada">Kanada</option>
         <option value= "Kanakadri">Kanakadri</option>
         <option value= "Kanakakusumavali">Kanakakusumavali</option>
@@ -401,7 +438,6 @@
         <option value= "Kannadagowla">Kannadagowla</option>
         <option value= "Kannadamaruva">Kannadamaruva</option>
         <option value= "Kanthamani">Kanthamani</option>
-        <option value= "Kapi">Kapi</option>
         <option value= "Kapi">Kapi</option>
         <option value= "Kapijingala">Kapijingala</option>
         <option value= "Karmukhavati">Karmukhavati</option>
@@ -580,7 +616,6 @@
         <option value= "Natabharanam">Natabharanam</option>
         <option value= "Natakapriya">Natakapriya</option>
         <option value= "Nattai">Nattai</option>
-        <option value= "Nattai">Nattai</option>
         <option value= "Nattakurunji">Nattakurunji</option>
         <option value= "Natyadharana">Natyadharana</option>
         <option value= "Navaneetham">Navaneetham</option>
@@ -626,8 +661,7 @@
         <option value= "Poornagowla">Poornagowla</option>
         <option value= "Poornakalanidhi">Poornakalanidhi</option>
         <option value= "Poornakambhoji">Poornakambhoji</option>
-        <option value= "Poornalalitha">Poornalalitha</option>
-        <option value= "Poornapanchamam">Poornapanchamam</option>
+        <option value= "Poornalalita">Poornalalita</option>
         <option value= "Poornapanchamam">Poornapanchamam</option>
         <option value= "Poornasaveri">Poornasaveri</option>
         <option value= "Poornashadjam">Poornashadjam</option>
@@ -873,7 +907,6 @@
         <option value= "Swarabhooshani">Swarabhooshani</option>
         <option value= "Swarakalanidhi">Swarakalanidhi</option>
         <option value= "Swaramanjari">Swaramanjari</option>
-        <option value= "Swararanjani">Swararanjani</option>
         <option value= "Swaravali">Swaravali</option>
         <option value= "Swaravedi">Swaravedi</option>
         <option value= "Swarnamalli">Swarnamalli</option>
@@ -885,7 +918,6 @@
         <option value= "Tanukeerti">Tanukeerti</option>
         <option value= "Tarakagowla">Tarakagowla</option>
         <option value= "Tarangini">Tarangini</option>
-        <option value= "Tarangini">Tarangini</option>
         <option value= "Tarkshika">Tarkshika</option>
         <option value= "Tatillatika">Tatillatika</option>
         <option value= "Tavamukhari">Tavamukhari</option>
@@ -894,6 +926,7 @@
         <option value= "Thilakamandari">Thilakamandari</option>
         <option value= "Thilang">Thilang</option>
         <option value= "Thilang">Thilang</option>
+		<option value= "Thodi">Thodi</option>
         <option value= "Tilakavathi">Tilakavathi</option>
         <option value= "Toyavegavahini">Toyavegavahini</option>
         <option value= "Triveni">Triveni</option>
@@ -964,27 +997,33 @@
         <option value= "Yagini">Yagini</option>
         <option value= "Yaman">Yaman</option>
         <option value= "Yamuna">Yamuna</option>
+    </datalist>
 
-
-    </select>
-    
-	<h2> </h2>    <!--<label for="AAnotes">Arohanam and Avarohanam notes:</label>
+	<br>
+	<label>Note duration (seconds):</label> 
+	<input id="duration" type="range" class="slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="durationchange()" /> 
+	<label id="durationvalue" type="text" text="0.5">0.5</label>  
+	<br>
+	   <!--<label for="AAnotes">Arohanam and Avarohanam notes:</label>
 	<input name="AAnotes" id="AAnotes" text="notes" size=80>-->
 
-	<br><label for="AAnotes">Arohanam:</label><input name="arohanam" id="arohanam" text="arohanam" size=80><br>
-	<label for="AAnotes">Avarohanam:</label><input name="avarohanam" id="avarohanam" text="avarohanam" size=80><br>
+	<br><label>Arohana:</label><input name="arohanam" id="arohanam" text="arohanam" size=80><br>
+	<label>Avarohana:</label><input name="avarohanam" id="avarohanam" text="avarohanam" size=80><br>
 
     <div>
-		<!--<label>Note duration (seconds):</label>-->
-		<!--<input id="duration" type="range" class="slider"  min="0.1" max="2" value="0.3" step="0.1" />--><br><br>
-        <input id="playragam" type="button" value="Play" onclick="toggle()"/><br>
+		<br>
+        <div class="button big-btn" id="playragam" type="button" onclick="toggle()">Play</div><br>
     </div>
 
     <script type="text/JavaScript"> 
 		var button = document.getElementById("playragam");
         button.text = "Play";
+		function populate() {
+			getAAnotes();
+		}
 		function getAAnotes() {
-			var ragaselect = document.getElementById("raga").value;
+            var ragaselect = document.querySelector('#raganame').value;
+		//	var ragaselect = document.getElementById("raganame").value;
 			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
 			if (pattern.test(ragaselect[0])) {
 				//console.log("a to l");
@@ -1020,8 +1059,7 @@
 					case "Ardhradesi":var notesText="S0 R1 G3 M1 P D1 N3 S1"; var notesText2 = "S1 D1 P M1 G3 R1 S0 ";break;
 					case "Arunangi":var notesText="S0 R1 M2 P N3 D1 S1"; var notesText2 = "S1 N3 D1 M2 R1 G2 R1 S0 ";break;
 					case "aryamati":var notesText="S0 R2 G2 P D2 S1"; var notesText2 = "S1 N2 D2 P D2 M1 G2 R2 S0 ";break;
-					case "Asaveri":var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 N2 S0 P D1 M1 P R1 G2 R1 S0 ";break;
-					case "Asaveri":var notesText="S0 R2 G2 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 P D2 M1 G2 R2 S0 ";break;
+					case "Asaveri":var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 N2 S1 P D1 M1 P R1 G2 R1 S0 ";break;
 					case "Atana":var notesText="S0 R2 M1 P N3 S1"; var notesText2 = "S1 N3 D2 P M1 P G3 R2 S0 ";break;
 					case "Aymmukhan":var notesText="S0 G2 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G2 S0 ";break;
 					case "Ayodhya":var notesText="S0 G3 M2 P N3 S1"; var notesText2 = "S1 D2 P M2 G3 M2 R3 S0 ";break;
@@ -1030,8 +1068,8 @@
 					case "Balahamsa":var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 R2 M1 G3 S0 ";break;
 					case "Bandhuvarali":var notesText="S0 M2 S0 N3 D1 P M2 D1 M2 G2 R1 S0 ";break;
 					case "Bangala":var notesText="S0 R2 G3 M1 P M1 R2 P S1"; var notesText2 = "S1 N3 P M1 R2 G3 R2 S0 ";break;
-					case "Basant-bahar":var notesText="S0 M2 P G3 M2 N3 D1 N3 S1 R2 S0 N2 D2 P M1 G2 M1 G2 R2 S0 ";break;
-					case "basant-bahar":var notesText="S0 M2 P G3 M2 N3 D1 N3 S1 R2 S0 N2 D2 P M1 G2 M1 G2 R2 S0 ";break;
+					case "Basant-bahar":var notesText="S0 M2 P G3 M2 N3 D1 N3 S1"; var notesText2 = "S1 R2+ S1 N2 D2 P M1 G2 M1 G2 R2 S0 ";break;
+					case "basant-bahar":var notesText="S0 M2 P G3 M2 N3 D1 N3 S1"; var notesText2 = "S1 R2+ S1 N2 D2 P M1 G2 M1 G2 R2 S0 ";break;
 					case "Begada":var notesText="S0 G3 R2 G3 M1 P D2 N2 D2 P S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Behag":var notesText="S0 G3 M1 P N3 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Behag-deshikam":var notesText="S0 R2 G3 M1 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 M1 G3 R2 S0 ";break;
@@ -1052,7 +1090,7 @@
 					case "Bhanupriya":var notesText="S0 R2 G2 D1 N3 S1"; var notesText2 = "S1 N3 D1 G2 R2 S0 ";break;
 					case "Bharati":var notesText="S0 R2 G2 M1 P S1"; var notesText2 = "S1 P M1 G2 R2 S0 ";break;
 					case "Bhashini":var notesText="S0 G2 R2 G2 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M2 G2 R1 S0 ";break;
-					case "Bhatiyar":var notesText="S0 D2 P D2 M2 P G3 M2 D2 S1 R1 N3 D2 P M2 P G3 R1 S0 ";break;
+					case "Bhatiyar":var notesText="S0 D2 P D2 M2 P G3 M2 D2 S1"; var notesText2 = "S1 R1+ N3 D2 P M2 P G3 R1 S0 ";break;
 					case "Bhavani":var notesText="S0 R1 G2 M2 P D1 P N2 S1"; var notesText2 = "S1 N2 D1 P M2 G2 R1 S0 ";break;
 					case "Bhavapriya":var notesText="S0 R1 G2 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M2 G2 R1 S0 ";break;
 					case "Bhavini":var notesText="S0 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G3 S0 ";break;
@@ -1106,7 +1144,7 @@
 					case "Chayashankarabharanam":var notesText="S0 R1 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R1 S0 ";break;
 					case "Chayatarangini":var notesText="S0 R2 M1 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Chayavathi":var notesText="S0 R1 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R1 S0 ";break;
-					case "Chenjurutti":var notesText="D2 S0 R2 G3 M1 P D2 N2 N2 D2 P M1 G3 R2 S0 N2 D2 P D2 S0 ";break;
+					case "Chenjurutti":var notesText="D2 S0 R2 G3 M1 P D2 N2"; var notesText2 = "N2 D2 P M1 G3 R2 S0 N2- D2- P- D2- S0 ";break;
 					case "Chintamani":var notesText="S0 G2 R2 G2 M2 G2 R2 G2 P M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R2 S0 ";break;
 					case "Chintaramani":var notesText="S0 G3 M2 P D2 N2 S1"; var notesText2 = "S1 D2 P M2 G3 R1 S0 ";break;
 					case "Chirswaroopi":var notesText="S0 R2 G3 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G3 R2 S0 ";break;
@@ -1118,7 +1156,7 @@
 					case "Chitthakarshani":var notesText="S0 R1 G2 M1 D1 S1"; var notesText2 = "S1 D1 M1 G2 R1 S0 ";break;
 					case "Churnikavinodhini":var notesText="S0 R2 G3 M2 P D3 N3 S1"; var notesText2 = "S1 N3 D3 N3 P M2 G3 R2 S0 ";break;
 					case "Damarugapriya":var notesText="S0 R3 G3 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P G3 R3 S0 ";break;
-					case "Darbar":var notesText="S0 R2 M1 P D2 N2 S1 R2 S0 N2 S0 D2 P M1 R2 G2 G2 R2 S0 ";break;
+					case "Darbar":var notesText="S0 R2 M1 P D2 N2 S1"; var notesText2 = "S1 R2+ S0 N2 S0 D2 P M1 R2 G2 G2 R2 S0 ";break;
 					case "darbari-kanada":var notesText="N2 S0 R2 G2 R2 S0 M1 P D1 N2 S1"; var notesText2 = "S1 D1 N2 P M1 P G2 M1 R2 S0 ";break;
 					case "Dasharatipriya":var notesText="S0 M1 G3 M1 P D2 N2 D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 S0 ";break;
 					case "Dayaranjani":var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 M1 G3 S0 ";break;
@@ -1174,7 +1212,6 @@
 					case "Divyamani":var notesText="S0 R1 G2 M2 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M2 G2 R1 S0 ";break;
 					case "Dundubi":var notesText="S0 R1 G2 M2 P D3 N3 S1"; var notesText2 = "S1 N3 P M2 G2 R1 S0 ";break;
 					case "Durga":var notesText="S0 R2 M1 D2 P D2 S1"; var notesText2 = "S1 D2 P M1 R2 S0 ";break;
-					case "Dvigandharabhooshani":var notesText="S0 R1 G2 G3 G2 P D2 S1"; var notesText2 = "S1 D2 P G2 G3 G2 R1 S0 D2 S0 ";break;
 					case "Dwigandharabhooshani":var notesText="S0 R1 G2 G3 G2 P D2 S1"; var notesText2 = "S1 D2 P G2 G3 G2 R1 S0 D2 S0 ";break;
 					case "Dwijavanthi":var notesText="S0 R2 M1 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 G2 R2 S0 N2 D2 N2 S0 ";break;
 					case "Eeshaivaridhi":var notesText="S0 R2 M1 D2 N2 S1"; var notesText2 = "S1 N2 P M1 R2 S0 ";break;
@@ -1238,10 +1275,7 @@
 					case "Gurupriya":var notesText="S0 R2 G3 M2 D2 N2 S1"; var notesText2 = "S1 N2 D2 M2 G3 R2 S0 ";break;
 					case "hameer-kalyan":var notesText="S0 R2 S0 G3 M1 D2 N3 D2 S1"; var notesText2 = "S1 N3 D2 N2 P G3 M1 D2 M2 P D2 P G3 M1 R2 S1 ";break;
 					case "hameer-kalyani":var notesText="S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P G3 M1 G3 R2 S0 ";break;
-					case "hameer-kalyani":var notesText="S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 M1 G3 P M1 R2 S0 ";break;
-					case "hameer-kalyani":var notesText="S0 R2 G3 M2 P D2 N3 P D2 P S1"; var notesText2 = "S1 N3 D2 P G3 M1 G3 R2 S0 ";break;
-					case "hameer-kalyani":var notesText="S0 R2 S0 P M2 N3 D2 S0 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G M1 R2 S0 ";break;
-					case "hameer-kalyani":var notesText="S0 R2 S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G3 M1 G3 R2 S0 ";break;
+					case "hameer-kalyani":var notesText="S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 P G3 M1 G3 R2 S0 ";break;
 					case "Hamsa-abheri":var notesText="S0 G2 P M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 S0 ";break;
 					case "Hamsabhramari":var notesText="S0 R2 G2 M2 P D2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R2 S0 ";break;
 					case "Hamsadeepika":var notesText="S0 R2 G2 M1 D2 S1"; var notesText2 = "S1 N3 D2 P M1 G2 R2 S0 ";break;
@@ -1259,7 +1293,6 @@
 					case "Hamsavinodhini":var notesText="S0 R2 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Hanumatodi":var notesText="S0 R1 G2 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R1 S0 ";break;
 					case "Haridarpa":var notesText="S0 R1 G3 M1 P D2 N3 S1"; var notesText2 = "S1 D2 P M1 R1 S0 ";break;
-					case "Haridasapriya":var notesText="S0 P M1 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D2 N2 P M1 G2 R2 S0 ";break;
 					case "Haridasapriya":var notesText="S0 P M1 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D2 N2 P M1 G2 R2 S0 ";break;
 					case "Harikambhoji":var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Harikedaragowla":var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
@@ -1355,8 +1388,7 @@
 					case "Kamalaptapriya":var notesText="S0 R1 G3 M2 P D1 S1"; var notesText2 = "S1 D1 P M2 G3 R1 S0 ";break;
 					case "Kamaripriya":var notesText="S0 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 M1 M1 G3 M1 R2 S0 ";break;
 					case "Kamas":var notesText="S0 M1 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
-					case "Kambhoji":var notesText="S0 R2 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 N3 P D2 S0 ";break;
-					case "Kambhoji":var notesText="S0 R2 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 N3. P. D2. S0 ";break;
+					case "Kambhoji":var notesText="S0 R2 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 N3- P- D2- S0 ";break;
 					case "Kanada":var notesText="S0 R2 G2 M1 D N2 S1"; var notesText2 = "S1 N2 P M1 G2 M1 R2 S0 ";break;
 					case "Kanakadri":var notesText="S0 R1 G2 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R1 S0 ";break;
 					case "Kanakakusumavali":var notesText="S0 R2 G3 M2 P D2 S1"; var notesText2 = "S1 D2 P M2 G3 R2 S0 ";break;
@@ -1368,14 +1400,13 @@
 					case "Kananapriya":var notesText="S0 R2 G3 M2 P M2 D1 N3 S1"; var notesText2 = "S1 D1 N3 P M2 G3 R2 S0 ";break;
 					case "Kanchanabowli":var notesText="S0 G2 M2 P D1 S1"; var notesText2 = "S1 N1 D1 P M1 G2 R1 S0 ";break;
 					case "Kanchanavathi":var notesText="S0 R1 G2 M2 P N2 S1"; var notesText2 = "S1 N2 P M2 G2 R1 S0 ";break;
-					case "Kannada":var notesText="S0 R2 G3 M1 P M1 D2 N3 S1"; var notesText2 = "S1 N3 S0 D2 P M1 G3 M1 G3 M1 R2 S0 ";break;
+					case "Kannada":var notesText="S0 R2 G3 M1 P M1 D2 N3 S1"; var notesText2 = "S1 N3 S1 D2 P M1 G3 M1 G3 M1 R2 S0 ";break;
 					case "Kannadabangala":var notesText="S0 R1 M1 G3 M1 D1 P D1 S1"; var notesText2 = "S1 D1 P M1 G3 R1 S0 ";break;
 					case "Kannadagowla":var notesText="S0 R2 G2 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 S0 ";break;
 					case "Kannadamaruva":var notesText="S0 G3 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G3 S0 ";break;
 					case "Kanthamani":var notesText="S0 R2 G3 M2 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 R2 S0 ";break;
-					case "Kapi":var notesText="S0 R2 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Kapi":var notesText="S0 R2 M1 P N3 S1"; var notesText2 = "S1 N2 D2 N2 P M1 G2 R2 S0 ";break;
-					case "Kapijingala":var notesText="S0 N2 S0 R2 G2 M1 M1 G2 R2 S0 N2 D2 N2 S0 ";break;
+					case "Kapijingala":var notesText="S0 N2- S0 R2 G2 M1 S1"; var notesText2 = "S1 M1+ G2+ R2+ S1 N2 D2 N2 S1";break;
 					case "Karmukhavati":var notesText="S0 R2 G2 M2 D2 N3 S1"; var notesText2 = "S1 N3 D2 M2 G2 R2 S0 ";break;
 					case "Karnaranjani":var notesText="S0 R2 G2 M1 G2 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
 					case "Karnataka-behag":var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 N2 P D2 M1 G3 R2 S0 ";break;
@@ -1421,7 +1452,7 @@
 					case "Kunthalam":var notesText="S0 R2 G3 M2 P D1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 R2 S0 ";break;
 					case "Kunthalashreekanti":var notesText="S0 G3 M2 P D2 N3 S1"; var notesText2 = "S1 N3 P M2 G3 R2 S0 ";break;
 					case "Kunthala-varali":var notesText="S0 M1 P D2 N2 D2 S1"; var notesText2 = "S1 N2 D2 P M1 S0 ";break;
-					case "Kurinji":var notesText="S0 N3 S0 R2 G3 M1 P D2 D2 P M1 G3 R2 S0 N3 S0 ";break;
+					case "Kurinji":var notesText="S0 N3- S0 R2 G3 M1 P D2 S1"; var notesText2 = "S1 D2 P M1 G3 R2 S0 N3 S0 ";break;
 					case "Kusumakaram":var notesText="S0 R3 G3 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G3 R3 S0 ";break;
 					case "Kusumamaruta":var notesText="S0 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R1 G3 M1 S0 ";break;
 					case "Kusumavali":var notesText="S0 G2 M1 P D1 S1"; var notesText2 = "S1 N3 D1 P M1 G2 M1 R1 S0 ";break;
@@ -1551,17 +1582,14 @@
 					case "Narayanadeshakshi":var notesText="S0 R2 M1 G3 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Narayana-gowla":var notesText="S0 R2 M1 P N2 D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 G3 S0 ";break;
 					case "Narayani":var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 R2 S0 ";break;
-					case "Nareretigowla":var notesText="S0 R1 G2 M1 P D1 N2 S1"; var notesText2 = "S1 R2 D1 P M1 G2 R2 S0 ";break;
+					case "Nareretigowla":var notesText="S0 R1 G2 M1 P D1 N2 S1"; var notesText2 = "S1 R2+ D1 P M1 G2 R2 S0 ";break;
 					case "Narmada":var notesText="S0 R1 G3 M2 D1 N2 S1"; var notesText2 = "S1 N2 D1 M2 P M2 G3 R1 S0 ";break;
 					case "Nasamani":var notesText="S0 R3 G3 M2 P D2 N2 S1"; var notesText2 = "S1 N3 D2 P M2 G3 R3 S0 ";break;
 					case "Nasikabhooshhani":var notesText="S0 R3 G3 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G3 R3 S0 ";break;
 					case "Natabharanam":var notesText="S0 R1 G2 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R1 S0 ";break;
 					case "Natakapriya":var notesText="S0 R1 G2 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R1 S0 ";break;
 					case "Nattai":var notesText="S0 R2 G3 M1 D2 N2 D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 S0 ";break;
-					case "Nattai":var notesText="S0 R3 G3 M1 P D3 N3 S1"; var notesText2 = "S1 N3 P M1 R3 S0 ";break;
-					case "Nattai-kurunji":var notesText="S0 R2 G3 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 S0 ";break;
-					case "Nattai-kurunji":var notesText="S0 R2 G3 M1 N2 D2 N2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 M1 P G3 R2 S0 ";break;
-					case "Nattai-kurunji":var notesText="S0 R2 G3 M1 N2 D2 N2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 M1 P M1 G3 R2 S0 ";break;
+					case "Nattakurunji":var notesText="S0 R2 G3 M1 N2 D2 N2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 M1 P G3 R2 S0 ";break;
 					case "Natyadharana":var notesText="S0 R1 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 R1 S0 ";break;
 					case "Navaneetham":var notesText="S0 R1 G1 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G1 R1 S0 ";break;
 					case "Navarasa-kalanidhi":var notesText="S0 R2 M1 P S0 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
@@ -1606,16 +1634,8 @@
 					case "Poornagowla":var notesText="S0 R2 G3 M1 P N3 D2 N3 P D2 N3 S1"; var notesText2 = "S1 N3 D2 N3 P M1 G3 R2 S0 ";break;
 					case "Poornakalanidhi":var notesText="S0 G2 M1 P D2 N2 S1"; var notesText2 = "S1 D2 P M1 G2 R2 S0 ";break;
 					case "Poornakambhoji":var notesText="S0 R2 G3 M1 P N2 S1"; var notesText2 = "S1 D2 P M1 G3 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 G2 R2 G2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 G2 R2 G2 R2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 G2 R2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 R1 G3 M1 P D1 S1"; var notesText2 = "S1 D1 P M1 G3 R1 S0 ";break;
-					case "Poornalalita":var notesText="S0 R2 G2 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 R2 G2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalita":var notesText="S0 R2 G2 R2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;
-					case "Poornalalitha":var notesText="S0 R1 M2 G1 R1 M2 P N3 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G1 R1 S0 ";break;
-					case "Poornapanchamam":var notesText="S0 R1 G1 M2 P D2 D2 P M2 G1 R1 S0 ";break;
-					case "Poornapanchamam":var notesText="P M1 S0 R1 S0 M1 P D2 D2 P M1 G3 R1 S0 N2 ";break;
+					case "Poornalalita":var notesText="S0 G2 R2 M1 P S1"; var notesText2 = "S1 N1 D1 P M1 G2 R2 S0 ";break;					
+					case "Poornapanchamam":var notesText="P M1 S0 R1 S0 M1 P D2"; var notesText2 = "D2 P M1 G3 R1 S0 N2-";break;
 					case "Poornasaveri":var notesText="S0 R2 M2 P D1 S1"; var notesText2 = "S1 N2 D1 P M2 G3 R2 S0 ";break;
 					case "Poornashadjam":var notesText="S0 R2 G2 M1 N2 S1"; var notesText2 = "S1 N2 P M1 G2 R2 S0 ";break;
 					case "Poorvadhanyasi":var notesText="S0 M1 G3 M1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G3 R2 S0 ";break;
@@ -1642,7 +1662,7 @@
 					case "Punnagatodi":var notesText="S0 R1 G2 M1 P P M1 G2 R1 S0 N2 D1 ";break;
 					case "Punnagavarali":var notesText="S0 R1 G2 M1 P D1 N2 N2 D1 P M1 G2 R1 S0 N2 ";break;
 					case "Puranirmai":var notesText="S0 R1 G3 P D1 S1"; var notesText2 = "S1 N3 D1 P G3 R1 S0 ";break;
-					case "Puriya-dhanashree":var notesText="N3 R1 G3 M2 P D1 P N3 S1 R1 N3 D1 P M2 G3 M2 R1 G3 R1 S0 ";break;
+					case "Puriya-dhanashree":var notesText="N3 R1 G3 M2 P D1 P N3"; var notesText2 = "S1 R1+ N3 D1 P M2 G3 M2 R1 G3 R1 S0 ";break;
 					case "Pushpalathika":var notesText="S0 R2 G2 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 G2 R2 S0 ";break;
 					case "Ragachoodamani":var notesText="S0 R3 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D1 M1 R3 G3 S0 ";break;
 					case "Ragamanjari":var notesText="S0 R1 M1 P D2 S1"; var notesText2 = "S1 N2 D2 M1 R1 S0 ";break;
@@ -1696,10 +1716,6 @@
 					case "Rudrapriya":var notesText="S0 R2 G2 M1 N2 S1"; var notesText2 = "S1 N2 P M1 G2 R2 S0 ";break;
 					case "Rukhmambari":var notesText="S0 R1 G3 P N3 S1"; var notesText2 = "S1 N3 P G3 R1 S0 ";break;
 					case "Rupavati":var notesText="S0 R1 G2 M1 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M1 G2 R1 S0 ";break;
-					case "S0":var notesText="G3 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 R2 S0 ";break;
-					case "S0":var notesText="G3 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 P G3 R2 S0 ";break;
-					case "S0":var notesText="R2 M2 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M2 R2 S0 ";break;
-					case "S0":var notesText="R2 M2 P N3 S1"; var notesText2 = "S1 N3 P M2 R2 S0 ";break;
 					case "Sahana":var notesText="S0 R2 G3 M1 P M1 D2 N2 S1"; var notesText2 = "S1 N2 S0 D2 N2 D2 P M1 G3 M1 R2 G3 R2 S0 ";break;
 					case "Saindhavi":var notesText="N2 D2 N2 S0 R2 G2 M1 P D2 N2 D2 P M1 G2 R2 S0 N2 D2 N2 S0 ";break;
 					case "Sajjananandhi":var notesText="S0 R2 G3 M2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 M2 G3 R2 S0 ";break;
@@ -1721,9 +1737,6 @@
 					case "Saramati":var notesText="S0 R2 G2 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 M G2 S0 ";break;
 					case "Sarang":var notesText="S0 R2 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 R2 S0 ";break;
 					case "Saranga":var notesText="S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 R2 G3 M1 R2 S0 ";break;
-					case "Saranga":var notesText="S0 R2 G3 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 R2 G3 M1 R2 S0 ";break;
-					case "Saranga":var notesText="S0 R2 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 R2 S0 ";break;
-					case "Saranga":var notesText="S0 R2 S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 S0 D2 P M2 R2 G3 M1 R2 S0 ";break;
 					case "saranga-kapi":var notesText="S0 R1 P M1 R1 P R1 M1 P N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R1 S0 ";break;
 					case "Saranga-mallar":var notesText="S0 R2 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 R2 S0 N3 S0 ";break;
 					case "Saranga-nata":var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 N3 S0 D1 P M1 G3 R1 S0 ";break;
@@ -1748,7 +1761,7 @@
 					case "Shakthiroopini":var notesText="S0 G2 M2 D2 S1"; var notesText2 = "S1 N2 D2 M2 G2 S0 ";break;
 					case "Shakunthala":var notesText="S0 R2 G3 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 S0 ";break;
 					case "Shankara":var notesText="S0 G3 P S1"; var notesText2 = "S1 N3 D2 P G3 P R2 G3 S0 ";break;
-					case "Shankaraharigowla":var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
+					case "Shankarabharanam":var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Shankaraharigowla":var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Shankaramohana":var notesText="S0 R2 G3 P N3 D2 S0 N3 S1 D2 P G3 R2 S0 ";break;
 					case "Shankari":var notesText="S0 G3 P N3 S1"; var notesText2 = "S1 N3 P G3 S0  ";break;
@@ -1884,8 +1897,7 @@
 					case "Tandavapriya":var notesText="S0 R1 G3 M2 P S1"; var notesText2 = "S1 P M2 G3 R1 S0 ";break;
 					case "Tanukeerti":var notesText="S0 R1 M1 P N3 S1"; var notesText2 = "S1 N3 D3 N3 P M1 G1 M1 R1 S0 ";break;
 					case "Tarakagowla":var notesText="S0 G3 M1 D1 N3 S1"; var notesText2 = "S1 N3 D1 M1 G3 S0 ";break;
-					case "Tarangini":var notesText="S0 R2 G3 P D1 N2 D1 P D1 S1"; var notesText2 = "S1 D1 P G3 R2 S0 G3 M1 R2 G3 S0 ";break;
-					case "Tarangini":var notesText="S0 R2 G3 P D1 N2 D1 S1"; var notesText2 = "S1 D1 P M1 G3 R2 S0 ";break;
+					case "Tarangini":var notesText="S0 R2 G3 P D1 N2 D1 S1"; var notesText2 = "S1 D1 P M1 G3 R2 S0 N2- D2- N2- D2- S0 ";break;
 					case "Tarkshika":var notesText="S0 R2 M1 P N2 S1"; var notesText2 = "S1 N2 D1 P M1 R2 G2 R2 S0 ";break;
 					case "Tatillatika":var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 D1 P M1 R1 S0 ";break;
 					case "Tavamukhari":var notesText="S0 R2 G2 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
@@ -1893,7 +1905,7 @@
 					case "Teevravahini":var notesText="S0 R1 G2 M2 P D2 P N2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R1 G2 M2 R1 S0 ";break;
 					case "Thilakamandari":var notesText="S0 R3 M2 P D2 S1"; var notesText2 = "S1 D2 P M2 G3 R3 S0 ";break;
 					case "Thilang":var notesText="S0 G3 M1 P N3 S1"; var notesText2 = "S1 N2 P M1 G3 S0 ";break;
-					case "Thilang":var notesText="S0 G3 M1 P N3 S1"; var notesText2 = "S1 N2 P M1 G3 S0 ";break;
+					case "Thodi":var notesText="S0 R1 G2 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R1 S0 ";break;
 					case "Tilakavathi":var notesText="S0 R2 G3 M1 P D2 P S1"; var notesText2 = "S1 D2 P M1 R2 S0 ";break;
 					case "Toyavegavahini":var notesText="S0 R1 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R1 S0 ";break;
 					case "Triveni":var notesText="S0 R2 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 R2 S0 ";break;
@@ -2019,6 +2031,9 @@
             }
 			return freq;
         }      
+		function durationchange() {
+				document.getElementById("durationvalue").innerHTML = document.getElementById("duration").value;
+		}
 		function toggle() {
 			var context = null;
 			var usingWebAudio = true;	
@@ -2037,7 +2052,8 @@
 			var osc = null;
 			//var freq = getSruthiFrequency();
 			var noteslist = "";
-			var duration = 0.6;//parseFloat(document.getElementById("duration").value);
+			var duration = parseFloat(document.getElementById("duration").value);
+			
 			getAAnotes();
 			console.log("entering toggle");
 			var freq = getSruthiFrequency();
@@ -2107,6 +2123,12 @@
 							freq2= freq*5/3; break;
 						case "D3":
 							freq2= freq*9/5; break;
+						case "D1-":
+							freq2= freq*3/5; break;
+						case "D2-":
+							freq2= freq*2/3; break;
+						case "D3-":
+							freq2= freq*4/5; break;
 						case "N1":
 							freq2= freq*5/3; break;
 						case "N1-":
