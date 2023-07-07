@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RagaPedia</title>
+	<style>
+		body {
+			background-color:cornsilk;
+			background-image: url("https://www.hancocks-paducah.com/Images/Item%20images/PB%20299%20Y_main-1.jpg?resizeid=5&resizeh=500&resizew=500");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+        img {
+            src: "C:\Users\srira\Documents\Raga Player App\violin.jpg";
+			alt: "violin"
+        }
+		.button {
+			background-color: #FFFFFF;
+			color:black;
+			padding: 10px;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			margin:10px;
+			text-align: center;
+		}
+		
+		.small-btn {
+			width: 50px;
+			height: 25px;
+		}
+		
+		.medium-btn {
+			width: 70px;
+			height: 30px;
+		}
+		
+		.big-btn {
+			width: 90px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+    <h2>RagaPedia</h2>
+	<label style="text-align: center; font-size: 18px;">Forgot how a raga goes?  Enter the notes and or info you know about the raga and get a raga corresponding to that info! </label>
+	<br>
+	<label style="text-align: center; font-size: 18px;">Instructions: </label><br><br>
+	<label style="text-align: center; font-size: 18px;">   1. Select your notes from the buttons denoting the 12 swarasthanas to form your ragam.</label><br><br>
+    <label style="text-align: center; font-size: 18px;">   2. Then, press the button "Search Raga".</label><br><br>
+	<label style="text-align: center; font-size: 18px;">   3. Select your sruti from the dropdown for "Sruti".</label><br><br>
+	<label style="text-align: center; font-size: 18px;">   4. Finally, press the "Play" button to play your selected raga.</label><br><br>
+	<br>
+	<br>
+	
+	<div>
+	<br><label>Arohana:</label><button type="button" onclick="addToArohana('S0')" class="btn btn-success">S0</button> 
+	<button type="button" onclick="addToArohana('R1')" class="btn btn-success">R1</button>
+	<button type="button" onclick="addToArohana('R2')" class="btn btn-success">R2</button>
+	<button type="button" onclick="addToArohana('R3')" class="btn btn-success">R3</button>
+	<button type="button" onclick="addToArohana('G1')" class="btn btn-success">G1</button>
+	<button type="button" onclick="addToArohana('G2')" class="btn btn-success">G2</button>
+	<button type="button" onclick="addToArohana('G3')" class="btn btn-success">G3</button>
+	<button type="button" onclick="addToArohana('M1')" class="btn btn-success">M1</button>
+	<button type="button" onclick="addToArohana('M2')" class="btn btn-success">M2</button>
+	<button type="button" onclick="addToArohana('P')" class="btn btn-success">P</button>
+	<button type="button" onclick="addToArohana('D1')" class="btn btn-success">D1</button>
+	<button type="button" onclick="addToArohana('D2')" class="btn btn-success">D2</button>
+	<button type="button" onclick="addToArohana('D3')" class="btn btn-success">D3</button>
+	<button type="button" onclick="addToArohana('N1')" class="btn btn-success">N1</button>
+	<button type="button" onclick="addToArohana('N2')" class="btn btn-success">N2</button>
+	<button type="button" onclick="addToArohana('N3')" class="btn btn-success">N3</button>
+	<button type="button" onclick="addToArohana('S1')" class="btn btn-success">S1</button>
+	<br>
+		<input name = "Arohana" id = "Arohanam" text="Arohanam" size=80><br> 
+	<br><br>
+	<label>Avarohana:</label>	<button type="button" onclick="addToAvarohana('S1')" class="btn btn-success">S1</button>
+	<button type="button" onclick="addToAvarohana('N3')" class="btn btn-success">N3</button>
+	<button type="button" onclick="addToAvarohana('N2')" class="btn btn-success">N2</button>
+	<button type="button" onclick="addToAvarohana('N1')" class="btn btn-success">N1</button>
+	<button type="button" onclick="addToAvarohana('D3')" class="btn btn-success">D3</button>
+	<button type="button" onclick="addToAvarohana('D2')" class="btn btn-success">D2</button>
+	<button type="button" onclick="addToAvarohana('D1')" class="btn btn-success">D1</button>
+	<button type="button" onclick="addToAvarohana('P')" class="btn btn-success">P</button>
+	<button type="button" onclick="addToAvarohana('M2')" class="btn btn-success">M2</button>
+	<button type="button" onclick="addToAvarohana('M1')" class="btn btn-success">M1</button>
+	<button type="button" onclick="addToAvarohana('G3')" class="btn btn-success">G3</button>
+	<button type="button" onclick="addToAvarohana('G2')" class="btn btn-success">G2</button>
+	<button type="button" onclick="addToAvarohana('G1')" class="btn btn-success">G1</button>
+	<button type="button" onclick="addToAvarohana('R2')" class="btn btn-success">R2</button>
+	<button type="button" onclick="addToAvarohana('R1')" class="btn btn-success">R1</button>
+	<button type="button" onclick="addToAvarohana('S0 ')" class="btn btn-success">S0</button> 
+	<br>
+		<input name = "Avarohana" id = "Avarohanam" text="Avarohanam" size=80><br> 
+	<br><br><label>Raga Info:</label><input name="info" id="info" text="Info" size=80><br>
+	<br>
+	</div>
+	<div>
+		<br>
+        <div class="button medium-btn" id="search_raga" type="button" style="font-size: 15px" onclick="getRaga()">Search raga</div><br>
+        <label>Raga: </label><input type="text" name="raganame" id="raganame" text="Matched raga appears here"><br>    
+	</div>
+	<label for="Sruthi">Select sruthi:</label>
+    <select name="Sruthi" id="Sruthi" onclick=getSruthiFrequency()>
+        <option value="A">A</option>
+        <option value="A#">A#</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="D">D</option>
+        <option value="D#">D#</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#</option>
+        <option value="G">G</option>
+        <option value="G#">G#</option>
+    </select>
+	
+	<br>
+	<label>Note duration (seconds):</label> 
+	<input id="Duration" type="range" class="Slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="durationchange()" /> 
+	<label id="Durationvalue" type="text" text="0.5">0.5</label>  
+	<br>
+	
+	<div>
+		<br>
+        <div class="button big-btn" id="playragam" type="button" style="font-size: 30px" onclick="toggle()">Play</div><br>
+    </div>
+
+    <script type="text/JavaScript"> 
+		var ragas = [
+					[ "Abheri","Kharaharapriya janya, audava-sampoorna","S0 G2 M1 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Abhiramam","Dhavalambari janya","S0 R1 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R1 S0 "],
+                                        [ "Abhiru","Suvarnangi janya","S0 R1 G2 R1 M2 P N3 S1","S1 D2 P M2 G2 R1 G2 S0 "],
+                                        [ "Abhogi","Kharaharapriya janya","S0 R2 G2 M1 D2 S1","S1 D2 M1 G2 R2 S0 "],
+                                        [ "Adhi-panchama","Panthuvarali janya","S0 R1 P D1 N3 S1","S1 N3 D1 N3 P M2 G3 R1 S0 "],
+                                        [ "Adi-kapi","Kharaharapriya janya","S0 R2 M1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Agnikopa","Kharaharapriya janya","S0 G2 M1 P N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Ahir-bhairavi","Chakravakam janya","S0 R1 G3 M1 P N2 D2 M1 P D2 S1","S1 N2 D2 P M1 P G3 R1 S0 "],
+                                        [ "Ahiri","Hanumatodi janya","S0 R1 S0 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R1 S0 "],
+                                        [ "Alankarapriya","Natakapriya janya","S0 R1 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 R1 S0 "],
+                                        [ "Alankari","Gamanasrama janya","S0 G3 M2 D2 N3 D2 S1","S1 N3 D2 M2 G3 S0 "],
+                                        [ "Amarasenapriya","Nitimati janya","S0 R2 M2 P N2 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Ambhojini","Harikambhoji janya","S0 R2 G3 M1 D2 S1","S1 D2 M1 G3 R2 S0 "],
+                                        [ "Amrita-dhanyasi","Hanumatodi janya","S0 R1 G2 M1 P N2 S1","S1 N2 P M1 G2 R1 S0 "],
+                                        [ "Amritavarshini","Chitrambari janya","S0 G3 M2 P N3 S1","S1 N3 P M2 G3 S0 "],
+                                        [ "Amritha-behag","Mechakalyani janya","S0 M2 G3 P N3 S1 D N3 D2 M2 G3 S0 "],
+                                        [ "Amrithavahini","Natabhairavi janya","S0 R2 M1 P D1 N2 S1","S1 N2 D1 M1 G2 R2 S0 "],
+                                        [ "Amudagandhari","Ragavardhini janya","S0 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R3 S0 "],
+                                        [ "Amudhasurabhi","Vakulabharanam janya","S0 M1 G3 M1 P D1 S1","S1 N2 D1 P M1 R1 S0 "],
+                                        [ "Anandabhairavi","Natabhairavi janya, evening raga","S0 G2 R2 G2 M1 P D2 P S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Anandavalli","Simhendramadhyamam janya","S0 G2 M2 P N3 S1","S1 N3 P M2 G2 S0 "],
+                                        [ "Anandharoopa","Dheera-shankarabharanam janya","S0 R2 G3 P D2 N3 S1","S1 N3 D2 P G3 R2 S0 "],
+                                        [ "Andhali","Harikambhoji janya","S0 R2 M1 P N2 S1","S1 N2 P M1 R2 G3 M1 R2 S0 "],
+                                        [ "Andolika","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 D2 M1 R2 S0 "],
+                                        [ "Aparoopam","Harikambhoji janya","S0 R2 G3 M1 P N2 D2 N2 S1","S1 D2 M1 G3 R2 G3 S0 "],
+                                        [ "Aprameya","Mechakalyani janya","S0 R2 M2 P D2 S1","S1 N3 D2 M2 G3 M2 R2 S0 "],
+                                        [ "Arabi","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Arabi","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Ardhradesi","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 S1","S1 D1 P M1 G3 R1 S0 "],
+                                        [ "Arunangi","Shubhapanthuvarali janya","S0 R1 M2 P N3 D1 S1","S1 N3 D1 M2 R1 G2 R1 S0 "],
+                                        [ "Aryamati","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 N2 D2 P D2 M1 G2 R2 S0 "],
+                                        [ "Asaveri","Hanumatodi janya","S0 R1 M1 P D1 S1","S1 N2 S1 P D1 M1 P R1 G2 R1 S0 "],
+                                        [ "Atana","","S0 R2 M1 P N3 S1","S1 N3 D2 P M1 P G3 R2 S0 "],
+                                        [ "Aymmukhan","Keeravani janya","S0 G2 M1 P D1 N3 S1","S1 N3 D1 P M1 G2 S0 "],
+                                        [ "Ayodhya","Kosalam janya","S0 G3 M2 P N3 S1","S1 D2 P M2 G3 M2 R3 S0 "],
+                                        [ "Bahudari","Harikambhoji janya","S0 G3 M1 P D2 N2 S1","S1 N2 P M1 G3 S0 "],
+                                        [ "Balachandrika","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Balahamsa","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 R2 M1 G3 S0 "],
+                                        [ "Bandhuvarali","Shubhapanthuvarali janya","S0 M2 S0 N3 D1 P M2 D1 M2 G2 R1 S0 "],
+                                        [ "Bangala","Dheera-shankarabharanam janya","S0 R2 G3 M1 P M1 R2 P S1","S1 N3 P M1 R2 G3 R2 S0 "],
+                                        [ "Basant-bahar","Kharaharapriya janya","S0 M2 P G3 M2 N3 D1 N3 S1","S1 R2+ S1 N2 D2 P M1 G2 M1 G2 R2 S0 "],
+                                        [ "Begada","Dheera-shankarabharanam janya","S0 G3 R2 G3 M1 P D2 N2 D2 P S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Behag","Dheera-shankarabharanam janya","S0 G3 M1 P N3 D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Behag-deshikam","","S0 R2 G3 M1 M2 P D2 N3 S1","S1 N3 D2 P M2 M1 G3 R2 S0 "],
+                                        [ "Bhadratodi","Hanumatodi janya","S0 R1 G2 M1 D1 S1","S1 N2 D1 P G2 S0 "],
+                                        [ "Bhagavatapriya","Kharaharapriya janya","S0 R2 G2 M1 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Bhagavataranjana","Vachaspathi janya","S0 R2 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
+                                        [ "Bhagavathpriya","Kharaharapriya janya","S0 R2 G2 M1 R2 M P D2 N S1","S1 N2 D2 P M1 R2 S0 "],
+                                        [ "Bhageshri","Kharaharapriya janya","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 P D2 G2 M1 R2 S0 "],
+                                        [ "Bhagyashabari","Natakapriya janya","S0 R1 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 R1 S0 "],
+                                        [ "Bhairavam","Suryakantam janya","S0 R1 G3 M1 P D2 N3 S1","S1 D2 P M1 G3 R1 S0 "],
+                                        [ "Bhairavi","Natabhairavi janya","S0 G2 R2 G2 M1 P D2 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Bhakthapriya","Chakravakam janya","S0 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 R1 M1 G3 S0 "],
+                                        [ "Bhanuchandrika","Hanumatodi janya","S0 M1 D1 N2 S1","S1 N2 D1 M1 G1 S0 "],
+                                        [ "Bhanudhanyasi","Shubhapanthuvarali janya","S0 R1 G2 M2 N3 D1 N3 D1 P M2 G2 R1 S0 N3 S0 "],
+                                        [ "Bhanukeeravani","Shubhapanthuvarali janya","S0 R1 G2 M2 P D1 N3 S1","S1 N3 D1 M2 G2 R1 S0 "],
+                                        [ "Bhanumanjari","Vagadeeshwari janya","S0 R3 G3 M1 P N2 S1","S1 N2 P M1 R3 G3 R3 S0 "],
+                                        [ "Bhanumati","Vanaspati janya","N2 S0 M1 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Bhanupriya","Keeravani janya","S0 R2 G2 D1 N3 S1","S1 N3 D1 G2 R2 S0 "],
+                                        [ "Bharati","Jhankaradhvani janya","S0 R2 G2 M1 P S1","S1 P M1 G2 R2 S0 "],
+                                        [ "Bhashini","Shanmukhapriya janya","S0 G2 R2 G2 M2 P D1 N2 S1","S1 N2 D1 P M2 G2 R1 S0 "],
+                                        [ "Bhatiyar","Gamanasrama janya","S0 D2 P D2 M2 P G3 M2 D2 S1","S1 R1+ N3 D2 P M2 P G3 R1 S0 "],
+                                        [ "Bhavani","Bhavapriya janya","S0 R1 G2 M2 P D1 P N2 S1","S1 N2 D1 P M2 G2 R1 S0 "],
+                                        [ "Bhavapriya","Melakarta 44","S0 R1 G2 M2 P D1 N2 S1","S1 N2 D1 P M2 G2 R1 S0 "],
+                                        [ "Bhavini","Mayamalava-gowla janya","S0 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 S0 "],
+                                        [ "Bhimpalas","Kharaharapriya janya","N2 S0 G2 M1 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Bhinnapanchamam","Ganamurti janya","S0 R1 G1 M1 P D1 N3 S1","S1 N3 D1 P M1 G1 R1 S0 "],
+                                        [ "Bhinnapauarali","Dhavalambari janya","S0 M2 P D1 N1 D1 S1","S1 N1 D1 P M2 G3 S0 "],
+                                        [ "Bhinnashadjam","Dhenuka janya","S0 R1 G2 R1 P M1 P N3 S1","S1 D1 P M1 G2 R1 S0 "],
+                                        [ "Bhogachaya-nattai","Vagadeeshwari janya","S0 R3 G3 R3 G3 Mi P N2 N2 S1","S1 N2 D2 N2 P S0 N2 P M1 M1 R3 S0 "],
+                                        [ "Bhogasaveri","Salagam janya","S0 R1 M2 D1 N1 D1 P M2 G1 R1 S0 "],
+                                        [ "Bhogavasantha","Panthuvarali janya","S0 R1 G3 M2 D1 N3 S1","S1 N3 D1 M2 G3 R1 S0 "],
+                                        [ "Bhogeeshwari","Vachaspathi janya","S0 R2 G3 P D2 N2 D2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
+                                        [ "Bhogi","Senavati janya","S0 G2 M1 P D1 N1 D1 S1","S1 N1 D1 P M1 G2 S0 "],
+                                        [ "Bhoopalam","Hanumatodi janya, morning raga","S0 R1 G2 P D1 S1","S1 D1 P G2 R1 S0 "],
+                                        [ "Bhoopalapanchamam","Jhalavarali janya","S0 G1 R1 G1 P M2 D1 S1","S1 P D1 M G1 R1 S0 "],
+                                        [ "Bhoopali","","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Bhoopkalyani","Mechakalyani janya","S0 R2 G3 P D2 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Bhooshavali","Vachaspathi janya","S0 R2 G3 M2 P D2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
+                                        [ "Bhooshavathi","aka Vachaspathi","S0 R2 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
+                                        [ "Bhujangini","Chakravakam janya","S0 R1 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 R1 S0 "],
+                                        [ "Bhuvanagandhari","Natabhairavi janya","S0 R2 M1 P N2 S1","S1 N2 D1 P M1 G2 S0 "],
+                                        [ "Bibhas","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 D1 P M1 R1 S0 "],
+                                        [ "Bilahari","Dheera-shankarabharanam janya, morning raga","S0 R2 G3 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Bindhumalini","Chakravakam janya","S0 G3 R1 G3 M1 P N2 S1","S1 N2 S0 D2 P G3 R1 S0 "],
+                                        [ "Bowli","Mayamalava-gowla janya, morning raga","S0 R1 G3 P D1 S1","S1 N3 D1 P G3 R1 S0 "],
+                                        [ "Bowli-ramakriya","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 N3 P D1 P M1 G3 R1 S0 "],
+                                        [ "Brindavana-saranga","Kharaharapriya janya","S0 R2 M1 P N3 S1","S1 N2 P M1 R2 G2 R2 S0 "],
+                                        [ "Brindavani","Kharaharapriya janya","S0 R2 M1 P N3 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Buddhamanohari","Dheera-shankarabharanam janya","S0 R2 G3 M1 S0 P S1","S1 P M1 G3 R2 S0 "],
+                                        [ "Buddharanjani","Dheera-shankarabharanam janya","S0 R2 G3 M1 P S1","S1 N3 P M1 G3 M1 R2 S0 "],
+                                        [ "Chakranarayani","Chakravakam janya","S0 R1 M1 P D2 N2 S1","S1 N2 D2 P M1 R1 S0 "],
+                                        [ "Chakrapradipta","Kharaharapriya janya","S0 R2 G2 M1 P M1 D2 N2 S1","S1 N2 D2 M1 G2 S0 "],
+                                        [ "Chakravakam","Melakarta 16","S0 R1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Chalanatta","Melakarta 36","S0 R3 G3 M1 P D3 N3 S1","S1 N3 D3 P M1 G3 R3 S0 "],
+                                        [ "Chamaram","Shanmukhapriya janya","S0 R2 G2 M2 P D1 N2 S1","S1 N2 D1 P M2 G2 R2 S0 "],
+                                        [ "Chandrachooda","Mayamalava-gowla janya","S0 M1 G3 M1 P D1 S1","S1 N3 D1 P M1 G3 S0 "],
+                                        [ "Chandrahasitham","Harikambhoji janya","S0 R2 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 R2 S0 "],
+                                        [ "Chandrajyothi","Pavani janya","S0 R1 G1 M2 P D2 S1","S1 D2 P M2 G1 R1 S0 "],
+                                        [ "Chandrakantha","Mechakalyani janya","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 N3 P M2 G3 R2 S0 "],
+                                        [ "Chandrarekha","Hemavathi janya","S0 R2 G2 M2 P D2 S1","S1 N2 D2 M2 G2 R2 S0 "],
+                                        [ "Chandrika","Keeravani janya","S0 R2 G2 P D1 N3 S1","S1 N3 D1 P G2 R2 S0 "],
+                                        [ "Chandrikatodi","Hanumatodi janya","S0 G2 M1 P D1 S1","S1 D1 P M1 G2 S0 "],
+                                        [ "Chapagantarva","Natabhairavi janya","S0 G2 M1 P N2 D1 M1 G2 R2 S0 N2 "],
+                                        [ "Charukesi","Melakarta 26","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],
+                                        [ "Charuvardhani","Mayamalava-gowla janya","S0 R1 M1 P D1 N3 S1","S1 D1 P M1 G3 R1 S0 "],
+                                        [ "Chaturangini","Chitrambari janya","S0 R2 G3 M2 P N3 S1","S1 N3 D3 N3 P G3 M2 G3 R2 S0 "],
+                                        [ "Chaya","Dheera-shankarabharanam janya","S0 P M1 P D2 P N3 R2 S1","S1 D2 P M1 P D2 P G3 M1 R2 S0 "],
+                                        [ "Chayagowla","Mayamalava-gowla janya","S0 R1 M1 G3 M1 P N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Chayalagakhamas","Harikambhoji janya","S0 M1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Chayanattai","Vagadeeshwari janya","S0 R3 G3 M1 P M1 P S1","S1 N2 D2 N2 P M1 R3 S0 "],
+                                        [ "Chayaranjani","Shubhapanthuvarali janya","S0 G2 M2 P N2 S1","S1 N2 D1 P M2 G2 S0 "],
+                                        [ "Chayashankarabharanam","Dheera-shankarabharanam janya","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R1 S0 "],
+                                        [ "Chayatarangini","Harikambhoji janya","S0 R2 M1 G3 M1 P N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Chayavathi","Suryakantam janya","S0 R1 G3 M1 D2 N3 S1","S1 N3 D2 P M1 G3 R1 S0 "],
+                                        [ "Chenjurutti","Harikambhoji Janya","D2 S0 R2 G3 M1 P D2 N2","N2 D2 P M1 G3 R2 S0 N2- D2- P- D2 S0 "],
+                                        [ "Chintamani","Shanmukhapriya janya","S0 G2 R2 G2 M2 G2 R2 G2 P M2 P D2 N2 S1","S1 N2 D2 P M2 G2 R2 S0 "],
+                                        [ "Chintaramani","Ramapriya janya","S0 G3 M2 P D2 N2 S1","S1 D2 P M2 G3 R1 S0 "],
+                                        [ "Chirswaroopi","Charukesi janya","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],
+                                        [ "Chitrachandrika","Lathangi janya","S0 G3 R2 G3 M2 P N3 D1 S1","S1 N3 D1 M2 G3 R2 S0 "],
+                                        [ "Chitramani","Kokilapriya janya","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R1 S0 "],
+                                        [ "Chitrambari","Melakarta 66","S0 R2 G3 M2 P D3 N3 S1","S1 N3 D3 P M2 G3 R2 S0 "],
+                                        [ "Chitrasindhu","Chitrambari janya","S0 G3 M2 P N3 S1","S1 N3 D3 P M2 G3 R2 S0 "],
+                                        [ "Chittaranjani","Kharaharapriya janya","S0 R2 G2 M1 P D2 N2 N2 S1","N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Chitthakarshani","Senavati janya","S0 R1 G2 M1 D1 S1","S1 D1 M1 G2 R1 S0 "],
+                                        [ "Churnikavinodhini","Chitrambari janya","S0 R2 G3 M2 P D3 N3 S1","S1 N3 D3 N3 P M2 G3 R2 S0 "],
+                                        [ "Damarugapriya","Yagapriya janya","S0 R3 G3 P D1 N1 S1","S1 N1 D1 P G3 R3 S0 "],
+                                        [ "Darbar","Kharaharapriya janya","S0 R2 M1 P D2 N2 S1","S1 R2+ S0 N2 S0 D2 P M1 R2 G2 G2 R2 S0 "],
+                                        [ "Darbari-kanada","Natabhairavi janya","N2 S0 R2 G2 R2 S0 M1 P D1 N2 S1","S1 D1 N2 P M1 P G2 M1 R2 S0 "],
+                                        [ "Dasharatipriya","Harikambhoji janya","S0 M1 G3 M1 P D2 N2 D2 S1","S1 N2 D2 P M1 G3 M1 R2 S0 "],
+                                        [ "Dayaranjani","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 M1 G3 S0 "],
+                                        [ "Dayavati","Kharaharapriya janya","S0 R2 G2 P N2 S1","S1 N2 P M1 G2 S0 "],
+                                        [ "Deepakam","Panthuvarali janya","S0 R2 M2 P D1 P S1","S1 N3 D1 N3 P M2 G3 R1 S0 "],
+                                        [ "Deeparamu","Natakapriya janya","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 N2 P M1 G2 R1 S0 "],
+                                        [ "Deepavarali","Jyothiswaroopini janya","S0 R3 M2 P N2 S1","S1 N2 P M2 G3 R3 S0 "],
+                                        [ "Desh","Harikambhoji janya","S0 R2 M1 P N3 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Deshakshi","Harikambhoji janya","S0 R2 G3 P D2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Deshamukhari","Divyamani janya","S0 R1 G2 M2 P D3 N3 D3 S1","S1 D3 N3 D3 P M2 G2 R1 S0 "],
+                                        [ "Desharanjani","Yagapriya janya","S0 R3 M1 P D1 N1 S1","S1 N1 D1 P M1 R3 S0 "],
+                                        [ "Deshavali","Shamalangi janya","S0 R2 G2 M2 D1 N1 D1 S1","S1 N1 D1 M2 G2 R2 S0 "],
+                                        [ "Deshikatodi","Hanumatodi janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Deshisimharavam","aka Hemavathi","S0 R2 G2 M2 P D2 N2 S1","S1 N2 D2 P M2 G2 R2 S0 "],
+                                        [ "Deshkar","Harikambhoji janya","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Deshyaganavaridhi","Nitimati janya","S0 R2 G2 M2 P D3 N3 P S1","S1 N3 S0 P M2 G2 R2 S0 "],
+                                        [ "Deshyagowla","Mayamalava-gowla janya","S0 R1 P D1 N3 S1","S1 N3 D1 P R1 S0 "],
+                                        [ "Deshyathodi","Yagapriya janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Devagandhari","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Devakriya","Natabhairavi janya","S0 R2 M1 P N2 S1","S1 N2 D1 N P M1 G2 R2 S0 "],
+                                        [ "Deva-manohari","Kharaharapriya janya","S0 R2 M1 P D2 N2 S1","S1 N2 D2 N2 P M1 R2 S0 "],
+                                        [ "Devamruthavarshani","Kharaharapriya janya","S0 R2 G2 M1 N2 D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Devanattai","Chalanatta janya","S0 G3 M1 P S1","S1 N3 D3 P M1 G3 R3 S0 "],
+                                        [ "Devaranji","Mayamalava-gowla janya","S0 M1 P D1 P N3 S1","S1 N3 D1 P M1 S0 "],
+                                        [ "Devasalaga","Mararanjani janya","S0 G3 P D1 N1 S1","S1 N1 D1 P M1 G3 R2 S0 "],
+                                        [ "Devipriya","Vakulabharanam janya","S0 G3 P N2 S1","S1 N2 D1 P M1 G3 R1 S0 "],
+                                        [ "Dhalivarali","Jhalavarali janya","S0 R1 G1 M2 P D1 N3 S1","S1 N3 D1 P M2 G1 R1 S0 "],
+                                        [ "Dhamavathi","aka Dharmavathi","S0 R2 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R2 S0 "],
+                                        [ "Dhanakapi","Kharaharapriya janya","S0 R2 M1 P N2 S0 (Varies) S1 N2 D2 N2 P M1 G2 R2 S0 "],
+                                        [ "Dhanakari","Shanmukhapriya janya","S0 G2 P D1 N2 S1","S1 N2 D1 M2 G2 S0 "],
+                                        [ "Dhanashree","Natabhairavi janya","N2 S0 G2 M1 P N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Dhanyasi","Hanumatodi janya, morning raga","S0 G2 M1 P N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Dharmalakhi","Dheera-shankarabharanam janya","S0 M1 P D2 N3 S1","S1 N3 D2 P M1 S0 "],
+                                        [ "Dharmaprakashini","Natabhairavi janya","S0 R2 M1 P N2 S1","S1 N2 D1 M1 G2 R2 S0 "],
+                                        [ "Dharmavathi","Melakarta 59","S0 R2 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R2 S0 "],
+                                        [ "Dharmini","Dhavalambari janya","S0 R1 G3 M2 D1 N1 S1","S1 N1 D1 M2 G3 R1 S0 "],
+                                        [ "Dhatuvardhani","Melakarta 69","S0 R3 G3 M2 P D1 N3 S1","S1 N3 D1 P M2 G3 R3 S0 "],
+                                        [ "Dhavalambari","Melakarta 49","S0 R1 G3 M2 P D1 N1 S1","S1 N1 D1 P M2 G3 R1 S0 "],
+                                        [ "Dhavalangam","Dhavalambari janya","S0 R1 G3 M2 P D1 S1","S1 N1 D1 P M2 G3 R1 S0 "],
+                                        [ "Dheerahindolam","Shulini janya","S0 G3 M1 D2 N3 S1","S1 N3 D2 P M1 G3 R3 S0 "],
+                                        [ "Dheera-shankarabharanam","Melakarta 29","S0 R2 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Dhenuka","Melakarta 9","S0 R1 G2 M1 P D1 N3 S1","S1 N3 D1 P M1 G2 R1 S0 "],
+                                        [ "Dhowmya","Ragavardhini janya","S0 R3 G3 M1 P D1 N2 P S1","S1 N2 D1 P M1 G3 R3 S0 "],
+                                        [ "Dhowreyani","Shubhapanthuvarali janya","S0 R1 G2 M2 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Dhowtha-panchamama","Dhatuvardhani janya","S0 R3 G3 M2 P N3 P S1","S1 N3 D1 P M2 R3 G3 M2 R3 S0 "],
+                                        [ "Dhunibhinnashadjam","Dhenuka janya","S0 R1 G2 R1 P M1 P N3 S1","S1 D1 P M1 G2 R1 S0 "],
+                                        [ "Dhurvanki","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Dhwithiyapanchamam","Dhatuvardhani janya","S0 R3 G3 M2 P N3 P S1","S1 N3 D1 P M2 R3 M3 G3 R3 S0 "],
+                                        [ "Dilipika","Kharaharapriya janya","S0 R2 G2 M1 P N2 D2 N2 P D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Dilipika-vasantha","Natabhairavi janya","S0 G2 M1 P D1 P N2 S1","S1 D1 P M1 R2 S0 "],
+                                        [ "Divyagandhari","Natabhairavi janya","S0 G2 M1 P D1 N2 S1","S1 N2 P M1 G2 S0 "],
+                                        [ "Divyamalati","Hanumatodi janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 S0 "],
+                                        [ "Divyamani","Melakarta 48","S0 R1 G2 M2 P D3 N3 S1","S1 N3 D3 P M2 G2 R1 S0 "],
+                                        [ "Dundubi","Divyamani janya","S0 R1 G2 M2 P D3 N3 S1","S1 N3 P M2 G2 R1 S0 "],
+                                        [ "Durga","Dheera-shankarabharanam janya","S0 R2 M1 D2 P D2 S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Dwigandharabhooshani","Gamanasrama janya","S0 R1 G2 G3 G2 P D2 S1","S1 D2 P G2 G3 G2 R1 S0 D2 S0 "],
+                                        [ "Dwijavanthi","Harikambhoji janya","S0 R2 M1 G3 M1 P D2 S1","S1 N2 D2 P M1 G3 M1 R2 G2 R2 S0 N2 D2 N2 S0 "],
+                                        [ "Eeshaivaridhi","Harikambhoji janya","S0 R2 M1 D2 N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Eeshamanohari","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 R2 M1 G3 R2 S0 "],
+                                        [ "Ekakshari","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 S1","S1 N1 P M1 R1 G3 M1 R1 S0 "],
+                                        [ "Gaganabhoopalam","Keeravani janya","S0 M1 G2 M1 P D1 N3 S1 N3 D1 M1 G2 R2 S0 "],
+                                        [ "Gaganamohini","Vachaspathi janya","S0 G3 P D2 N2 S1","S1 N2 P M2 G3 S0 "],
+                                        [ "Gajagowri","Dheera-shankarabharanam janya","S0 R2 M1 G3 M1 N3 P D2 S1","S1 N3 D2 P M1 P M1 G3 R2 S0 "],
+                                        [ "Gamakakriya","Gamanasrama janya","S0 R1 G3 M2 P D2 S1","S1 N3 D2 P M2 G3 R1 S0 "],
+                                        [ "Gamakapriya","Panthuvarali janya","S0 R1 G3 M2 P N3 D1 S1","S1 D1 P M2 G3 R1 S0 "],
+                                        [ "Gamanapriya","Panthuvarali janya","S0 R1 G3 M2 P N3 D1 S1","S1 D1 P M2 G3 R1 S0 "],
+                                        [ "Gamanashrama","Melakarta 53","S0 R1 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R1 S0 "],
+                                        [ "Gambheeranattai","Chalanatta janya","S0 G3 M1 P N3 S1","S1 N3 P M1 G3 S0 "],
+                                        [ "Gambheeravani","Naganandini janya","S0 G3 P M1 D3 N3 S1","S1 N3 P M1 G3 R2 G3 R2 S0 "],
+                                        [ "Ganahemavati","Sadvidhamargini janya","S0 G2 M2 P N2 S1","S1 N2 D2 P M2 G2 S0 "],
+                                        [ "Ganamoorti","Melakarta 3","S0 R1 G1 M1 P D1 N3 S1","S1 N3 D1 P M1 G1 R1 S0 "],
+                                        [ "Ganamukhari","Ratnangi janya","S0 R1 M1 D1 S1","S1 N2 D1 M1 R1 S0 "],
+                                        [ "Ganaranjani","Chalanatta janya","S0 R3 G3 M1 P M1 D3 N3 S1","S1 N3 D3 P M1 P M1 R3 S0 "],
+                                        [ "Ganasamavarali","Ganamurti janya","S0 R1 M1 P D1 N3 S1","S1 N3 D1 P M1 G1 R1 S0 "],
+                                        [ "Ganavaridhi","Shulini janya","S0 M1 R3 G3 M1 P D2 N2/N3 S1","S1 D2 N2/N3 P M1 R3 S0 "],
+                                        [ "Ganavaridhi","","S0 M1 R3 G3 M1 P D2 N2/N3 S1","S1 D2 N2/N3 P M1 R3 S0 "],
+                                        [ "Gandharalola","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 G3 M1 G3 R2 S0 "],
+                                        [ "Gandharva","Raghupriya janya","M2 P D3 N3 S0 R1 G1 R1 S0 N3 P M2 P "],
+                                        [ "Gangatarangini","Gangeyabhushani janya","S0 R3 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 M1 G3 M1 R3 S0 "],
+                                        [ "Gangeyabhushani","Melakarta 33","S0 R3 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R3 S0 "],
+                                        [ "Garigadya","Shanmukhapriya janya","N2 S0 G2 M2 P D1 N2 D1 P M2 G2 R2 S0 "],
+                                        [ "Garudadhvani","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Gavambhodhi","","S0 R1 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R1 S0 "],
+                                        [ "Gavathi","Harikambhoji janya","S0 M1 P N3 S1","S1 D2 M1 P G3 M1 R2 N3 S0 "],
+                                        [ "Gayakapriya","Melakarta 13","S0 R1 G3 M1 P D1 N1 S1","S1 N1 D1 P M1 G3 R1 S0 "],
+                                        [ "Geervani","Ghavambhodhi janya","S0 R1 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R1 S0 "],
+                                        [ "Geethapriya","aka Lathangi","S0 R2 G3 M2 P D1 N3 S1","S1 N3 D1 P M2 G3 R2 S0 "],
+                                        [ "geya-hejjajji","Gayakapriya janya","S0 R1 M1 G3 M1 P D1 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Ghanashyamala","Manavati janya","S0 G1 M1 P D2 S1","S1 D2 N3 P M1 G1 R1 S0 "],
+                                        [ "Ghanasindhu","Mayamalava-gowla janya","S0 M1 G3 M1 P D1 N3 D1 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Ghanta","Hanumatodi janya","S0 G2 R2 M1 P N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Ghantana","Simhendramadhyamam janya","S0 R2 G2 M2 D1 N3 S1","S1 N3 D1 M2 G2 R2 S0 "],
+                                        [ "Ghavambhodhi","Melakarta 43","S0 R1 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R1 S0 "],
+                                        [ "Ghoshini","Chakravakam janya","S0 M1 G3 M1 P D2 N2 D2 S1","S1 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Godari","Jhalavarali janya","S0 R1 G1 R1 M2 G1 M2 P D1 N3 S1","S1 N3 D1 P M2 R1 S0 "],
+                                        [ "Gomathi","Raghupriya janya","S0 R1 G1 M2 P D3 N3 P M2 G1 R1 S0 "],
+                                        [ "Gopikathilakam","Shanmukhapriya janya","S0 R2 G2 M2 P N2 S1","S1 N2 P M2 G2 R2 S0 "],
+                                        [ "Gopikavasantam","Natabhairavi janya","S0 R2 G2 M1 P D1 P N2 S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Gopriya","Rishabhapriya janya","S0 R2 G3 M2 D1 N2 S1","S1 N3 D1 M2 G3 R2 S0 "],
+                                        [ "Gowdamallar","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 N3 M1 G3 R2 S0 "],
+                                        [ "Gowla","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 P M1 R1 G3 M1 R1 S0 "],
+                                        [ "Gowla-kannada","Kharaharapriya janya","S0 R2 G2 M1 P D2 N2 S1","S1 N2 P M1 G2 S0 "],
+                                        [ "Gowlipantu","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 D1 P M1 D1 M1 G3 R1 S0 "],
+                                        [ "Gowri","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Gowrikriya","Dharmavathi janya","S0 G2 M2 P D2 N3 S1","S1 N3 D2 N3 P M2 G2 S0 "],
+                                        [ "Gowrimanohari","Melakarta 23","S0 R2 G2 M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Gowrishankar","Gowrimanohari janya","S0 R2 G2 M1 P N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Gowrivelavali","Gowrimanohari janya","S0 R2 G1 G2 S0 R2 M1 M1 P D2 D2 S1","S1 N3 D2 P M1 G1 G2 R2 S0 "],
+                                        [ "Gowrivelavali","Gowrimanohari janya","S0 R2 G2 S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Guhamanohari","Harikambhoji janya","S0 R2 M1 D2 N2 S1","S1 N2 D2 M1 R2 S0 "],
+                                        [ "Guhapriya","Chakravakam janya","S0 R1 G3 M1 P P M1 D2 N2 S1","S1 N2 D2 P M1 G3 S0 R1 S0 "],
+                                        [ "Guharanjani","Harikambhoji janya","S0 R2 S0 M1 P D2 N2 S1","S1 N2 D2 N2 P M1 G3 S0 "],
+                                        [ "Gummakambhoji","Mayamalava-gowla janya","S0 R1 G3 P D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Gunavati","Natakapriya janya","S0 R1 M1 P D2 S1","S1 D2 P M1 R1 S0 "],
+                                        [ "Gundakriya","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 P D1 P M1 G3 R1 S0 "],
+                                        [ "Gurjari","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 S1","S1 D1 N3 P M1 G3 R1 S0 "],
+                                        [ "Gurupriya","Vachaspathi janya","S0 R2 G3 M2 D2 N2 S1","S1 N2 D2 M2 G3 R2 S0 "],
+                                        [ "hameer-kalyan","","S0 R2 S0 G3 M1 D2 N3 D2 S1","S1 N3 D2 N2 P G3 M1 D2 M2 P D2 P G3 M1 R2 S1 "],
+                                        [ "hameer-kalyani","Kalyani Janya","S0 P M2 P D2 N3 S1","S1 N3 D2 P G3 M1 G3 R2 S0 "],
+                                        [ "hameer-kalyani","Kalyani Janya","S0 P M2 P D2 N3 S1","S1 N3 D2 P M2 P G3 M1 G3 R2 S0 "],
+                                        [ "Hamsa-abheri","Kharaharapriya janya","S0 G2 P M1 P N2 S1","S1 N2 D2 P M1 G2 S0 "],
+                                        [ "Hamsabhramari","Hemavathi janya","S0 R2 G2 M2 P D2 S1","S1 N2 D2 P M2 G2 R2 S0 "],
+                                        [ "Hamsadeepika","Gowrimanohari janya","S0 R2 G2 M1 D2 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Hamsadhwani","Dheera-shankarabharanam janya","S0 R2 G3 P N3 S1","S1 N3 P G3 R2 S0 "],
+                                        [ "Hamsagamini","Ramapriya janya","S0 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 D2 P M2 G3 R1 S0 "],
+                                        [ "Hamsagiri","Rasikapriya janya","S0 R3 G3 M2 P D3 N3 S1","S1 N3 P D3 N3 P M2 G3 S0 "],
+                                        [ "Hamsakalyani","Mechakalyani janya","S0 R2 G3 P N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Hamsalatha","Lathangi janya","S0 R2 G3 P N3 S1","S1 N3 D1 P M2 G3 R2 S0 "],
+                                        [ "Hamsanandi","Gamanasrama janya","S0 R1 G3 M2 D2 N3 S1","S1 N3 D2 M2 G3 R1 S0 "],
+                                        [ "Hamsanantini","Hatakambari janya","S0 G3 M1 P S1","S1 P M1 G3 R1 S0 "],
+                                        [ "Hamsanarayani","Panthuvarali janya","S0 R1 G3 M2 P S1","S1 N3 P M2 G3 R1 S0 "],
+                                        [ "Hamsapancama","Keeravani janya","S0 G2 M1 P N3 D1 N3 P S1","S1 N3 D1 M1 G2 R2 S0 "],
+                                        [ "Hamsaroopini","Harikambhoji janya","S0 R2 G3 P D2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Hamsavahini","Keeravani janya","S0 R2 M1 P D1 N3 S1","S1 N3 D1 P M1 R2 S0 "],
+                                        [ "Hamsavinodhini","Dheera-shankarabharanam janya","S0 R2 G3 M1 D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Hanumatodi","Melakarta 8","S0 R1 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Haridarpa","Suryakantam janya","S0 R1 G3 M1 P D2 N3 S1","S1 D2 P M1 R1 S0 "],
+                                        [ "Haridasapriya","Harikambhoji janya","S0 P M1 G3 M1 P N2 S1","S1 N2 D2 N2 P M1 G2 R2 S0 "],
+                                        [ "Harikambhoji","Melakarta 28","S0 R2 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Harikedaragowla","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Harikedaram","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 S0 N2 S1","S1 N2 S0 D2 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Harinarayani","Kharaharapriya janya","S0 R2 G2 M1 P M1 D2 N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Harini","Harikambhoji janya","S0 G3 M1 P D2 N2 D2 S1","S1 N2 S0 N2 D2 P M1 G3 M1 G2 R2 S0 "],
+                                        [ "Haripriya","Sarasangi janya","S0 R1 G3 M1 P S1","S1 N3 D1 P M1 G3 S0 "],
+                                        [ "Harithapriya","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 G3 R2 G3 R2 S0 "],
+                                        [ "Hatakambari","Melakarta 18","S0 R1 G3 M1 P D3 N3 S1","S1 N3 D3 P M1 G3 R1 S0 "],
+                                        [ "Hejjajji","Gayakapriya janya","S0 R1 G3 M1 P D1 S1","S1 N1 D1 P M1 G3 R1 S0 "],
+                                        [ "Hemambari","Hemavathi janya","S0 R2 G2 M2 P D2 N2 S1","S1 P M2 G2 R2 S0 "],
+                                        [ "Hemangi","Vishvambhari janya","S0 R1 G3 M2 D3 S1","S1 D3 M2 G3 R1 S0 "],
+                                        [ "Hemant","Dheera-shankarabharanam janya","N3 S0 D2 N3 S0 G3 G3 M1 D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Hemapriya","Hemavathi janya","S0 R2 G2 M2 D2 S1","S1 D2 M2 G2 R2 S0 "],
+                                        [ "Hemasaranga","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 D2 S1","S1 P M1 G3 R2 S0 "],
+                                        [ "Hemavati","Melakarta 58","S0 R2 G2 M2 P D2 N2 S1","S1 N2 D2 P M2 G2 R2 S0 "],
+                                        [ "Hindoladarbar","Ragavardhini janya","S0 G3 M1 P S1","S1 N2 D1 P M1 R3 S0 "],
+                                        [ "Hindoladeshikam","Natakapriya janya","S0 M1 R1 G2 M1 P D2 N2 S1","S1 P N2 D2 M1 G2 R1 S0 "],
+                                        [ "Hindolam","Natabhairavi janya","S0 G2 M1 D1 N2 S1","S1 N2 D1 M1 G2 S0 "],
+                                        [ "Hindolavasanta","Natabhairavi janya","S0 G2 M1 P D1 N2 D1 S1","S1 N2 D1 P M1 D2 M1 G2 S0 "],
+                                        [ "Hindustani-behag","","S0 G3 M1 P N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Hindustani-kapi","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 D2 N2 P M1 G2 M1 D2 P G2 R2 S0 N2 S1 "],
+                                        [ "Hindusthani-todi","Shubhapanthuvarali janya","N3 R1 G2 M2 D1 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Hrdhini","Vachaspathi janya","S0 G3 M2 P N2 S1","S1 N2 P M2 G3 S0 "],
+                                        [ "Hrudkamali","Gowrimanohari janya","S0 R2 M1 D2 N3 S1","S1 N3 D2 M1 R2 S0 "],
+                                        [ "Huseni","Kharaharapriya janya","S0 R2 G2 M1 P N2 D2 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Huseni","Kharaharapriya janya","S0 R2 G3 M1 P N3 D2 M1 P N3 S1","S1 N3 S0 P D2 M1 P G3 R2 S0 "],
+                                        [ "Indhudhanyasi","Sadvidhamargini janya","S0 G2 M2 D2 N2 S1","S1 N2 D2 P D2 M2 G2 R1 S0 "],
+                                        [ "Indughantarava","Natabhairavi janya","S0 G2 M1 P D1 P N2 D1 P M1 G2 R2 S0 N2 "],
+                                        [ "Indumathi","Panthuvarali janya","S0 G3 M2 D1 N3 S1","S1 N3 D1 P M2 G3 S0 "],
+                                        [ "Ishtarangini","Rasikapriya janya","S0 R3 M2 P N3 S1","S1 N3 D3 P M2 G3 R3 S0 "],
+                                        [ "Jaganmohana","Jalavarnam janya","S0 R1 G1 M2 P D2 S1","S1 N2 D1 P M2 G1 R1 S0 "],
+                                        [ "Jaganmohinam","Jalavarnam janya","S0 R1 G1 M2 P D1 N2 S1","S1 N2 D1 P M2 G1 R1 S0 "],
+                                        [ "Jaganmohini","Mayamalava-gowla janya","S0 G3 M1 P N3 S1","S1 N3 P M1 G3 R1 S0 "],
+                                        [ "Jaijaivanthi","Harikambhoji janya","S0 R2 G3 R2 S0 D2 N2 P R2 G3 M1 P N2 S1 N2 S0 N2 D2 P D2 M1 G3 R2 G3 R2 S0 "],
+                                        [ "Jaithshree","Harikambhoji janya","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Jalakesari","Shubhapanthuvarali janya","S0 R1 M2 P D1 N3 S1","S1 D1 P M2 R1 S0 "],
+                                        [ "Jalarnavam","Melakarta 38","S0 R1 G1 M2 P D1 N2 S1","S1 N2 D1 P M2 G1 R1 S0 "],
+                                        [ "Jalasugandhi","Jhalavarali janya","S0 R1 G1 M2 P D1 S1","S1 D1 P M2 G1 R1 S0 "],
+                                        [ "Jalmika","Jhankaradhvani janya","S0 R2 G1 M1 P D1 N1 S1","S1 N1 D1 P M1 G1 S0 R2 S0 "],
+                                        [ "Janaranjani","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Jana-sammodhini","Harikambhoji janya","S0 R2 G3 P D2 N2 S1","S1 N2 D2 P G3 R2 S0 "],
+                                        [ "Janatodi","Hanumatodi janya","S0 R1 G2 M P D1 N2 S1","S1 N2 D1 P M G2 R1 S0 "],
+                                        [ "Janavali","Jhalavarali janya","S0 G2 R1 G2 M2 P D1 N3 D1 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Jayachoodamani","Simhendramadhyamam janya","S0 G2 M2 P D1 S1","S1 N3 D1 P M2 G2 R2 S0 "],
+                                        [ "Jayamanohari","Kharaharapriya janya","S0 R2 G2 M1 D2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Jayanarayani","Kharaharapriya janya","S0 R2 G2 M1 P D2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Jayanthasena","Kharaharapriya janya","S0 G2 M1 P D2 S1","S1 N2 D2 P M1 G2 S0 "],
+                                        [ "Jayanthashri","Natabhairavi janya","S0 G2 M1 D1 N2 S1","S1 N2 D1 M1 P M1 G2 S0 "],
+                                        [ "Jayarama","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Jayasamvardhani","Suryakantam janya","S0 G3 M1 P D2 N3 S1","S1 N3 P M1 G3 R1 S0 "],
+                                        [ "Jayashree","Keeravani janya","S0 R2 G2 M1 P D1 N3 D1 S1","S1 N3 D1 P M1 G2 R2 S0 "],
+                                        [ "Jayashuddhamalavi","Hatakambari janya","S0 R1 G3 M1 P N3 S1","S1 N3 D3 P M1 G3 R1 S0 "],
+                                        [ "Jeevanthika","Suryakantam janya","S0 M2 P D3 N3 S1","S1 N3 P M2 G2 S0 "],
+                                        [ "Jeevanthini","Divyamani janya","S0 M2 P D3 N3 S1","S1 N3 P M2 G2 S0 "],
+                                        [ "Jeevantika","Divyamani janya","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 R1 S0 "],
+                                        [ "Jhalavarali","Melakarta 39","S0 R1 G1 M2 P D1 N3 S1","S1 N3 D1 P M2 G1 R1 S0 "],
+                                        [ "Jhankarabhramari","Jhankaradhvani janya","S0 R2 G2 M1 P D1 N1 D1 P D1 S1","S1 N1 D1 P M1 G2 R2 S0 "],
+                                        [ "Jhankaradhvani","Melakarta 19","S0 R2 G2 M1 P D1 N1 S1","S1 N1 D1 P M1 G2 R2 S0 "],
+                                        [ "Jhinjothi","Harikambhoji janya","D2 S0 R2 G3 M1 P D2 N2 D2 P M1 G3 R2 S0 N2 D2 P D2 S0 "],
+                                        [ "Jingala","Natabhairavi janya","S0 R2 G2 M1 P D1 N2 D1 P S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Jnanachintamani","Kokilapriya janya","S0 R1 M1 D2 N3 S1","S1 N3 D2 P M1 R1 S0 "],
+                                        [ "Jog","Kharaharapriya janya","S0 G3 M1 P N3 S1","S1 N2 P M1 G3 M1 G3 S0 G3 S0 "],
+                                        [ "Jonpuri","","S0 R2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Jujahuli","Harikambhoji janya","S0 M1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Julavu","Dheera-shankarabharanam janya","P D2 N3 S0 R2 G3 M1 P M1 G3 R2 S0 N3 D2 P M1 "],
+                                        [ "Jyothi","aka Jyothiswaroopini","S0 R3 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 S0 "],
+                                        [ "Jyothishmathi","Jyothiswaroopini janya","S0 R3 G3 M2 P S1","S1 N2 D1 M2 P M2 G3 R3 S0 "],
+                                        [ "Jyothiswaroopini","Melakarta 68","S0 R3 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 R3 S0 "],
+                                        [ "Kadaram","Keeravani janya","S0 G2 M1 D1 N3 S1","S1 N3 D1 M1 G2 S0 "],
+                                        [ "Kaikavashi","Nitimati janya","S0 R2 G2 M2 P D3 N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Kalahamsa","Yagapriya janya","S0 R3 G3 M P D1 S1","S1 N1 D1 P M1 G3 R3 S0 "],
+                                        [ "Kalakanti","Gayakapriya janya","S0 R1 G3 M1 D1 N1 S1","S1 N1 D1 P G3 R1 S0 "],
+                                        [ "Kalanidhi","Kharaharapriya janya","S0 R2 G2 M1 S0 P M1 D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Kalasaveri","Hanumatodi janya","S0 R1 G2 P N2 S1","S1 N2 P G2 R1 S0 "],
+                                        [ "Kalavathi","Yagapriya janya","S0 R3 G3 M1 P D1 N1 S1","S1 N1 D1 P M1 G3 R3 S0 "],
+                                        [ "Kalavati","Chakravakam janya","S0 R1 M1 P D2 S1","S1 D2 P M1 G3 R1 S0 "],
+                                        [ "Kalika","Kharaharapriya janya","S0 R2 G2 P D2 N2 S1","S1 N2 D2 P G2 R2 S0 "],
+                                        [ "Kalindaja","Vakulabharanam janya","S0 R1 G3 M1 P N2 S1","S1 N2 P M1 G3 R1 S0 "],
+                                        [ "Kalkada","Gayakapriya janya","S0 R1 G3 P D1 N1 S1","S1 N1 D1 P M1 G3 R1 S0 "],
+                                        [ "Kallola","Hatakambari janya","S0 P D3 N3 S1","S1 N3 D3 P M1 G3 R1 S0 "],
+                                        [ "Kalpanadharini","Gayakapriya janya","S0 G3 M1 P D1 S1","S1 N1 D1 P M1 G3 R1 S0 "],
+                                        [ "Kalyanadayini","Mechakalyani janya","S0 R2 G3 M2 D2 N3 S1","S1 N3 D2 M2 G3 R2 S0 "],
+                                        [ "Kalyanakesari","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 D1 P G3 R1 S0 "],
+                                        [ "Kalyana-vasantam","Keeravani janya","S0 G2 M1 D1 N3 S1","S1 N3 D1 P M1 G2 R2 S0 "],
+                                        [ "Kalyani","Melakarta 65, aka Mechakalyani, Queen of ragas","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Kamala-manohari","Sarasangi janya","S0 G3 M1 P N3 S1","S1 N3 D1 P M1 G3 S0 "],
+                                        [ "Kamalaptapriya","Panthuvarali janya","S0 R1 G3 M2 P D1 S1","S1 D1 P M2 G3 R1 S0 "],
+                                        [ "Kamaripriya","Dheera-shankarabharanam janya","S0 G3 M1 D2 N3 S1","S1 N3 D2 M1 M1 G3 M1 R2 S0 "],
+                                        [ "Kamas","Harikambhoji janya","S0 M1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Kamavardhini","Melakarta 51, aka Panthuvarali","S0 R1 G3 M1 P D1 N3 S1","S1 N3 D1 P M2 G3 R1 S0 "],
+                                        [ "Kambhoji","Harikambhoji Janya","S0 R2 G3 M1 P D2 S1","S1 N2 D2 P M1 G3 R2 S0 N3- P- D2- S0 "],
+                                        [ "Kanada","Kharaharapriya janya","S0 R2 G2 M1 D N2 S1","S1 N2 P M1 G2 M1 R2 S0 "],
+                                        [ "Kanakadri","Natakapriya janya","S0 R1 G2 P D2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
+                                        [ "Kanakakusumavali","Kanthamani janya","S0 R2 G3 M2 P D2 S1","S1 D2 P M2 G3 R2 S0 "],
+                                        [ "Kanakambari","Kanakangi janya","S0 R1 M1 P D1 S1","S1 N1 D1 P M1 G1 R1 S0 "],
+                                        [ "Kanakangi","Melakarta 1","S0 R1 G1 M1 P D1 N1 S1","S1 N1 D1 P M1 G1 R1 S0 "],
+                                        [ "Kanakasaveri","Hanumatodi janya","S0 R1 M1 P D1 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Kanakatodi","","S0 R1 G1 M1 P D1 S1","S1 N1 D1 P M1 R1 S0 "],
+                                        [ "Kanakavasantham","Natabhairavi janya","S0 G2 M1 P N2 D1 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Kananapriya","","S0 R2 G3 M2 P M2 D1 N3 S1","S1 D1 N3 P M2 G3 R2 S0 "],
+                                        [ "Kanchanabowli","Ghavambhodhi janya","S0 G2 M2 P D1 S1","S1 N1 D1 P M1 G2 R1 S0 "],
+                                        [ "Kanchanavathi","Bhavapriya janya","S0 R1 G2 M2 P N2 S1","S1 N2 P M2 G2 R1 S0 "],
+                                        [ "Kannada","Dheera-shankarabharanam janya","S0 R2 G3 M1 P M1 D2 N3 S1","S1 N3 S1 D2 P M1 G3 M1 G3 M1 R2 S0 "],
+                                        [ "Kannadabangala","Mayamalava-gowla janya","S0 R1 M1 G3 M1 D1 P D1 S1","S1 D1 P M1 G3 R1 S0 "],
+                                        [ "Kannadagowla","Kharaharapriya janya","S0 R2 G2 M1 P N2 S1","S1 N2 D2 P M1 G2 S0 "],
+                                        [ "Kannadamaruva","Mechakalyani janya","S0 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 S0 "],
+                                        [ "Kanthamani","Melakarta 61","S0 R2 G3 M2 P D1 N1 S1","S1 N1 D1 P M2 G3 R2 S0 "],
+                                        [ "Kapi","Kharaharapriya janya","S0 R2 M1 P N3 S1","S1 N2 D2 N2 P M1 G2 R2 S0 "],
+                                        [ "Kapijingala","Kharaharapriya janya","S0 N2- S0 R2 G2 M1","S1 M1+ G2+ R2+ S1 N2 D2 N2 S1 "],
+                                        [ "Karmukhavati","Dharmavathi janya","S0 R2 G2 M2 D2 N3 S1","S1 N3 D2 M2 G2 R2 S0 "],
+                                        [ "Karnaranjani","Kharaharapriya janya","S0 R2 G2 M1 G2 P D2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Karnataka-behag","Harikambhoji janya","S0 R2 G3 M1 P D2 N2 S1","S1 N2 D2 N2 P D2 M1 G3 R2 S0 "],
+                                        [ "Karnataka-devagandhari","Harikambhoji janya","S0 G3 M1 P N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Karnataka-hindolam","Kharaharapriya janya","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 S0 "],
+                                        [ "Karnataka-kapi","Kharaharapriya janya","S0 R2 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Karnataka-khamas","Harikambhoji janya","S0 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Karnataka-saranga","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 R1 S0 "],
+                                        [ "Karnataka-shuddha-saveri","Kanakangi janya","S0 R1 M1 P D1 S1","S1 D1 P M1 R1 S0 "],
+                                        [ "Karpoora-bharani","Dharmavathi janya","S0 R2 G2 P M2 P D2 S1","S1 D2 P M2 P G2 R2 S0 "],
+                                        [ "Karunakari","","S0 M2 P D1 N3 D1 S1","S1 N3 D1 P M2 S0 "],
+                                        [ "Karunamritavarshini","Jhalavarali janya","S0 R1 G1 M2 P D1 N3 P S1","S1 N3 D1 M2 G1 R1 S0 "],
+                                        [ "Kashiramakriya","Panthuvarali janya","S0 G3 R1 G3 M2 P D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Kathanakuthoohalam","Dheera-shankarabharanam janya","S0 R2 M1 D2 N3 G3 P S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Katyayani","Natabhairavi janya","S0 R2 G2 P D2 S1","S1 D2 P G2 R2 S0 "],
+                                        [ "Kedara-gowla","Harikambhoji janya","S0 R2 M1 P N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Kedaram","Dheera-shankarabharanam janya, morning raga","S0 M1 G3 M1 P N3 S1","S1 N3 P M1 G3 R2 S0 "],
+                                        [ "Keeranavali","Keeravani janya","S0 R2 G2 M1 P D1 N3 S1","S1 P M1 G2 R2 S0 "],
+                                        [ "Keeravani","Melakarta 21","S0 R2 G2 M1 P D1 N3 S1","S1 N3 D1 P M1 G2 R2 S0 "],
+                                        [ "Kesari","Mararanjani janya","S0 R2 G3 M1 P M1 D1 P D1 S1","S1 D1 N1 D1 P M1 G2 R2 S0 "],
+                                        [ "Keshavapriya","Harikambhoji janya","S0 R2 S0 M1 P D2 N2 S1","S1 N2 S0 P M1 G3 R2 S0 "],
+                                        [ "Kharaharapriya","Melakarta 22","S0 R2 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Kokila","Chakravakam janya","S0 R1 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 R1 S0 "],
+                                        [ "Kokilabhashani","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 S1","S1 N3 P M1 G3 M1 R2 S0 "],
+                                        [ "Kokiladhwani","Harikambhoji janya","S0 R2 G3 M1 D2 N2 D2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Kokilanandhi","Shanmukhapriya janya","S0 G2 M2 D1 N2 S1","S1 N2 D1 P M2 G2 S0 "],
+                                        [ "Kokilapanchamam","Jhalavarali janya","S0 G1 R1 G1 P D1 N3 S1","S1 N3 D1 P M2 G1 R1 S0 "],
+                                        [ "Kokilapriyaa","Melakarta 11","S0 R1 G2 M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R1 S0 "],
+                                        [ "Kokilaravam","","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Kokilavarali","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 M1 P M1 G3 R2 G3 S0 "],
+                                        [ "Kolahalam","Dheera-shankarabharanam janya","S0 P M1 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Kosalam","Melakarta 71","S0 R3 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R3 S0 "],
+                                        [ "Kowmari","Kokilapriya janya","S0 R1 G2 M1 P D2 S1","S1 N3 D2 P M1 G2 R1 S0 "],
+                                        [ "Kowmoda","Mechakalyani janya","S0 R2 G3 M2 N3 S1","S1 N3 P M2 G3 S0 "],
+                                        [ "Kowmodaki","Kharaharapriya janya","S0 R2 G2 M1 P D2 N2 S1","S1 D2 P G2 S0 "],
+                                        [ "Kowshika","Kharaharapriya janya","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 M1 R2 S0 "],
+                                        [ "Kshanika","Natabhairavi janya","S0 G2 M1 P D1 S1","S1 D1 P M1 G2 S0 "],
+                                        [ "Kshemakari","Hemavathi janya","S0 R2 M2 D2 N2 S1","S1 N2 D2 M2 R2 S0 "],
+                                        [ "Kumbhini","Pavani janya","S0 G1 R1 G1 M2 P N3 D2 N3 S1","S1 N3 D2 P M2 G1 R1 S0 "],
+                                        [ "Kumudhachandrika","Shubhapanthuvarali janya","S0 G2 M2 D1 S1","S1 N3 D1 M2 G2 R1 S0 "],
+                                        [ "Kumudhakriya","Panthuvarali janya","S0 R1 G3 M2 D1 S1","S1 N3 D1 M2 G3 R1 S0 "],
+                                        [ "Kunjari","Manavati janya","S0 R1 M1 P D2 P S1","S1 N3 D2 P M1 G1 R1 S0 "],
+                                        [ "Kunthalam","Kanthamani janya","S0 R2 G3 M2 P D1 S1","S1 N1 D1 P M2 G3 R2 S0 "],
+                                        [ "Kunthalashreekanti","Mechakalyani janya","S0 G3 M2 P D2 N3 S1","S1 N3 P M2 G3 R2 S0 "],
+                                        [ "Kunthala-varali","Harikambhoji janya","S0 M1 P D2 N2 D2 S1","S1 N2 D2 P M1 S0 "],
+                                        [ "Kurinji","Dheera-shankarabharanam janya","S0 N3- S0 R2 G3 M1 P D2 S1","S1 D2 P M1 G3 R2 S0 N3 S0 "],
+                                        [ "Kusumakaram","aka Kosalam","S0 R3 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R3 S0 "],
+                                        [ "Kusumamaruta","Suryakantam janya","S0 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R1 G3 M1 S0 "],
+                                        [ "Kusumavali","Keeravani janya","S0 G2 M1 P D1 S1","S1 N3 D1 P M1 G2 M1 R1 S0 "],
+                                        [ "Kusumavichithra","Dheera-shankarabharanam janya","S0 G3 R2 G3 M1 P N3 P D2 N3 S1","S1 D2 N3 D2 M1 G3 P M1 G3 R2 S0 "],
+                                        [ "Kutuhala","Dheera-shankarabharanam janya","S0 R2 M1 N3 D2 P N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Kuvalayabharanam","Vakulabharanam janya","S0 R1 G3 M1 D1 N1 S1","S1 N1 D1 M1 G3 R1 S0 "],
+                                        [ "Lahari","Dheera-shankarabharanam janya","S0 R2 G3 P D2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Lalita","Mayamalava-gowla janya","S0 R1 G3 M1 D1 N3 S1","S1 N3 D1 M1 G3 R1 S0 "],
+                                        [ "Lalitabhairavi","Jhankaradhvani janya","S0 G2 M1 P D1 S1","S1 N1 D1 P M1 G2 R2 S0 "],
+                                        [ "Lalitamanohari","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Lalitapanchamam","Mayamalava-gowla janya","S0 R1 G3 M1 D1 N3 S1","S1 N3 D1 M1 P M1 G3 R1 S0 "],
+                                        [ "Lalitasimharavam","Dharmavathi janya","S0 R2 G2 M2 P S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Lalithagandharva","Naganandini janya","S0 R2 G3 M1 P D3 N3 S1","S1 N3 P G3 R2 S0 "],
+                                        [ "Lalithangi","","S0 R2 G3 M2 D1 N3 S1","S1 N3 D1 M2 G3 R2 S0 "],
+                                        [ "Latantapriya","Kanakangi janya","S0 R1 G1 M1 P D1 S1","S1 D1 P M1 R1 S0 "],
+                                        [ "Lathangi","Melakarta 63","S0 R2 G3 M2 P D1 N3 S1","S1 N3 D1 P M2 G3 R2 S0 "],
+                                        [ "Lavangi","Kanakangi janya","S0 R1 M1 D1 S1","S1 D1 M1 R1 S0  "],
+                                        [ "Lavanthika","Gowrimanohari janya","S0 R2 M1 P N3 S1","S1 N3 P M1 R2 S0 "],
+                                        [ "Lokaranjani","Ramapriya janya","S0 G3 M2 P M2 D2 N2 S1","S1 N2 D2 N2 P M2 G3 R1 S0 "],
+                                        [ "Madhavamanohari","Kharaharapriya janya","S0 R2 G3 M1 P N2 D2 N2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Madhavi","Keeravani janya","S0 M1 G2 M1 P D1 N3 S1","S1 N3 D1 P M1 S0 M1 G2 R1 S0 "],
+                                        [ "Madhukowns","Hemavathi janya","S0 G2 M2 P N2 P S1","S1 N2 P M2 G3 S0 "],
+                                        [ "Madhulika","Sarasangi janya","S0 R2 G3 M1 N3 S1","S1 N3 M1 G3 R2 S0 "],
+                                        [ "Madhumalathi","","N3 S0 G2 M2 P S1","S1 N3 D2 P M2 G2 R2 S0 "],
+                                        [ "Madhurakokila","Harikambhoji janya","S0 R2 G3 D2 N2 S1","S1 N2 D2 G3 R2 S0 "],
+                                        [ "Madhuvanthi","Dharmavathi janya","S0 G2 M2 P N3 S1","S1 N3 D2 P M2 G2 R2 S0 "],
+                                        [ "Madhyamaravali","","S0 R2 G2 P D2 N2 S1","S1 N2 D2 P G2 R2 S0 "],
+                                        [ "Madhyamavathi","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Maghathi","Vagadeeshwari janya","S0 R3 M1 P D2 N2 S1","S1 N2 D2 P M1 R3 S0 "],
+                                        [ "Mahanandhi","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 D2 P G2 R2 S0 "],
+                                        [ "Mahanandhini","Shubhapanthuvarali janya","S0 M2 G2 M2 P D1 N3 S1","S1 D1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Mahathi","Ghavambhodhi janya","S0 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 S0 "],
+                                        [ "Mahathi","Harikambhoji janya","S0 G3 P N2 S1","S1 N2 P G3 S0  "],
+                                        [ "Mahati","Natabhairavi janya","S0 G2 P D1 N2 S1","S1 N2 P G2 R2 S0 "],
+                                        [ "Mahuri","Harikambhoji janya","S0 R2 M1 G3 R2 G3 P D2 S1","S1 N2 D2 P M1 G3 R2 S0 R2 G3 R2 S0 "],
+                                        [ "Malahari","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 D1 P M1 G3 R1 S0 "],
+                                        [ "Malavakurinji","Mayamalava-gowla janya","S0 G3 P D1 N3 S1","S1 N3 D1 M1 R1 S0 "],
+                                        [ "Malavapanchamam","Mayamalava-gowla janya","S0 R1 G3 M1 P N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Malavashree","Kharaharapriya janya","S0 G2 M1 P N2 D2 N2 P D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Malavi","Harikambhoji janya","S0 R2 G3 M1 P M1 D2 N2 S1","S1 N2 D2 P M1 G3 M1 R2 S0 "],
+                                        [ "Malayamarutam","Chakravakam janya","S0 R1 G3 P D2 N2 S1","S1 N2 D2 P G3 R1 S0 "],
+                                        [ "Malkosh","Natabhairavi janya","S0 G2 M1 D1 N2 S1","S1 N2 D1 M1 G2 S0 "],
+                                        [ "Mallikavasantam","Mayamalava-gowla janya","S0 G3 M1 P N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Manavati","Melakarta 5","S0 R1 G1 M1 P D2 N3 S1","S1 N3 D2 P M1 G1 R1 S0 "],
+                                        [ "Mand","Dheera-shankarabharanam janya","S0 G3 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Mandamari","Kharaharapriya janya","S0 R2 M1 P D2 S1","S1 N2 S0 D2 P M1 G2 R2 S0 "],
+                                        [ "Mandari","Panthuvarali janya","S0 R1 G3 M2 P N2 S1","S1 N2 P M2 G3 R1 S0 "],
+                                        [ "Mangalakaishiki","Mayamalava-gowla janya","S0 R1 M1 G3 D1 P S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Mangalakari","Vachaspathi janya","S0 R2 P M2 P D2 N2 S1","S1 N2 D2 P G3 R2 S0 "],
+                                        [ "Mangalavathi","Kharaharapriya janya","S0 R2 M1 P D2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Manirangu","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Manjari","Kharaharapriya janya","S0 G2 R2 G2 M1 P N2 D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Manji","Natabhairavi janya","S0 R2 G2 M1 P D2 N2 S1","S1 N2 D1 P M1 P M1 P G2 R2 S0 "],
+                                        [ "Manoharam","Harikambhoji janya","S0 R2 G3 M1 D2 N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Manohari","Kharaharapriya janya","S0 G2 R2 G2 M1 P D2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Manolayam","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 N3 D1 P M1 R1 S0 "],
+                                        [ "Manorama","Kharaharapriya janya","S0 R2 G2 M1 P D1 P S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Manoranjani","Manavati janya","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 G1 R1 S0 "],
+                                        [ "Marakathagowla","Nasikabhooshani janya","S0 R3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R3 S0 "],
+                                        [ "Mararanjani","Melakarta 25","S0 R2 G3 M1 P D1 N1 S1","S1 N1 D1 P M1 G3 R2 S0 "],
+                                        [ "Maravi","Charukesi janya","S0 G3 M1 P N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],
+                                        [ "Margadesi","Mayamalava-gowla janya","S0 R1 G3 R1 G3 D1 M1 P D1 S1","S1 D1 P M1 G3 R1 S0 "],
+                                        [ "Margahindolam","Natabhairavi janya","S0 R2 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 S0 "],
+                                        [ "Maruthi","Panthuvarali janya","S0 R1 M2 P N3 S1","S1 N3 D1 P M2 G3 R1 S0 "],
+                                        [ "Maruva","Mayamalava-gowla janya","S0 G3 M1 D1 N3 S1","S1 N3 D1 P G3 M1 G3 R1 S0 R1 G3 R1 S0 "],
+                                        [ "Maruvadhanyasi","Kharaharapriya janya","S0 G2 M1 P D2 S1","S1 N2 D2 P M1 D2 M1 G2 R2 S0 "],
+                                        [ "Matangakamini","Natakapriya janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 S0 "],
+                                        [ "Mattakokila","Harikambhoji janya","S0 R2 P D2 N2 D2 S1","S1 D2 N2 D2 P R2 S0 "],
+                                        [ "Mayadravila","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 S1","S1 N2 P M1 P G3 M1 R2 S0 "],
+                                        [ "Mayamalava-gowla","Melakarta 17","S0 R1 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Mayapradeeptam","Kharaharapriya janya","S0 M1 G2 M1 P D2 N2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Mechabowli","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Mechagandhari","Ghavambhodhi janya","S0 R3 G3 M1 P D2 N2 S1","S1 N2 D2 N2 P M1 G3 M1 R3 S0 "],
+                                        [ "Mechakalyani","Melakarta 65, aka Kalyani","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Mechakangi","Gamanasrama janya","S0 R1 G3 M2 P D2 P N3 S1","S1 N3 P D2 P M2 G3 R1 S0 "],
+                                        [ "Megha","Kanakangi janya","S0 R1 M1 P D1 N1 D1 P S1","S1 N1 D1 P M1 R1 S0 "],
+                                        [ "Meghana","Harikambhoji janya","S0 M1 G3 M1 P D2 S1","S1 N2 D2 M1 G3 S0 "],
+                                        [ "Megharanjani","Mayamalava-gowla janya","S0 R1 G3 M1 N3 S1","S1 N3 M1 G3 R1 S0 "],
+                                        [ "Meghashyamala","Ramapriya janya","S0 G3 M2 P D2 N2 D2 P S1","S1 N2 D2 P M2 G3 R1 S0 "],
+                                        [ "Mishramanolayam","Kharaharapriya janya","S0 R2 M1 P D1 S1","S1 D2 D1 P M1 R2 S0 "],
+                                        [ "Mishrashivaranjani","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 D2 P G3 G2 R2 S0 "],
+                                        [ "Miyan-malhar","","S0 R2 P M1 P N2 D2 N2 S1","S1 N2 P M1 P G2 M1 R2 S0 "],
+                                        [ "Mohanadhwani","Dheera-shankarabharanam janya","S0 R2 G3 P D2 S1","S1 N3 P D2 P G3 R2 S0 "],
+                                        [ "Mohana-kalyani","Mechakalyani janya","S0 R2 G3 P D2 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Mohanam","Shankarabharanam Janya, Audava Ragam","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Mohananata","Dhenuka janya","S0 G2 M1 P D1 P M1 P N3 S1","S1 N3 P D1 P M1 G2 S0 "],
+                                        [ "Mohanangi","Vagadeeshwari janya","S0 R3 G3 P D2 S1","S1 D2 P G3 P D2 P G3 R3 S0 "],
+                                        [ "Moharanjani","Dharmavathi janya","S0 R2 G2 P D2 S1","S1 N3 D2 M2 G2 S0 "],
+                                        [ "Moorthee","","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 S0 "],
+                                        [ "Mrganandhana","Mechakalyani janya","S0 R2 G3 D2 N3 S1","S1 N3 D2 M2 D2 G3 R2 S0 "],
+                                        [ "Mukhari","Kharaharapriya janya","S0 R2 M1 P N2 D2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Mukthangi","Chakravakam janya","S0 R1 G3 M1 P D2 N2 S1","S1 D2 N2 P M1 G3 R1 S0 "],
+                                        [ "Mukthidayini","Vachaspathi janya","S0 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 S0 "],
+                                        [ "Mukundamalini","Chakravakam janya","S0 R1 G2 P D2 S1","S1 D2 P G2 R1 S0 "],
+                                        [ "Murali","Vagadeeshwari janya","S0 R3 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 R3 S0 "],
+                                        [ "Nabhomani","Navaneetham janya","S0 G1 R1 G1 M2 P S1","S1 N2 D2 P M2 G1 R1 S0 "],
+                                        [ "Nadachintamani","Kharaharapriya janya","S0 R2 G2 M1 N2 D2 N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Nadatarangini","Kharaharapriya janya","S0 P M1 R2 G2 S1","S1 P N2 D2 P M1 G2 R2 G2 S0 "],
+                                        [ "Nadavalli","Harikambhoji janya","S0 R2 M1 D2 N2 S1","S1 N2 D2 M1 R2 S0 "],
+                                        [ "Nadavarangini","Kharaharapriya janya","S0 P M1 N2 D2 N2 S1","S1 P N2 D2 P M1 G2 R2 G2 S0 "],
+                                        [ "Nadhabrahma","Vachaspathi janya","S0 P M2 P D2 N2 S1","S1 N2 D2 P M2 G3 S0 "],
+                                        [ "Nadhakalyani","","S0 G3 M2 D2 N3 S1","S1 N3 D2 M2 G3 M2 R2 S0 "],
+                                        [ "Nadhanamakriya","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 N3 D1 P M1 G3 R1 S0 N3 "],
+                                        [ "Nadharanjani","Ganamurti janya","S0 R1 M1 D1 N3 S1","S1 N3 D1 M1 G1 R1 S0 "],
+                                        [ "Nagabharanam","Naganandini janya","S0 R2 G2 M1 P D3 N3 S1","S1 N3 D3 P M1 G2 R2 S0 "],
+                                        [ "Nagabhooshani","Dheera-shankarabharanam janya","S0 R2 M1 P D2 N3 S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Nagachoodamani","Suryakantam janya","S0 R1 G3 M1 P D2 S1","S1 D2 N2 D2 P M1 G3 M1 R2 S0 "],
+                                        [ "Nagadhwani","Dheera-shankarabharanam janya","S0 R2 S0 M1 G3 M1 P N3 D2 N3 S1","S1 N3 D2 N3 P M1 G3 S0 "],
+                                        [ "Nagagandhari","Natabhairavi janya","S0 R2 M1 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Nagagiri","Rasikapriya janya","S0 G3 M2 P D2 P S1","S1 D2 P M2 G3 S0 "],
+                                        [ "Naganandhini","Melakarta 30","S0 R2 G3 M1 P D3 N3 S1","S1 N3 D3 P M1 G3 R2 S0 "],
+                                        [ "Nagari","Kharaharapriya janya","S0 R2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 S0 "],
+                                        [ "Nagaswaravali","Harikambhoji janya","S0 G3 M1 P D2 S1","S1 D2 P M1 G3 S0 "],
+                                        [ "Nagavalli","Kharaharapriya janya","S0 R2 M1 D2 N2 S1","S1 N2 D2 M1 R2 S0 "],
+                                        [ "Nagavarali","Hanumatodi janya","S0 R1 G2 M1 P M1 D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Nalinakanthi","Sarasangi janya","S0 G3 R2 M1 P N3 S1","S1 N3 P M1 G3 R2 S0 "],
+                                        [ "Namadeshi","","S0 R1 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 R1 S0 "],
+                                        [ "Namanarayani","Melakarta 50","S0 R1 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 R1 S0 "],
+                                        [ "Nandhkowns","","S0 G3 M1 P M1 D2 N2 S1","S1 N2 D2 P M1 G3 S0 G3 S0 "],
+                                        [ "Narani","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 R2 S0 "],
+                                        [ "Narayanadeshakshi","Dheera-shankarabharanam janya","S0 R2 M1 G3 R2 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Narayana-gowla","Harikambhoji janya","S0 R2 M1 P N2 D2 N2 S1","S1 N2 D2 P M1 G3 R2 G3 S0 "],
+                                        [ "Narayani","Harikambhoji janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 R2 S0 "],
+                                        [ "Nareretigowla","Natabhairavi janya","S0 R1 G2 M1 P D1 N2 S1","S1 R2+ D1 P M1 G2 R2 S0 "],
+                                        [ "Narmada","Namanarayani janya","S0 R1 G3 M2 D1 N2 S1","S1 N2 D1 M2 P M2 G3 R1 S0 "],
+                                        [ "Nasamani","Nasikabhooshani janya","S0 R3 G3 M2 P D2 N2 S1","S1 N3 D2 P M2 G3 R3 S0 "],
+                                        [ "Nasikabhooshani","Melakarta 70","S0 R3 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R3 S0 "],
+                                        [ "Natabhairavi","Melakarta 20","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "]                                       
+                                        [ "Natabharanam","Natakapriya janya","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
+                                        [ "Natakapriya","Melakarta 10","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
+                                        [ "Nattai","Chalanatta janya","S0 R2 G3 M1 D2 N2 D2 S1","S1 N2 D2 P M1 G3 M1 R2 S0 "],
+                                        [ "Nattakurunji","Harikambhoji janya, evening raga","S0 R2 G3 M1 N2 D2 N2 P D2 N2 S1","S1 N2 D2 M1 G3 M1 P G3 R2 S0 "],
+                                        [ "Natyadharana","Natakapriya janya","S0 R1 M1 P D2 S1","S1 N2 D2 P M1 R1 S0 "],
+                                        [ "Navaneetham","Melakarta 40","S0 R1 G1 M2 P D2 N2 S1","S1 N2 D2 P M2 G1 R1 S0 "],
+                                        [ "Navarasa-kalanidhi","Harikambhoji janya","S0 R2 M1 P S0 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Navarasa-kannada","Harikambhoji janya","S0 G3 M1 P S1","S1 N2 D2 M1 G3 R2 S0 "],
+                                        [ "Navarasa-Mala","Senavati janya","S0 R1 G2 M1 P D1 S1","S1 N1 D1 P M1 R1 S0 "],
+                                        [ "Navarathna-vilasam","Natabhairavi janya","S0 R2 G2 M1 P D1 P S1","S1 D1 P M1 G2 M1 R2 S0 "],
+                                        [ "Navaroj","Dheera-shankarabharanam janya","P D2 N3 S0 R2 G3 M1 P M1 G1 R3 S0 N2 D2 P "],
+                                        [ "Nayaki","Kharaharapriya janya","S0 R2 M1 P D2 N2 D2 P S1","S1 N2 D2 P M1 R2 G2 R2 S0 "],
+                                        [ "Neela","Harikambhoji janya","S0 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 S0 "],
+                                        [ "Neelamani","Sarasangi janya","S0 R2 M1 P D1 N3 S1","S1 N3 D1 P M1 R2 S0 "],
+                                        [ "Neelambari","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 P N3 S1","S1 N3 P M1 G3 R2 G3 S0 "],
+                                        [ "Neethimathi","Melakarta 60","S0 R2 G2 M2 P D3 N3 S1","S1 N3 D3 P M2 G2 R2 S0 "],
+                                        [ "Nigamagamini","Kharaharapriya janya","M1 G2 S0 G2 M1 N2 S1","S1 N2 M1 G2 M1 G2 S0 "],
+                                        [ "Nilamati","Natabhairavi janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 M1 G2 S0 "],
+                                        [ "Nilaveni","Natabhairavi janya","S0 R2 G2 M1 P D1 N2 D1 S1","S1 D1 P M1 G2 R2 S0 "],
+                                        [ "Niranjana","Natakapriya janya","S0 R1 G2 M1 P D2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
+                                        [ "Niranjani","Yagapriya janya","S0 R3 M1 D1 N1 S1","S1 N1 D1 M1 R3 S0 "],
+                                        [ "Nirmalangi","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Niroshta","Dheera-shankarabharanam janya","S0 R2 G3 D2 N3 S1","S1 N3 D2 G3 R2 S0 "],
+                                        [ "Nisshadham","aka Nitimati","S0 R2 G2 M2 P D3 N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Nitimati","Melakarta 60","S0 R2 G2 M2 P D3 N3 S1","S1 N3 D3 P M2 G2 R2 S0 "],
+                                        [ "Nuthanachandrika","Nitimati janya","S0 R2 G2 M2 P D3 N3 S1","S1 N3 P D3 N3 P M2 G2 S0 "],
+                                        [ "Omkari","Kharaharapriya janya","S0 R2 G2 M1 P D2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Padi","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 P D1 P M1 R1 S0 "],
+                                        [ "Padmakalyani","Gamanasrama janya","S0 G3 P N3 S1","S1 N3 D2 P M2 G3 S0 "],
+                                        [ "Pahadi","Dheera-shankarabharanam janya","S0 R2 G3 P D2 P D2 S1 N3 D2 P G3 M1 G3 R2 S0 N3 D2 P D2 S0 "],
+                                        [ "Panchamam","Kharaharapriya janya","S0 R2 D2 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Panthuvarali","Melakarta 51, aka Kamavardhini","S0 R1 G3 M2 P D1 N3 S1","S1 N3 D1 P M2 G3 R1 S0 "],
+                                        [ "Parameshwarapriya","Harikambhoji janya","S0 R2 G3 M1 P N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Parpathi","Shubhapanthuvarali janya","S0 G2 M2 P N3 S1","S1 N3 P M2 G2 S0 "],
+                                        [ "Parsi","Harikambhoji janya","S0 R2 G3 M1 D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Pashupathipriya","Harikambhoji janya","S0 R2 M1 P M1 D2 S1","S1 D2 M1 P R2 M1 S0 "],
+                                        [ "Patadeep","","N2 S0 G2 M1 P N2 S1","S1 N2 D2 P M1 G2 R2 S0 N2 S0 G2 R2 S0 "],
+                                        [ "Patalambari","Ramapriya janya","S0 R1 G3 M2 D2 S1","S1 D2 M2 G3 R1 S0 "],
+                                        [ "Pavani","Melakarta 41","S0 R1 G1 M2 P D2 N3 S1","S1 N3 D2 P M2 G1 R1 S0 "],
+                                        [ "Peeloo","","N2 S0 G3 M1 P N2 D2 P S1","S1 N2 D2 P D2 P M1 G2 R2 S0 N2 S0 "],
+                                        [ "Phalamanjari","Kharaharapriya janya","S0 G2 M1 D2 S1","S1 N2 D2 P M1 G2 M1 R2 S0 "],
+                                        [ "Phalaranjani","Kharaharapriya janya","S0 G2 M1 P M1 D2 S1","S1 N2 D2 P M1 G2 M1 R2 S0 "],
+                                        [ "Pharaju-(paras)","Mayamalava-gowla janya","S0 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Phenadhyuti","Ratnangi janya","S0 R1 M1 P D1 P N2 S1","S1 N2 D1 P M1 G1 R1 S0 "],
+                                        [ "Ponni","Panthuvarali janya","S0 G3 M2 P N3 S1","S1 N3 P M2 G3 R1 S0 "],
+                                        [ "Poornachandrika","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 P S1","S1 N3 P M1 R2 G3 M1 R2 S0 "],
+                                        [ "Poornagowla","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 D2 N3 P D2 N3 S1","S1 N3 D2 N3 P M1 G3 R2 S0 "],
+                                        [ "Poornakalanidhi","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Poornakambhoji","Harikambhoji Janya","S0 R2 G3 M1 P N2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Poornalalita","Jhankaradhvani janya","S0 G2 R2 M1 P S1","S1 N1 D1 P M1 G2 R2 S0 "]                                       
+                                        [ "Poornapanchamam","Chakravakam janya","P M1 S0 R1 S0 M1 P D2","D2 P M1 G3 R1 S0 N2-"],
+                                        [ "Poornasaveri","Rishabhapriya janya","S0 R2 M2 P D1 S1","S1 N2 D1 P M2 G3 R2 S0 "],
+                                        [ "Poornashadjam","Natabhairavi janya","S0 R2 G2 M1 N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Poorvadhanyasi","Charukesi janya","S0 M1 G3 M1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],
+                                        [ "Poorvagowla","Dheera-shankarabharanam janya","S0 G3 R2 G3 S0 R2 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Poorvavarali","Ganamurti janya","S0 R1 M1 P D1 S1","S1 N3 D1 P M1 G1 R1 S0 "],
+                                        [ "Poorvi","Mayamalava-gowla janya","S0 R1 G3 M1 D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "poorvi-kalyani","Gamanasrama janya","S0 R1 G3 M2 P D2 P S1","S1 N3 D2 P M2 G3 R1 S0 "],
+                                        [ "Poorvikavasanta","Mayamalava-gowla janya","S0 M1 G3 M1 D N3 S1","S1 N3 D1 M1 P M1 G3 R1 S0 "],
+                                        [ "Pooshakalyani","Vishvambhari janya, evening raga","S0 R1 G3 M2 P D3 N3 S1","S1 N3 P M2 G3 R1 S0 "],
+                                        [ "Prabhavali","Pavani janya","S0 R1 M2 P D2 N3 S1","S1 N3 D2 M2 P M2 R1 G1 R1 S0 "],
+                                        [ "Prabhupriya","Hanumatodi janya","S0 G2 M1 P D1 S1","S1 D1 P M1 G2 S0 "],
+                                        [ "Pramodhini","Mechakalyani janya","S0 G3 M2 P D2 S1","S1 D2 P M2 G3 S0 "],
+                                        [ "Pranavakari","Vachaspathi janya","P N2 D2 N2 S0 R2 G3 M2 P M2 G3 R2 S0 N2 D2 N2 P "],
+                                        [ "Pranavapriya","Simhendramadhyamam janya","S0 R2 M2 P N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Pratapadhanyasi","Mayamalava-gowla janya","S0 G3 M1 P N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Pratapa-nattai","Harikambhoji Janya","S0 R2 G3 M1 D2 P D2 N3 S1","S1 N3 D2 P M1 G3 S0 "],
+                                        [ "Prataparanjani","Mayamalava-gowla janya","S0 R1 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Pratapavarali","Harikambhoji Janya","S0 R2 M1 P D2 P S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Prathapa","Panthuvarali janya","S0 G3 M2 D1 N3 S1","S1 N3 D P M2 G3 R1 S0 "],
+                                        [ "Prathapahamsi","Yagapriya janya","S0 G3 M1 P N1 D1 N1 S1","S1 N1 D1 P M1 G3 M1 R3 S0 "],
+                                        [ "Pravalajyoti","Harikambhoji Janya","S0 R2 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Pravritti","Chakravakam janya","S0 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Priyadarshani","Keeravani janya","S0 R2 M1 D1 N3 S1","S1 N3 D1 M1 R2 S0 "],
+                                        [ "Punnagatodi","Hanumatodi janya","S0 R1 G2 M1 P P M1 G2 R1 S0 N2 D1 "],
+                                        [ "Punnagavarali","Hanumatodi janya","S0 R1 G2 M1 P D1 N2 N2 D1 P M1 G2 R1 S0 N2 "],
+                                        [ "Puranirmai","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 N3 D1 P G3 R1 S0 "],
+                                        [ "Puriya-dhanashree","Panthuvarali janya","N3 R1 G3 M2 P D1 P N3","S1 R1+ N3 D1 P M2 G3 M2 R1 G3 R1 S0 "],
+                                        [ "Pushpalathika","Kharaharapriya janya","S0 R2 G2 M1 P N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Ragachoodamani","Ragavardhini janya","S0 R3 G3 M1 P N2 S1","S1 N2 D1 M1 R3 G3 S0 "],
+                                        [ "Ragamanjari","Chakravakam janya","S0 R1 M1 P D2 S1","S1 N2 D2 M1 R1 S0 "],
+                                        [ "Ragapanjaramu","Harikambhoji Janya","S0 R2 M1 P D2 N2 D2 S1","S1 N2 D2 M1 R2 S0 "],
+                                        [ "Ragavardhini","Melakarta 32","S0 R3 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R3 S0 "],
+                                        [ "Ragavinodini","Harikambhoji Janya","S0 R2 G3 M1 D2 S1","S1 D2 M1 G3 R2 S0 "],
+                                        [ "Rageshree","Harikambhoji Janya","S0 G3 M1 D2 N3 S1","S1 N2 D2 M1 G3 R2 S0 "],
+                                        [ "Rageshree","Harikambhoji Janya","S0 G3 M1 D2 N3 S1","S1 N3 D2 M1 G3 R2 S0 "],
+                                        [ "Rageshree","Harikambhoji Janya","S0 G3 M1 D2 N3 S1","S1 N3 D2 N3 D2 M1 G3 R2 S0 "],
+                                        [ "Raghuleela","Raghupriya janya","S0 M2 R1 P M2 G1 M2 P M2 R1 M2 P N3 S1","S1 N3 D3 N3 P M2 G1 M2 R1 M2 G1 R1 S0"],
+                                        [ "Raghupriyaa","Melakarta 42","S0 R1 G1 M2 P D3 N3 S1","S1 N3 D3 P M2 G1 R1 S0 "],
+                                        [ "Rajarajeshwari","Natabhairavi janya","S0 R2 M1 P D1 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Rajathilaka","Mararanjani janya","S0 R2 G3 M1 P S1","S1 P M1 G3 R2 S0 "],
+                                        [ "Rajeshwari","Shanmukhapriya janya","S0 R2 G2 P N2 S1","S1 N2 D1 P M1 G2 S0 "],
+                                        [ "Raktimargini","Ramapriya janya","S0 P M2 D2 N2 S1","S1 N2 D2 P M2 P G3 R1 S0 "],
+                                        [ "Ramagiri","Jyothiswaroopini janya","S0 R3 M2 G3 M2 P D1 N2 S1","S1 D1 N2 D1 P M2 G3 R3 S0 "],
+                                        [ "Ramakali","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Ramakriya","","S0 G3 M1 P D1 N3 S1","S1 N3 P D1 P M1 G3 R1 S0 "],
+                                        [ "Ramamanohari","Ramapriya janya","S0 R1 G3 M2 P D2 S1","S1 N2 D2 P M2 G3 R1 S0 "],
+                                        [ "Ramani","Lathangi janya","S0 G3 M2 P N3 S1","S1 N3 D1 P M2 G3 S0 "],
+                                        [ "Ramapriya","Melakarta 52","S0 R1 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R1 S0 "],
+                                        [ "Ramya","Ragavardhini janya","S0 R3 G3 M1 P D1 N2 P S1","S1 N2 D1 P M1 G3 R3 S0 "],
+                                        [ "Ranjani","Dharmavathi janya","S0 R2 G2 M2 D2 S1","S1 N3 D2 M2 G2 S0 R2 G2 S0 "],
+                                        [ "Rasali","Vanaspati janya","S0 R1 M1 P D2 N2 S1","S1 D2 P M1 R1 S0 "],
+                                        [ "Rasamanjari","aka Rasikapriya","S0 R3 G3 M2 P D3 N3 S1","S1 N3 D3 P M2 G3 R3 S0 "],
+                                        [ "Rasavinodini","Ramapriya janya","S0 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 S0 "],
+                                        [ "Rasikapriya","Melakarta 72","S0 R3 G3 M2 P D3 N3 S1","S1 N3 D3 P M2 G3 R3 S0 "],
+                                        [ "Rasikaranjani","Chakravakam janya","S0 R1 G3 P S1","S1 D2 P G3 R1 S0 "],
+                                        [ "Rathika","Suvarnangi janya","S0 M2 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R1 S0 "],
+                                        [ "Rathipriya","aka Rishabhapriya","S0 R2 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 R2 S0 "],
+                                        [ "Rathnabhanu","Rishabhapriya janya","S0 R2 M2 P N2 D1 N2 S1","S1 N2 D1 P M2 G3 R2 S0 "],
+                                        [ "Rathnabhooshani","Dheera-shankarabharanam janya","S0 R2 G3 M1 P S1","S1 P M1 G3 R2 S0 "],
+                                        [ "Rathnakanthi","Lathangi janya","S0 R2 G3 M2 P N3 S1","S1 N3 P M2 G3 R2 S0 "],
+                                        [ "Rathnangi","","S0 R1 G1 M1 P D1 N2 S1","S1 N2 D1 P M1 G1 R1 S0 "],
+                                        [ "Rathnasaranga","Nitimati janya","S0 R2 G2 M2 P N3 S1","S1 N3 D3 P M2 G2 R2 S0 "],
+                                        [ "Ratipatipriya","","S0 R2 G2 P N2 S1","S1 N2 P G2 R2 S0 "],
+                                        [ "Ratnavarali","Ratnangi janya","S0 R1 M1 P N2 D1 S1","S1 N2 P M1 R1 G1 R1 S0 "],
+                                        [ "Ravi-chandrika","Harikambhoji Janya","S0 R2 G3 M1 D2 N2 D2 S1","S1 N2 D2 M1 G3 R2 S0 "],
+                                        [ "Ravi-kriya","Raghupriya janya","S0 G1 R1 G1 M2 P D3 N3 S1","S1 N3 P M2 G1 R1 S0 "],
+                                        [ "Raviswaroopini","Lathangi janya","S0 G3 M2 P D1 N3 S1","S1 N3 D1 P M2 G3 S0 "],
+                                        [ "Reethi-chandrika","Ramapriya janya","S0 R1 G3 M2 P D2 S1","S1 N2 D2 P M2 G3 R1 S0 "],
+                                        [ "Reethi-gowla","Kharaharapriya janya","S0 G2 R2 G2 M1 N2 D2 M1 N2 N2 S1","S1 N2 D2 M1 G2 M1 P M1 G2 R2 S0 "],
+                                        [ "Reetuvilasa","Dheera-shankarabharanam janya","S0 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 S0 "],
+                                        [ "Revagupti","Mayamalava-gowla janya","S0 R1 G3 P D1 S1","S1 D1 P G3 R1 S0 "],
+                                        [ "Revati","Ratnangi janya","S0 R1 M1 P N2 S1","S1 N2 P M1 R1 S0 "],
+                                        [ "Rishabhapriya","Melakarta 62","S0 R2 G3 M2 P D1 N2 S1","S1 N2 D1 P M2 G3 R2 S0 "],
+                                        [ "Rishabhavilasa","Kanakangi janya","S0 R1 M1 P D1 S1","S1 D1 P M1 R1 M1 R1 S0 "],
+                                        [ "Rishipriya","Keeravani janya","S0 R2 G2 M1 P D1 N3 S1","S1 N3 P M1 G2 R2 S0 "],
+                                        [ "Rohini","Suryakantam janya","S0 R1 G2 M1 M2 D2 N2 S1","S1 N2 D2 M2 M1 G2 R1 S0 "],
+                                        [ "Rowpyanaka","Rupavati janya","S0 M1 P D3 N3 S1","S1 N3 P M1 G2 R1 S0 "],
+                                        [ "Rudrapriya","Kharaharapriya janya","S0 R2 G2 M1 N2 S1","S1 N2 P M1 G2 R2 S0 "],
+                                        [ "Rukhmambari","Mayamalava-gowla janya","S0 R1 G3 P N3 S1","S1 N3 P G3 R1 S0 "],
+                                        [ "Rupavati","Melakarta 12","S0 R1 G2 M1 P D3 N3 S1","S1 N3 D3 P M1 G2 R1 S0 "],
+                                        [ "Sahana","Kharaharapriya janya","S0 R2 G3 M1 P M1 D2 N2 S1","S1 N2 S0 D2 N2 D2 P M1 G3 M1 R2 G3 R2 S0 "],
+                                        [ "Saindhavi","Kharaharapriya janya","N2 D2 N2 S0 R2 G2 M1 P D2 N2 D2 P M1 G2 R2 S0 N2 D2 N2 S0 "],
+                                        [ "Sajjananandhi","Lathangi janya","S0 R2 G3 M2 P D1 N3 S1","S1 N3 D1 M2 G3 R2 S0 "],
+                                        [ "Salagabhairavi","Kharaharapriya janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Salagam","Melakarta 37","S0 R1 G1 M2 P D1 N1 S1","S1 N1 D1 P M2 G1 R1 S0 "],
+                                        [ "Salanganata","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 D1 P G3 R1 S0 "],
+                                        [ "Salavi","Sarasangi janya","S0 G3 R2 G3 M1 P D1 N3 D1 S1","S1 N3 D1 P M1 G3 R2 S0 "],
+                                        [ "Sallapa","Vakulabharanam janya","S0 G3 M1 D1 N2 S1","S1 N2 D1 M1 G3 S0 "],
+                                        [ "Samakannada","Suryakantam janya","S0 R2 M1 G2 M1 P D2 N3 S1","S1 N3 D2 P M1 R1 S0 "],
+                                        [ "Samanta","Naganandini janya","S0 R2 G3 M1 P D3 N3 S1","S1 N3 D3 N3 D3 P M1 G3 R2 S0 "],
+                                        [ "Samantadeepara","Mayamalava-gowla janya","S0 R1 G3 M1 P N3 S1","S1 N3 P M1 G3 R1 S0 "],
+                                        [ "Samantajingala","Ragavardhini janya","S0 R3 G3 M1 P D1 N2 S1","S1 N2 P D1 N2 P M1 G3 M1 R3 G3 S0 "],
+                                        [ "Samapriya","Keeravani janya","S0 R2 M1 P D1 S1","S1 D1 P M1 R2 S0 "],
+                                        [ "Samavarali","Ganamurti janya","S0 R1 M1 P D1 N3 S1","S1 N3 D1 P M1 G1 R1 G1 S0 "],
+                                        [ "Samudrapriya","Shanmukhapriya janya","S0 G2 M2 P N2 S1","S1 N2 P M2 G2 S0 "],
+                                        [ "Sangrama","Kharaharapriya janya","S0 R2 M1 D2 N2 P S1","S1 N2 D2 G2 R2 S0 "],
+                                        [ "Sankrandanapriya","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 D2 P G2 R2 S0 "],
+                                        [ "Santhana","","S0 R3 G3 M2 P D1 S1","S1 N1 D1 P M2 R3 S0 "],
+                                        [ "Saramati","Natabhairavi janya","S0 R2 G2 M1 P D1 N2 S1","S1 N2 D1 M G2 S0 "],
+                                        [ "Sarang","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Saranga","Mechakalyani janya","S0 P M2 P D2 N3 S1","S1 N3 D2 P M2 R2 G3 M1 R2 S0 "],
+                                        [ "Saranga-kapi","Natabhairavi janya","S0 R1 P M1 R1 P R1 M1 P N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Saranga-mallar","Dheera-shankarabharanam janya","S0 R2 M1 P D2 N3 S1","S1 N3 D2 P M1 R2 S0 N3 S0 "],
+                                        [ "Saranga-nata","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 N3 S0 D1 P M1 G3 R1 S0 "],
+                                        [ "Sarasanana","Sarasangi janya","S0 R2 G3 M1 D1 N3 S1","S1 N3 D1 M1 G3 R2 S0 "],
+                                        [ "Sarasangi","Melakarta 27","S0 R2 G3 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R2 S0 "],
+                                        [ "Saraseeruha","Sarasangi janya","S0 R2 G3 M1 D1 N1 D1 S1","S1 N1 D1 M1 G3 R2 "],
+                                        [ "Saraswathi","Vachaspathi janya","S0 R2 M2 P D2 S1","S1 N2 D2 P M2 R2 S0 "],
+                                        [ "Saraswathi-manohari","Harikambhoji Janya","S0 R2 G3 M1 D2 S1","S1 D2 N2 P M1 G3 R2 S0 "],
+                                        [ "Sarvachoodamani","Kharaharapriya janya","S0 R2 M1 G2 M1 P D2 N2 S1","S1 N2 P D2 N2 D2 P M1 G2 R2 G2 R2 S0 "],
+                                        [ "Sarvangi","Simhendramadhyamam janya","S0 R2 M2 D1 N3 S1","S1 N3 D1 M2 G2 S0 R3 S0 "],
+                                        [ "Sarvashree","Kanakangi janya","S0 M1 P S1","S1 P M1 S0  "],
+                                        [ "Sathvamanjari","Harikambhoji Janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 N2 D2 M1 R2 S0 "],
+                                        [ "Satyavati","Mayamalava-gowla janya","S0 G3 R1 G3 P D1 S1","S1 N3 D1 N3 P D1 P G3 R1 S0 "],
+                                        [ "Saveri","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Savithri","Harikambhoji Janya","S0 G3 M1 P N2 S1","S1 N2 P M1 G3 S0 "],
+                                        [ "Seemantinipriya","Ramapriya janya","S0 R1 G3 M2 D2 N2 S1","S1 N2 D2 M2 G3 R1 S0 "],
+                                        [ "Senagrani","","S0 R1 G2 R1 M1 G2 M1 P N1 D1 S1","S1 N1 D1 P M1 G2 M1 G2 R1 S0 "],
+                                        [ "Senavati","Melakarta 7","S0 R1 G2 M1 P D1 N1 S1","S1 N1 D1 P M1 G2 R1 S0 "],
+                                        [ "Seshanadam","Simhendramadhyamam janya","S0 R2 G2 M2 P D1 S1","S1 N3 D1 P M2 G2 R2 S0 "],
+                                        [ "Sadvidhamargini","Melakarta 46","S0 R1 G2 M2 P D2 N2 S1","S1 N2 D2 P M2 G2 R1 S0 "],
+                                        [ "Shailadeshakshhi","Shulini janya","S0 M1 G3 P D2 S1","S1 N3 D2 S0 N3 P M1 G3 S0 "],
+                                        [ "Shakthiroopini","Hemavathi janya","S0 G2 M2 D2 S1","S1 N2 D2 M2 G2 S0 "],
+                                        [ "Shakunthala","Harikambhoji Janya","S0 R2 G3 M1 D2 N2 S1","S1 N2 D2 M1 G3 S0 "],
+                                        [ "Shamalangi","Melakarta 55","S0 R2 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R2 S0 "],
+                                        [ "Shankara","Dheera-shankarabharanam janya","S0 G3 P S1","S1 N3 D2 P G3 P R2 G3 S0 "],
+                                        [ "Shankarabharanam","Melakartha 29","S0 R2 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Shankaraharigowla","Harikambhoji Janya","S0 R2 G3 M1 P D2 N3 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Shankaramohana","Dheera-shankarabharanam janya","S0 R2 G3 P N3 D2 S0 N3 S1 D2 P G3 R2 S0 "],
+                                        [ "Shankari","Dheera-shankarabharanam janya","S0 G3 P N3 S1","S1 N3 P G3 S0  "],
+                                        [ "Shanmukhapriyaa","Melakarta 56, evening raga","S0 R2 G2 M2 P D1 N2 S1","S1 N2 D1 P M2 G2 R2 S0 "],
+                                        [ "Shanmukhi","Shanmukhapriya janya","S0 R1 G2 M2 D1 N2 S1","S1 N2 D1 M2 G2 R1 S0 "],
+                                        [ "Shanthabhashini","Natakapriya janya","S0 R1 G2 M1 P D2 S1","S1 N2 D2 P M1 S0 "],
+                                        [ "Shanthakalyani","aka Mechakalyani","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Sharabadhvaja","Gamanasrama janya","S0 R1 G3 M2 P D2 S1","S1 D2 P G3 R1 S0 "],
+                                        [ "Sharadabharana","Vagadeeshwari janya","S0 M1 G3 M1 P M1 D2 N2 S1","S1 N2 D2 M1 P M1 R3 S0 "],
+                                        [ "Sharadapriya","Natabhairavi janya","S0 R2 G2 P N2 S1","S1 N2 P G2 R2 S0 "],
+                                        [ "Sharadhyuthi","Vishvambhari janya","S0 R1 G3 M2 P D3 N3 D3 S1","S1 N3 D3 P M2 G3 R1 S0 "],
+                                        [ "Sharavathi","Mararanjani janya","S0 R2 G3 M1 P D1 N1 D1 S1","S1 N1 D1 P M1 G3 R2 S0 "],
+                                        [ "Shekharachandrika","Shubhapanthuvarali janya","S0 R1 G2 M2 D1 N3 S1","S1 N3 D1 M2 G2 R1 S0 "],
+                                        [ "Shenchukambhoji","Harikambhoji Janya","S0 P M1 D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Shilangi","Mechakalyani janya","S0 G2 M2 P N3 S1","S1 N3 P M2 G2 S0 "],
+                                        [ "Shiva-kambhoji","Harikambhoji Janya","S0 R2 G3 M1 N2 S1","S1 N2 P M1 G3 R2 S0 "],
+                                        [ "Shiva-manohari","Charukesi janya","S0 M1 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],
+                                        [ "Shivapanthuvarali","Shubhapanthuvarali janya","S0 R1 G2 M2 P D1 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Shivapriya","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 D2 P G2 R2 S0 "],
+                                        [ "Shivaranjani","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 D2 P G2 R2 S0 "],
+                                        [ "Shivashakti","Natakapriya janya","S0 G2 M1 D2 S1","S1 N2 D2 M1 G2 S0 "],
+                                        [ "Shokavarali","Shulini janya","S0 G3 D2 N3 D2 P M1 G3 R3 S0  "],
+                                        [ "Shravanamallika","Hanumatodi janya","S0 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Shree","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 P D2 N2 P M1 R2 G2 R2 S0 "],
+                                        [ "Shreekanti","Sadvidhamargini janya","S0 G2 M2 P D2 N2 S1","S1 N2 D2 P M2 G2 S0 "],
+                                        [ "Shreemani","Ratnangi janya","S0 R1 G1 P D1 S1","S1 N2 D1 P G1 R1 S0 "],
+                                        [ "Shree-manohari","Kharaharapriya janya","S0 G2 R2 G2 M1 P D2 S1","S1 D2 P M1 G2 R2 S0 "],
+                                        [ "Shree-manoranjani","","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Shreemati","Ratnangi janya","S0 R1 G1 P D1 S1","S1 N2 D1 P G1 R1 S0 "],
+                                        [ "Shree-nabhomargini","Chakravakam janya","S0 G3 M1 P D2 N2 S1","S1 D2 P M1 G3 R1 S0 "],
+                                        [ "Shree-navarasachandrika","Natabhairavi janya","S0 R2 G2 M1 P D1 S1","S1 D1 P M1 G2 R2 S0 "],
+                                        [ "Shree-ranjani","Kharaharapriya janya","S0 R2 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Shrothasvini","Keeravani janya","S0 G2 M1 P N3 S1","S1 N3 P M1 G2 S0 "],
+                                        [ "Shruthiranjani","Kanthamani janya","S0 R2 G3 M2 P D1 N1 N1 D1 P M2 G3 R2 S0 "],
+                                        [ "Shubhapanthuvarali","Melakarta 45","S0 R1 G2 M2 P D1 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Shuddha-desi","Natabhairavi janya","S0 R2 G2 R2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Shuddha-kamboji","Vakulabharanam janya","S0 G3 R1 M1 P N2 S1","S1 N2 P M1 G3 R1 S0 "],
+                                        [ "Shuddha-lallitha","Kokilapriya janya","S0 P M1 D2 N3 S1","S1 N3 S0 D2 P M1 G2 R1 S0 "],
+                                        [ "Shuddha-salavi","Natabhairavi janya","S0 G2 M1 P N2 S1","S1 N2 P M1 R2 S0 "],
+                                        [ "Shuddha-seemantini","Hanumatodi janya","S0 R1 G2 M1 P D1 S1","S1 D1 P M1 G2 R1 S0 "],
+                                        [ "Shuddha-todi","Hanumatodi janya","S0 R1 G2 M1 D1 N2 S1","S1 N2 D1 M1 G2 R1 S0 "],
+                                        [ "Shukrajyothi","Charukesi janya","S0 R2 G3 M1 P D1 N2 S1","S1 N2 P D1 M1 G3 R2 S0 "],
+                                        [ "Shulini","Melakarta 35","S0 R3 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R3 S0 "],
+                                        [ "Shyama","Harikambhoji Janya","S0 R2 G3 S0 R2 P M1 D2 D2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Shyama","Harikambhoji Janya","S0 R2 M1 P D2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Shyamakalyani","Rupavati janya","S0 M1 G2 M1 P D3 N3 S1","S1 N3 P D3 N3 P M1 G2 R1 S0 "],
+                                        [ "Shyamalam","","S0 R2 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R2 S0 "],
+                                        [ "Shyamalangi","Melakarta 55","S0 R2 G2 M2 P D1 N1 S1","S1 N1 D1 P M2 G2 R2 S0 "],
+                                        [ "Shyamali","Chakravakam janya","S0 G3 P D2 N2 S1","S1 N2 D2 P G3 R1 S0 "],
+                                        [ "Siddhasena","Kharaharapriya janya","S0 G2 R2 G2 M1 P D2 S1","S1 N2 D2 M1 P M1 R2 G2 R2 S0 "],
+                                        [ "Simhala","Hatakambari janya","S0 R1 G3 M1 P D3 N3 S1","S1 N3 D3 N3 P M1 G3 R1 S0 "],
+                                        [ "Simharava","Hemavathi janya","S0 R2 M2 P N2 S1","S1 N2 P M2 R2 G2 R2 S0 "],
+                                        [ "Simhavahini","Sarasangi janya","S0 G2 M1 P D1 N3 S1","S1 N3 D1 P M1 G3 R2 S0 "],
+                                        [ "Simhavikrama","Harikambhoji Janya","S0 R2 G3 R2 M1 P D2 P N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Simhendramadhyamam","Melakarta 57","S0 R2 G2 M2 P D1 N3 S1","S1 N3 D1 P M2 G2 R2 S0 "],
+                                        [ "Sindhu","Dheera-shankarabharanam janya","S0 M1 P D2 S1","S1 N3 D2 M1 P M1 G3 R2 S0 "],
+                                        [ "Sindhu-bhairavi","Hanumatodi janya","S0 R2 G2 M1 G2 P D1 N2 S1 N2 D1 P M1 G2 R1 S0 N2 S0 "],
+                                        [ "Sindhu-dhanyasi","Natabhairavi janya","S0 G2 M1 P N2 S1","S1 N2 D1 M1 P M1 G2 R2 S0 "],
+                                        [ "Sindhu-gowri","Senavati janya","S0 R1 G2 M1 P D1 N1 S1","S1 N1 D1 M1 G2 M1 R1 S0 "],
+                                        [ "Sindhu-kannada","Harikambhoji Janya","S0 M1 G3 M1 R2 G3 M1 P D2 P S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Sindhu-mandari","Dheera-shankarabharanam janya","S0 R2 G3 M1 P S1","S1 N3 D2 P G3 M1 P M1 R2 S0 "],
+                                        [ "Sindhu-ramakriya","Mayamalava-gowla janya","S0 G3 M1 P D1 N3 S1","S1 N3 P M1 G3 R1 G3 S0 "],
+                                        [ "Sindhu-surutti","Harikambhoji Janya","S0 R2 M1 P N2 S0 S0 N2 S1","S1 N2 D2 P M1 R2 M1 G3 R2 S0 "],
+                                        [ "Skandamanorama","Lathangi janya","S0 R2 M2 P N3 S1","S1 N3 P M2 R2 S0 "],
+                                        [ "Sohini","Gamanasrama janya","S0 G3 M2 D2 N3 S1","S1 N3 D2 M2 G3 R1 S0 "],
+                                        [ "Soma","","S0 R1 P M1 D1 N2 S1","S1 N2 D1 M1 P M1 G3 R1 S0 "],
+                                        [ "Sooryakantam","Melakarta 17","S0 R1 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R1 S0 "],
+                                        [ "Sowgandhini","Salagam janya","S0 R1 M2 P D1 S1","S1 N1 D1 P M2 G1 R1 S0 "],
+                                        [ "Sowjanya","Hanumatodi janya","S0 R1 M1 D1 S1","S1 D1 M1 R1 S0  "],
+                                        [ "Sowrasena","Sarasangi janya","S0 R2 M1 P D1 S1","S1 N3 D1 P M1 G3 R2 S0 "],
+                                        [ "Sowrashtram","Suryakantam janya","S0 R1 G3 M1 P M1 D2 N3 S1","S1 N3 D2 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Sowveeram","Suvarnangi janya","S0 R1 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R1 S0 "],
+                                        [ "Sthavarajam","Sadvidhamargini janya","S0 R1 M2 P D2 S1","S1 N2 D2 M2 G2 S0 "],
+                                        [ "Subhashini","Chakravakam janya","S0 D2 N2 D R1 G3 M1 P M1 G3 R1 S0 N2 D2 N2 S0 "],
+                                        [ "Sucharitra","Melakarta 67","S0 R3 G3 M2 P D1 N1 S1","S1 N1 D1 P M2 G3 R3 S0 "],
+                                        [ "Suddha","","S0 G3 M2 P S1","S1 N3 D2 M2 G3 R2 S0 "],
+                                        [ "Suddha","Simhendramadhyamam janya","S0 R2 G2 M2 P N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Suddha","Harikambhoji Janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 R2 S0 "],
+                                        [ "Suddha-bangala","Kharaharapriya janya","S0 R2 M1 P D2 S1","S1 D2 P M1 R2 G2 R2 S0 "],
+                                        [ "Suddha-bhairavi","Kharaharapriya janya","S0 G2 M1 P N2 D2 S1","S1 N2 D2 M1 G2 R2 S0 "],
+                                        [ "Suddha-dhanyasi","Kharaharapriya janya","S0 G2 M1 P N2 S1","S1 N2 P M1 G2 S0 "],
+                                        [ "Suddha-gandhari","Divyamani janya","S0 R1 G2 M2 N3 S1","S1 N3 D3 N3 S0 N3 P M2 R1 S0 "],
+                                        [ "Suddha-gowla","Suryakantam janya","S0 R1 M1 P N3 S1","S1 N3 P M1 R1 S0 "],
+                                        [ "Suddha-hindolam","Kharaharapriya janya","S0 G2 M1 D2 N2 S1","S1 N2 D2 M1 G2 S0 "],
+                                        [ "Suddha-khamas","Harikambhoji Janya","S0 M1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Suddhakriya","Vishvambhari janya","S0 R1 M2 M2 P D3 S1","S1 D3 P M2 G3 R1 S0 "],
+                                        [ "Suddha-malavi","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 S1","S1 D2 N3 P M1 G3 R2 S0 "],
+                                        [ "Suddha-manohari","Kharaharapriya janya","S0 R2 G2 M1 P D2 S1","S1 N2 P M1 R2 G2 S0 "],
+                                        [ "Suddha-mukhari","Kanakangi janya","S0 R1 M1 P D1 S1","S1 N1 D1 P M1 G1 R1 S0 "],
+                                        [ "Suddha-sarang","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 D2 S1","S1 D2 P M1 R2 G3 R2 S0 "],
+                                        [ "Suddha-saranga","Rishabhapriya janya","S0 G M2 P N2 S1","S1 D1 P M2 G3 S0 "],
+                                        [ "Suddha-saveri","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Suddhatarangini","Harikambhoji Janya","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Suddha-varali","Harikambhoji Janya","S0 R2 G3 M1 D2 N2 S1","S1 N2 D2 N2 P M1 G3 S0 "],
+                                        [ "Suddha-vasantha","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 S1","S1 N3 D2 N3 P M1 G3 S0 "],
+                                        [ "Suddha-velavali","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 D2 N2 P M1 G2 R2 S0 "],
+                                        [ "Sudharmini","Dhavalambari janya","S0 R1 M2 P D1 N1 S1","S1 N1 D1 M1 G3 R2 S0 "],
+                                        [ "Sugunabhooshani","Kharaharapriya janya","S0 G2 M1 P M1 D2 N2 S1","S1 N2 D2 P M1 D2 M1 R2 S0 "],
+                                        [ "Sukhakari","Ramapriya janya","S0 R1 S0 P D2 N2 S1","S1 N2 D2 P M2 G3 S0 R1 S0 "],
+                                        [ "Sukumari","Natabhairavi janya","S0 G2 M1 P N2 D1 N2 S1","S1 N2 P M1 G2 M1 R2 S0 "],
+                                        [ "Sumadyuthi","","S0 R2 G2 M2 P D1 N3 S1","S1 N3 D1 P M2 G2 R2 S0 "],
+                                        [ "Sumanapriya","Harikambhoji Janya","S0 R2 G3 M1 P D2 P S1","S1 D2 S0 P M1 G3 R2 S0 "],
+                                        [ "Sumanesharanjani","Shanmukhapriya janya","S0 G2 M2 P N2 S1","S1 N2 P M2 G2 S0 "],
+                                        [ "Sumukham","Dhatuvardhani janya","S0 R3 M2 N3 S1","S1 N3 M2 R3 S0  "],
+                                        [ "Sunadapriya","","S0 R2 G2 M2 P S1","S1 N3 D1 P M2 G2 R2 S0 "],
+                                        [ "Sunadavinodini","Mechakalyani janya","S0 G3 M2 D2 N3 S1","S1 N3 D2 M2 G3 S0 "],
+                                        [ "Sundaramanohari","Gowrimanohari janya","S0 R2 M1 P N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Sundarangi","Vishvambhari janya","S0 R1 G3 P D3 N3 S1","S1 N3 D3 P G3 R1 S0 "],
+                                        [ "Suposhini","Harikambhoji Janya","S0 R2 S0 M1 P N2 D2 S1","S1 D2 P M1 R2 M1 S0 "],
+                                        [ "Supradeepam","Suryakantam janya","S0 R1 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 M1 R1 S0 "],
+                                        [ "Suranandini","Dheera-shankarabharanam janya","S0 R2 G3 P D2 N3 S1","S1 N3 D2 P G3 R2 S0 "],
+                                        [ "Suraranjani","Dheera-shankarabharanam janya","S0 G3 P R2 M1 D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Surasena","Sarasangi janya","S0 R2 M1 P D1 S1","S1 N3 D1 P M1 G3 S0 R2 S0 "],
+                                        [ "Surasindhu","Mayamalava-gowla janya","S0 M1 G3 M1 P D1 N3 D1 S1","S1 N3 D1 P M1 R1 G3 R1 S0 "],
+                                        [ "Surutti","Harikambhoji Janya","S0 R2 M1 P N2 S1","S1 N2 D2 P M1 G3 P M1 R2 S0 "],
+                                        [ "Sushama","Natabhairavi janya","S0 R2 M1 P D1 S1","S1 D1 P M1 R2 S0 "],
+                                        [ "Sutradhari","Sarasangi janya","S0 R2 M1 P D1 S1","S1 D1 P M1 R2 S0 "],
+                                        [ "Suvarnadeepakam","Ghavambhodhi janya","S0 R1 G2 M2 P D1 S1","S1 D1 P M2 G2 R1 S0 "],
+                                        [ "Suvarnakriya","Harikambhoji Janya","S0 R2 G3 P N2 D2 S1","S1 N2 P G3 R2 S0 "],
+                                        [ "Suvarnangi","Melakarta 47","S0 R1 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R1 S0 "],
+                                        [ "Swarabhooshani","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 R2 S0 "],
+                                        [ "Swarakalanidhi","Kharaharapriya janya","S0 M1 G2 M1 P D2 N2 S1","S1 N2 D2 N2 P M1 G2 R2 S0 "],
+                                        [ "Swaramanjari","Namanarayani janya","S0 G3 M2 P D1 S1","S1 N2 D1 P M2 G3 S0 "],
+                                        [ "Swararanjani","Kharaharapriya janya","S0 R2 G2 M1 D2 N2 S1","S1 N2 P M1 G2 M1 R2 S0 "],
+                                        [ "Swaravali","Harikambhoji Janya","S0 M1 G3 M1 P N2 D2 N2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Swaravedi","Harikambhoji Janya","S0 M1 G3 M1 P N2 D2 N2 S1","S1 N2 D2 P M1 G3 S0 "],
+                                        [ "Swarnamalli","Hanumatodi janya","S0 G2 M1 P D1 N1 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Swayambhooshwara","Mechakalyani janya","S0 G3 P S1","S1 P G3 S0  "],
+                                        [ "Takka","Mayamalava-gowla janya","S0 R1 S0 G3 M1 G3 P M1 D1 N3 S1","S1 N3 D1 P M1 G3 R1 S0 "],
+                                        [ "Tanaroopi","Melakarta 6","S0 R1 G1 M1 P D3 N3 S1","S1 N3 D3 P M1 G1 R1 S0 "],
+                                        [ "Tandavam","Dheera-shankarabharanam janya","S0 G3 P D2 N3 S1","S1 N3 D2 P G3 S0 "],
+                                        [ "Tandavapriya","Panthuvarali janya","S0 R1 G3 M2 P S1","S1 P M2 G3 R1 S0 "],
+                                        [ "Tanukeerti","Tanarupi janya","S0 R1 M1 P N3 S1","S1 N3 D3 N3 P M1 G1 M1 R1 S0 "],
+                                        [ "Tarakagowla","Mayamalava-gowla janya","S0 G3 M1 D1 N3 S1","S1 N3 D1 M1 G3 S0 "],
+                                        [ "Tarangini","Charukesi janya","S0 R2 G3 P D1 N2 D1 S1","S1 D1 P M1 G3 R2 S0 N2- D2- N2- D2- S0 "],
+                                        [ "Tarkshika","Natabhairavi janya","S0 R2 M1 P N2 S1","S1 N2 D1 P M1 R2 G2 R2 S0 "],
+                                        [ "Tatillatika","Kanakangi janya","S0 R1 M1 P D1 S1","S1 D1 P M1 R1 S0 "],
+                                        [ "Tavamukhari","Kharaharapriya janya","S0 R2 G2 P D2 S1","S1 N2 D2 P M1 G2 R2 S0 "],
+                                        [ "Tavapriya","Dhatuvardhani janya","S0 R3 M2 P N3 S1","S1 N3 D1 P M2 G3 R3 S0 "],
+                                        [ "Teevravahini","Sadvidhamargini janya","S0 R1 G2 M2 P D2 P N2 S1","S1 N2 D2 P M2 G2 R1 G2 M2 R1 S0 "],
+                                        [ "Thilakamandari","Nasikabhooshani janya","S0 R3 M2 P D2 S1","S1 D2 P M2 G3 R3 S0 "],
+                                        [ "Thilang","Harikambhoji Janya","S0 G3 M1 P N3 S1","S1 N2 P M1 G3 S0 "],
+                                        [ "Thodi","Melakarta 8","S0 R1 G2 M1 P D1 N2 S1","S1 N2 D1 P M1 G2 R1 S0 "],
+                                        [ "Tilakavathi","Harikambhoji Janya","S0 R2 G3 M1 P D2 P S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Toyavegavahini","Chakravakam janya","S0 R1 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Triveni","Vachaspathi janya","S0 R2 M2 P D2 N2 S1","S1 N2 D2 P M2 R2 S0 "],
+                                        [ "Udayaraga","Natabhairavi janya","S0 G2 M1 P N2 S1","S1 N2 P M1 G2 S0 "],
+                                        [ "udhaya-ravi-candrika","Dhenuka janya","S0 G2 M1 P N3 S1","S1 N3 P M1 G2 S0 "],
+                                        [ "Umabharanam","Harikambhoji Janya","S0 R2 G3 M1 P D2 N2 S1","S1 N2 P M1 R2 G3 M1 R2 S0 "],
+                                        [ "Urmika","Simhendramadhyamam janya","S0 R2 G2 M2 P N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Ushavali","Mayamalava-gowla janya","S0 R1 M1 P D1 S1","S1 N3 D1 M1 P M1 R1 S0 "],
+                                        [ "Utthari","Vachaspathi janya","S0 G3 M2 P D2 N2 S1","S1 N2 D2 M2 G3 S0 "],
+                                        [ "Vachaspathi","Melakarta 64","S0 R2 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
+                                        [ "Vagadeeshwari","Melakarta 34","S0 R3 G3 M1 P D2 N2 S1","S1 N2 D2 P M1 G3 R3 S0 "],
+                                        [ "Vageeshwari","Kanakangi janya","S0 R1 G1 M1 P D1 S1","S1 D1 M1 P G1 R1 S0 "],
+                                        [ "Vaishaka","Gamanasrama janya","S0 R1 G3 M2 P D2 N3 S1","S1 N3 D2 N3 P M2 G3 M2 R1 S0 "],
+                                        [ "Vaishnavi","Harikambhoji Janya","S0 R2 G3 M1 P D2 S1","S1 D2 P M1 G3 R2 S0 "],
+                                        [ "Vajrakanti","Kharaharapriya janya","S0 G2 M1 P N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
+                                        [ "Vakulabharanam","Melakarta 14","S0 R1 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R1 S0 "],
+                                        [ "Valaji","Chakravakam janya","S0 G3 P D2 N2 S1","S1 N2 D2 P G3 S0 "],
+                                        [ "Vallabhi","Dheera-shankarabharanam janya","S0 R2 G3 M1 P D2 N3 S1","S1 N3 D2 N3 D2 P M1 P G3 M1 R2 S0 "],
+                                        [ "Vamshavathi","Melakarta 54, aka Viswambari","S0 R1 G3 M2 P D3 N3 S1","S1 N3 P M2 G3 R1 S0 "],
+                                        [ "Vanaspati","Melakarta 4","S0 R1 G1 M1 P D2 N2 S1","S1 N2 D2 P M1 G1 R1 S0 "],
+                                        [ "Vanavali","Vanaspati janya","S0 R1 M1 P D2 N2 S1","S1 D2 P M1 R1 S0 "],
+                                        [ "Vandanadharini","Mechakalyani janya","S0 R2 M2 P D2 S1","S1 D2 P M2 R2 S0 "],
+                                        [ "Varada","Dharmavathi janya","S0 R2 M2 P N3 S1","S1 N3 P M2 R2 S0 "],
+                                        [ "Varali","Jhalavarali janya","S0 G1 R1 G1 M2 P D1 N3 S1","S1 N3 D1 P M2 G1 R1 S0 "],
+                                        [ "Vardhani","Kokilapriya janya","S0 G2 M1 P M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R1 S0 "],
+                                        [ "Varunapriyaa","Melakarta 24","S0 R2 G2 M1 P D3 N3 S1","S1 N3 D3 P M1 G2 R2 S0 "],
+                                        [ "Vasantabhairavi","Vakulabharanam janya","S0 R1 G3 M1 D1 N2 S1","S1 N2 D1 M1 G3 R1 S0 "],
+                                        [ "Vasantamalli","Kokilapriya janya","S0 G2 M1 P N3 S1","S1 D2 P M1 G2 S0 "],
+                                        [ "vasanta-mukhari","Vakulabharanam janya","S0 M1 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R1 S0 "],
+                                        [ "Vasantanarayani","Kokilapriya janya","S0 R1 G2 M1 P S1","S1 N3 D2 P M1 G2 R1 S0 "],
+                                        [ "Vasantashree","Gowrimanohari janya","S0 R2 G2 M1 D2 N3 S1","S1 N3 D2 M1 G2 R2 S0 "],
+                                        [ "Vasantavarali","Natabhairavi janya","S0 R2 M1 P D1 S1","S1 N2 D1 P G2 R2 S0 "],
+                                        [ "Vasantha","Suryakantam janya, evening raga","S0 M1 G3 M1 D2 N3 S1","S1 N3 D2 M1 G3 R1 S0 "],
+                                        [ "Vasanthamalai","Dheera-shankarabharanam janya","S0 R2 M1 P N3 S1","S1 D2 P M1 R2 S0 "],
+                                        [ "Vasanthamanohari","Keeravani janya","S0 R2 G2 M1 D1 N3 S1","S1 N3 D1 M1 G2 R2 S0 "],
+                                        [ "Vasanthatodi","Dhenuka janya","S0 R1 G2 M1 D1 N3 S1","S1 N3 D1 M1 R1 S0 "],
+                                        [ "Vasanthi","Sarasangi janya","S0 R2 G3 P D1 S1","S1 D1 P G3 R2 S0 "],
+                                        [ "Vasukari","Shanmukhapriya janya","S0 G2 M2 P D1 N2 S1","S1 N2 D1 M2 G2 S0 "],
+                                        [ "Vatee-Vasantabhairavi","","S0 R1 G3 M1 D1 N2 S1","S1 N2 D1 M1 G3 R1 S0 "],
+                                        [ "Vedhandhagamana","Dheera-shankarabharanam janya","S0 G3 M1 P N3 S1","S1 N3 P M1 G3 S0 "],
+                                        [ "Vedhaswaroopi","Ramapriya janya","S0 R1 G3 M2 P D2 N3 P S1","S1 N3 D2 Pn3 P M2 G3 S0 "],
+                                        [ "Veenadhari","Chakravakam janya","S0 R1 G3 P D2 N2 S1","S1 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Veenavadini","Harikambhoji Janya","S0 R2 G3 P N2 S1","S1 N2 P G2 R2 S0 "],
+                                        [ "Veerapratapa","Dheera-shankarabharanam janya","S0 G3 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Veeravasantham","Varunapriya janya","S0 R2 G2 M1 P S1","S1 N3 D3 P M1 G2 R2 S0 "],
+                                        [ "Vegavahini","Chakravakam janya","S0 R1 G3 M1 D2 N2 D2 S1","S1 N2 D2 P M1 G3 R1 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 G2 M1 D2 N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 G2 R2 M1 P D2 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 R2 G2 M1 P D2 S1","S1 N3 D2 P M1 G2 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 R2 G2 S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 R2 M1 P D2 N3 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Velavali","Gowrimanohari janya","S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G2 R2 S0 "],
+                                        [ "Vijayabhooshavali","Ghavambhodhi janya","S0 R1 G3 M2 P S1","S1 N3 D3 P M2 G3 R1 S0 "],
+                                        [ "Vijayakoshalam","Chitrambari janya","S0 R2 G3 M2 P S1","S1 N3 P M2 G3 S0 "],
+                                        [ "Vijayamalavi","Shamalangi janya","S0 R2 M2 P D1 S1","S1 N1 D1 P M2 R2 S0 "],
+                                        [ "Vijayanagari","Dharmavathi janya","S0 R2 G2 M2 P D2 S1","S1 D2 P M2 G2 R2 S0 "],
+                                        [ "Vijayasaranga","Hemavathi janya","S0 R2 G2 M2 P D2 S1","S1 N2 D2 M2 G2 R2 S0 "],
+                                        [ "Vijayasaraswathi","Simhendramadhyamam janya","S0 G2 M2 P D1 N3 S1","S1 N3 P M2 G2 R2 S0 "],
+                                        [ "Vijayashrangi","Hemavathi janya","S0 R2 G2 M2 P D2 S1","S1 N2 D2 M2 G2 R2 S0 "],
+                                        [ "Vijayashree","Suvarnangi janya","S0 R1 G2 M2 P N2 S1","S1 N2 P M2 G2 R1 S0 "],
+                                        [ "Vijayavasantham","Vishvambhari janya","S0 M2 P D3 N3 S1","S1 N3 P M2 G3 S0 "],
+                                        [ "Vijayollasini","Vakulabharanam janya","S0 R1 G3 M1 P M1 D1 N2 S1","S1 N2 D1 P M1 G3 R1 S0 "],
+                                        [ "Vikhavathi","Vagadeeshwari janya","S0 R3 G3 P D2 S1","S1 D2 P G3 R3 S0 "],
+                                        [ "Vilasini","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 S1","S1 N3 P M1 G3 R2 S0 "],
+                                        [ "Visharada","Mayamalava-gowla janya","S0 R1 M1 P N3 S1","S1 N3 P M1 R1 S0 "],
+                                        [ "Vishvambhari","Melakarta 54, aka Gamanasrama","S0 R1 G3 M2 P D3 N3 S1","S1 N3 D3 P M2 G3 R1 S0 "],
+                                        [ "Vishveshwarapriya","Dharmavathi janya","S0 R2 M2 P N3 S1","S1 N3 D2 P M2 R2 S0 "],
+                                        [ "Vittalapriya","Vanaspati janya","S0 R1 M1 P D2 S1","S1 D2 P M1 R1 S0 "],
+                                        [ "Vivahapriya","Mechakalyani janya","S0 R2 M2 P D2 N3 S1","S1 N3 D2 P M2 R2 S0 "],
+                                        [ "Vivardhani","Harikambhoji Janya","S0 R2 M P S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Yadukula-kambhoji","Harikambhoji Janya, combination of suddha saaveri and harikambhoji","S0 R2 M1 P D2 S1","S1 N2 D2 P M1 G3 R2 S0 "],
+                                        [ "Yagapriya","Melakarta 31","S0 R3 G3 M1 P D1 N1 S1","S1 N1 D1 P M1 G3 R3 S0 "],
+                                        [ "Yagini","Hemavathi janya","S0 R2 M2 P N2 S1","S1 N2 P M2 R2 S0 "],
+                                        [ "Yaman","","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 M1 G3 R2 S0 "],
+                                        [ "Yaman","","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
+                                        [ "Yamuna","","S0 R2 G3 P M2 P D2 S1","S1 D2 P M2 P G3 R2 S0 "]
+		];
+		var chosenArohana = "";
+		var chosenAvarohana = "";
+		var button = document.getElementById("playragam");
+        button.text = "Play";
+		function populate() {
+			getAAnotes();
+		}
+		function getAAnotes() {
+            var ragaselect = document.querySelector('#raganame').value;
+			console.log(ragas[0].length);
+			var notesText="";
+			var notesText2="";
+			var info="";
+			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
+			if (pattern.test(ragaselect[0])) {
+				for (var i=0; i<ragas.length; i++) {
+				if (ragas[i][0].localeCompare(ragaselect)==0) {
+						console.log(ragaselect+"\n");
+						console.log(ragas[i][1]+"\n");
+						console.log(ragas[i][2]+"\n");
+						console.log(ragas[i][3]+"\n");
+						document.getElementById("info").value = ragas[i][1];
+						document.getElementById("Arohanam").value = ragas[i][2];
+						document.getElementById("Avarohanam").value = ragas[i][3];
+						break;
+				} else {
+					console.log("shove it");
+				}					
+				}
+			}
+		}
+		function getRaga() {			
+            var arohana = document.getElementById("Arohanam").value;
+			var avarohana = document.getElementById("Avarohanam").value;
+			console.log("\n");
+			console.log("User input:\n");
+			console.log(arohana);
+			console.log(avarohana);			
+			var raga = "";
+			var info="";
+			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
+			if (pattern.test(arohana) && pattern.test(avarohana)) {
+				for (var i=0; i<ragas.length; i++) {
+				if (!ragas[i][2].localeCompare(arohana) && !ragas[i][3].localeCompare(avarohana)) {
+						console.log(ragas[i][0]+"\n");
+						console.log(ragas[i][1]+"\n");
+						console.log(ragas[i][2]+"\n");
+						console.log(ragas[i][3]+"\n");
+						raga = ragas[i][0];
+						info = ragas[i][1];
+						notesText = ragas[i][2];
+						notesText2 = ragas[i][3];
+						break;
+				} else {
+					console.log("shove it")
+				}					
+				}
+			}
+			document.getElementById("raganame").value = raga;
+			document.getElementById("info").value = info;
+			document.getElementById("Arohanam").value = notesText;
+			document.getElementById("Avarohanam").value = notesText2;
+		}
+		function addToArohana(swara) {
+			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.concat(" ");
+			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.concat(swara);
+		}
+		function addToAvarohana(swara) {
+			document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(" ");
+			document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(swara);
+		}
+        function getSruthiFrequency() {
+            var sruthiletter = document.getElementById("Sruthi").value;
+            switch (sruthiletter) {
+                case "A":
+                    freq= 220;
+                    break;
+                case "A#":
+                    freq= 233;
+                case "B":
+                    freq= 247;
+                    break;
+                case "C":
+                    freq= 262;
+                    break;
+                case "C#":
+                    freq= 277;
+                    break;
+                case "D":
+                    freq= 294;
+                    break;
+                case "D#":
+                    freq= 311;
+                    break;
+                case "E":
+                    freq= 329;
+                    break;
+                case "F":
+                    freq= 349;
+                    break;
+                case "F#":
+                    freq= 370;
+                    break;
+                case "G":
+                    freq= 392;
+                    break;
+                case "G#":
+                    freq= 415;
+                    break;
+            }
+			return freq;
+        }      
+		function durationchange() {
+				document.getElementById("Durationvalue").innerHTML = document.getElementById("Duration").value;
+		}
+		function toggle() {
+			var context = null;
+			var usingWebAudio = true;	
+			//this section is code for setting frequency
+			
+			if (typeof AudioContext !== 'undefined') {
+				context = new AudioContext();
+			} else if (typeof webkitAudioContext !== 'undefined') {
+				if (navigator.appCodeName == "Firefox" || navigator.appCodeName == "Chrome") {
+					context = new webkitAudioContext();
+				} 
+			} else {
+				usingWebAudio = false;
+			}
+			var playing = false;
+			var osc = null;
+			//var freq = getSruthiFrequency();
+			var noteslist = "";
+			var duration = parseFloat(document.getElementById("Duration").value);
+			
+			getAAnotes();
+			console.log("entering toggle");
+			var freq = getSruthiFrequency();
+			var chosenArohana = document.getElementById("Arohanam").value;
+			var chosenAvarohana = document.getElementById("Avarohanam").value;
+			var prevraga = chosenArohana.concat(" zz ",chosenAvarohana);
+			var freq2=0;
+			if (playing && osc) {
+				playing = false;
+				osc.stop(0);
+				button.value = "Play";
+			} else {
+				playing = true;
+				button.value = "Playing";
+				noteslist = prevraga;
+				let array_notestext = noteslist.split(" ");
+				for (var i = 0; i < array_notestext.length ; i++) {
+                    
+					//calculate frequency based on swara and sruthiletter
+					switch (array_notestext[i]) {
+						case "S0":
+							freq2= freq*1; break;
+						case "R1":
+							freq2= freq*16/15; break;
+						case "R1+":
+							freq2= freq*31/15; break;
+						case "R2":
+							freq2= freq*9/8; break;
+						case "R2+":
+							freq2= freq*17/8; break;
+						case "R3":
+							freq2= freq*6/5; break;
+						case "R3+":
+							freq2= freq*11/5; break;
+						case "G1":
+							freq2= freq*9/8; break;
+						case "G2":
+							freq2= freq*6/5; break;
+						case "G3":
+							freq2= freq*5/4; break;
+						case "G1+":
+							freq2= freq*17/8; break;
+						case "G2+":
+							freq2= freq*11/5; break;
+						case "G3+":
+							freq2= freq*9/4; break;
+						case "M1-":
+							freq2= freq*1/3; break;
+						case "M1":
+							freq2= freq*4/3; break;
+						case "M1+":
+							freq2= freq*7/3; break;
+						case "M2-":
+							freq2= freq*5/12; break;
+						case "M2":
+							freq2= freq*17/12; break;
+						case "M2+":
+							freq2= freq*29/12; break;
+						case "P-":
+							freq2= freq*1/2; break;
+						case "P":
+							freq2= freq*3/2; break;
+						case "P+":
+							freq2= freq*5/2; break;
+						case "D1":
+							freq2= freq*8/5; break;
+						case "D2":
+							freq2= freq*5/3; break;
+						case "D3":
+							freq2= freq*9/5; break;
+						case "D1-":
+							freq2= freq*3/5; break;
+						case "D2-":
+							freq2= freq*2/3; break;
+						case "D3-":
+							freq2= freq*4/5; break;
+						case "N1":
+							freq2= freq*5/3; break;
+						case "N1-":
+							freq2= freq*2/3; break;
+						case "N2":
+							freq2= freq*9/5; break;
+						case "N2-":
+							freq2= freq*4/5; break;
+						case "N3":
+							freq2= freq*15/8; break;
+						case "N3-":
+							freq2= freq*7/8; break;
+						case "S1":
+							freq2= freq*2; break;
+						case "zz":
+							freq2 = 0;break;
+						default:
+							break;
+					}                    
+					console.log("here");
+					osc = context.createOscillator();
+					osc.connect(context.destination);
+					osc.frequency.value = freq2;
+					osc.start(duration*i);
+					osc.stop(duration*(i+1));
+				}	
+				button.value = "Play";
+				playing = false;
+				osc.stop(0);
+			}
+        }
+    //END OF CODE TO GENERATE FREQUENCY TONE
+		
+    </script>
+	
+</body>
+
+</p>
+
+</html>
+</html>
