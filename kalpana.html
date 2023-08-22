@@ -1025,10 +1025,16 @@
 	<br>
         <div class="button big-btn" id="playragam" type="button" style="font-size: 30px" onclick="toggle()">Play</div>
 	<br>
-	<label>To find a raga based on selected notes:</label>	
-	<input type="submit" style="font-size: 15px" onclick="location.href = 'reverse_raga.html'" width="48" height="48" value="Go to next page">
+	<input type="submit" style="font-size: 15px" onclick="location.href = 'reverse_raga.html'" width="48" height="48" value="Raga search based on selected notes">
 	</input>
-
+	<input type="submit" style="font-size: 15px" onclick="location.href = 'raga_player_page1_normalplayer_page2_reverse.html'" width="48" height="48" value="Generic Raga Search">
+	</input>
+	<br>
+	<br>
+        <div class="button big-btn" id="kalpana_swarams" type="button" width="80" style="font-size:20px; height:25px; width:400px;" onclick="genKalpana()">Play kalpana swarams</div>
+		<label>How many swaras to generate?</label><input name="number_of_swarams" id="number_of_swarams" text="0" size=3>
+	<br>
+	<label>Kalpana Swaras:</label><input name="kalpana_swarams_labels" id="kalpana_swarams" style="font-size:20px; height:500px; width:400px;" text="" height=1000><br>
 
     <script type="text/JavaScript"> 
 		var ragas = [
@@ -1580,7 +1586,7 @@
                                         [ "Narmada","Namanarayani janya","S0 R1 G3 M2 D1 N2 S1","S1 N2 D1 M2 P M2 G3 R1 S0 "],
                                         [ "Nasamani","Nasikabhooshani janya","S0 R3 G3 M2 P D2 N2 S1","S1 N3 D2 P M2 G3 R3 S0 "],
                                         [ "Nasikabhooshani","Melakarta 70","S0 R3 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R3 S0 "],
-                                        [ "Natabhairavi","Melakarta 20","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "]                                       
+                                        [ "Natabhairavi","Melakarta 20","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],                                       
                                         [ "Natabharanam","Natakapriya janya","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
                                         [ "Natakapriya","Melakarta 10","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
                                         [ "Nattai","Chalanatta janya","S0 R2 G3 M1 D2 N2 D2 S1","S1 N2 D2 P M1 G3 M1 R2 S0 "],
@@ -1630,7 +1636,7 @@
                                         [ "Poornagowla","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 D2 N3 P D2 N3 S1","S1 N3 D2 N3 P M1 G3 R2 S0 "],
                                         [ "Poornakalanidhi","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 D2 P M1 G2 R2 S0 "],
                                         [ "Poornakambhoji","Harikambhoji Janya","S0 R2 G3 M1 P N2 S1","S1 D2 P M1 G3 R2 S0 "],
-                                        [ "Poornalalita","Jhankaradhvani janya","S0 G2 R2 M1 P S1","S1 N1 D1 P M1 G2 R2 S0 "]                                       
+                                        [ "Poornalalita","Jhankaradhvani janya","S0 G2 R2 M1 P S1","S1 N1 D1 P M1 G2 R2 S0 "],                                       
                                         [ "Poornapanchamam","Chakravakam janya","P M1 S0 R1 S0 M1 P D2","D2 P M1 G3 R1 S0 N2-"],
                                         [ "Poornasaveri","Rishabhapriya janya","S0 R2 M2 P D1 S1","S1 N2 D1 P M2 G3 R2 S0 "],
                                         [ "Poornashadjam","Natabhairavi janya","S0 R2 G2 M1 N2 S1","S1 N2 P M1 G2 R2 S0 "],
@@ -1987,6 +1993,8 @@
 		function getAAnotes() {
             var ragaselect = document.querySelector('#raganame').value;
 			console.log(ragas[0].length);
+			var notesText="";
+			var notesText2="";
 			var info="";
 			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
 			if (pattern.test(ragaselect[0])) {
@@ -1996,18 +2004,15 @@
 						console.log(ragas[i][1]+"\n");
 						console.log(ragas[i][2]+"\n");
 						console.log(ragas[i][3]+"\n");
-						info = ragas[i][1];
-						notesText = ragas[i][2];
-						notesText2 = ragas[i][3];
+						document.getElementById("info").value = ragas[i][1];
+						document.getElementById("Arohanam").value = ragas[i][2];
+						document.getElementById("Avarohanam").value = ragas[i][3];
 						print("looking");
 						break;
 				} else {
 					console.log("shove it");
 				}					
 				}
-				document.getElementById("info").value = info;
-				document.getElementById("Arohanam").value = notesText;
-				document.getElementById("Avarohanam").value = notesText2;
 			}
 		}
 		
@@ -2183,7 +2188,78 @@
 			}
         }
     //END OF CODE TO GENERATE FREQUENCY TONE
-		
+		function genKalpana() {
+			var numSwarams = document.getElementById("number_of_swarams").value;
+			var arohanam = document.getElementById("Arohanam").value;
+			let arohanam_swarams = arohanam.split(" ");
+			var avarohanam = document.getElementById("Avarohanam").value;
+			let avarohanam_swarams = avarohanam.split(" ");
+			var kalpana = [];
+			var randDirection = Math.floor(Math.random()*2);
+			var randSwaram = 0;
+			if (randDirection == 0) {
+				print(arohanam_swarams.length);
+				randSwaram =  Math.floor(Math.random()*arohanam_swarams.length);
+				kalpana[0] = arohanam_swarams[randSwaram];
+				console.log(randSwaram);
+			} else {
+				print(avarohanam_swarams.length);
+				randSwaram = Math.floor(Math.random()*avarohanam_swarams.length);
+				kalpana[0] = avarohanam_swarams[randSwaram];
+			}
+			var swarams_to_skip=0;
+			for(var i=1; i<numSwarams; i++) {
+				swarams_to_skip = Math.floor(Math.random()*2);
+				console.log(swarams_to_skip);
+				randDirection = Math.floor(Math.random()*2);
+				console.log(randDirection);
+				if (randDirection==0) {
+					randSwaram += swarams_to_skip;
+					if (randSwaram >= arohanam_swarams.length) {
+						randDirection = 1;
+						//randSwaram-=arohanam_swarams.length;
+					}
+					console.log(randSwaram);
+					kalpana[i] = arohanam_swarams[randSwaram];
+					console.log(kalpana[i]);
+				}
+				if (randDirection==1) {
+					randSwaram -= swarams_to_skip;
+					if (randSwaram <= avarohanam_swarams.length) {
+						//randSwaram+=avarohanam_swarams.length;
+						randDirection = 0;
+					}
+					console.log(randSwaram);
+					kalpana[i] = avarohanam_swarams[randSwaram];
+					console.log(kalpana[i]);
+				}
+			}
+			for (var i=0; i<kalpana.length; i++) {
+				console.log(kalpana[i]+ " ")
+				if (i%8==0){
+					console.log("\n");
+				}
+			}
+			document.getElementById("kalpana_swarams").value = kalpana;
+			var context = null;
+			var usingWebAudio = true;	
+			//this section is code for setting frequency
+			
+			if (typeof AudioContext !== 'undefined') {
+				context = new AudioContext();
+			} else if (typeof webkitAudioContext !== 'undefined') {
+				if (navigator.appCodeName == "Firefox" || navigator.appCodeName == "Chrome") {
+					context = new webkitAudioContext();
+				} 
+			} else {
+				usingWebAudio = false;
+			}
+			var playing = false;
+			var osc = null;
+			//var freq = getSruthiFrequency();
+			var noteslist = "";
+			var duration = parseFloat(document.getElementById("Duration").value);
+		}
     </script>
 </body>
 </div>

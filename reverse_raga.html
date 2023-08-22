@@ -10,12 +10,14 @@
 	<style>
 		body {
 			background-color:cornsilk;
-			background-image: url("https://www.hancocks-paducah.com/Images/Item%20images/PB%20299%20Y_main-1.jpg?resizeid=5&resizeh=500&resizew=500");
+			background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0520/5552/light_purple_shop_preview.png");
             font-family: Arial, Helvetica, sans-serif;
+			color: white
         }
         h2 {
             text-align: center;
             font-size: 50px;
+			color: #000000
         }
         img {
             src: "C:\Users\srira\Documents\Raga Player App\violin.jpg";
@@ -50,16 +52,18 @@
 </head>
 <body>
     <h2>RagaPedia</h2>
-	<label style="text-align: center; font-size: 18px;">Forgot how a raga goes?  Enter the notes and or info you know about the raga and get a raga corresponding to that info! </label>
+	<label style="text-align: center; font-size: 18px;">Identify a ragam with its' notes.</label>
 	<br>
 	<label style="text-align: center; font-size: 18px;">Instructions: </label><br><br>
-	<label style="text-align: center; font-size: 18px;">   1. Select your notes from the buttons denoting the 12 swarasthanas to form your ragam.</label><br><br>
-    <label style="text-align: center; font-size: 18px;">   2. Then, press the button "Search Raga".</label><br><br>
-	<label style="text-align: center; font-size: 18px;">   3. Select your sruti from the dropdown for "Sruti".</label><br><br>
-	<label style="text-align: center; font-size: 18px;">   4. Finally, press the "Play" button to play your selected raga.</label><br><br>
+	<label style="text-align: center; font-size: 18px;">   1. Select your notes from the buttons denoting the swarasthanas to form your ragam.</label><br><br>
+    <label style="text-align: center; font-size: 18px;">   2. Press the button "Search Raga".</label><br><br>
+	<label style="text-align: center; font-size: 18px;">   3. Select your sruti.</label><br><br>
+	<label style="text-align: center; font-size: 18px;">   4. Press the "Play".</label><br><br>
 	<br>
 	<br>
-	
+	Which type of search?
+	<button type="button" id = "Hindustani" class="btn btn-success">Hindustani</button> 
+	&nbsp; &nbsp; <button type="button" id = "Carnatic" class="btn btn-success">Carnatic</button> 
 	<div>
 	<br><label>Arohana:</label><button type="button" onclick="addToArohana('S0')" class="btn btn-success">S0</button> 
 	<button type="button" onclick="addToArohana('R1')" class="btn btn-success">R1</button>
@@ -78,7 +82,10 @@
 	<button type="button" onclick="addToArohana('N2')" class="btn btn-success">N2</button>
 	<button type="button" onclick="addToArohana('N3')" class="btn btn-success">N3</button>
 	<button type="button" onclick="addToArohana('S1')" class="btn btn-success">S1</button>
+		&nbsp;&nbsp;&nbsp;
+	<button type="button" onclick="clearUp()" class="btn btn-success">Clear entry</button> 
 	<br>
+
 		<input name = "Arohana" id = "Arohanam" text="Arohanam" size=80><br> 
 	<br><br>
 	<label>Avarohana:</label>	<button type="button" onclick="addToAvarohana('S1')" class="btn btn-success">S1</button>
@@ -97,15 +104,17 @@
 	<button type="button" onclick="addToAvarohana('R2')" class="btn btn-success">R2</button>
 	<button type="button" onclick="addToAvarohana('R1')" class="btn btn-success">R1</button>
 	<button type="button" onclick="addToAvarohana('S0 ')" class="btn btn-success">S0</button> 
+	&nbsp;&nbsp;&nbsp;
+	<button type="button" onclick="clearDown()" class="btn btn-success">Clear entry</button> 
+	<button type="button" onclick="reverseScale()" class="btn btn-success">Set avarohanam to reverse of arohanam</button> 
 	<br>
 		<input name = "Avarohana" id = "Avarohanam" text="Avarohanam" size=80><br> 
-	<br><br><label>Raga Info:</label><input name="info" id="info" text="Info" size=80><br>
-	<br>
 	</div>
 	<div>
-		<br>
+		
         <div class="button medium-btn" id="search_raga" type="button" style="font-size: 15px" onclick="getRaga()">Search raga</div><br>
-        <label>Raga: </label><input type="text" name="raganame" id="raganame" text="Matched raga appears here"><br>    
+        <label>Raga: </label><input type="text" name="raganame" id="raganame" text="Matched raga appears here">    
+		&nbsp;&nbsp;<label>Raga Info:</label><input name="info" id="info" text="Info" size=80>
 	</div>
 	<label for="Sruthi">Select sruthi:</label>
     <select name="Sruthi" id="Sruthi" onclick=getSruthiFrequency()>
@@ -162,7 +171,6 @@
                                         [ "Andolika","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 D2 M1 R2 S0 "],
                                         [ "Aparoopam","Harikambhoji janya","S0 R2 G3 M1 P N2 D2 N2 S1","S1 D2 M1 G3 R2 G3 S0 "],
                                         [ "Aprameya","Mechakalyani janya","S0 R2 M2 P D2 S1","S1 N3 D2 M2 G3 M2 R2 S0 "],
-                                        [ "Arabi","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 D2 P M1 G3 R2 S0 "],
                                         [ "Arabi","Dheera-shankarabharanam janya","S0 R2 M1 P D2 S1","S1 N3 D2 P M1 G3 R2 S0 "],
                                         [ "Ardhradesi","Mayamalava-gowla janya","S0 R1 G3 M1 P D1 N3 S1","S1 D1 P M1 G3 R1 S0 "],
                                         [ "Arunangi","Shubhapanthuvarali janya","S0 R1 M2 P N3 D1 S1","S1 N3 D1 M2 R1 G2 R1 S0 "],
@@ -212,7 +220,7 @@
                                         [ "Bhogi","Senavati janya","S0 G2 M1 P D1 N1 D1 S1","S1 N1 D1 P M1 G2 S0 "],
                                         [ "Bhoopalam","Hanumatodi janya, morning raga","S0 R1 G2 P D1 S1","S1 D1 P G2 R1 S0 "],
                                         [ "Bhoopalapanchamam","Jhalavarali janya","S0 G1 R1 G1 P M2 D1 S1","S1 P D1 M G1 R1 S0 "],
-                                        [ "Bhoopali","","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
+                                        [ "Bhoopali","Hindustani mohanam","S0 R2 G3 P D2 S1","S1 D2 P G3 R2 S0 "],
                                         [ "Bhoopkalyani","Mechakalyani janya","S0 R2 G3 P D2 S1","S1 N3 D2 P M2 G3 R2 S0 "],
                                         [ "Bhooshavali","Vachaspathi janya","S0 R2 G3 M2 P D2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
                                         [ "Bhooshavathi","aka Vachaspathi","S0 R2 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R2 S0 "],
@@ -421,9 +429,9 @@
                                         [ "Hindoladeshikam","Natakapriya janya","S0 M1 R1 G2 M1 P D2 N2 S1","S1 P N2 D2 M1 G2 R1 S0 "],
                                         [ "Hindolam","Natabhairavi janya","S0 G2 M1 D1 N2 S1","S1 N2 D1 M1 G2 S0 "],
                                         [ "Hindolavasanta","Natabhairavi janya","S0 G2 M1 P D1 N2 D1 S1","S1 N2 D1 P M1 D2 M1 G2 S0 "],
-                                        [ "Hindustani-behag","","S0 G3 M1 P N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
-                                        [ "Hindustani-kapi","Kharaharapriya janya","S0 R2 M1 P N2 S1","S1 N2 D2 N2 P M1 G2 M1 D2 P G2 R2 S0 N2 S1 "],
-                                        [ "Hindusthani-todi","Shubhapanthuvarali janya","N3 R1 G2 M2 D1 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
+                                        [ "Hindustani-behag","hindustani","S0 G3 M1 P N3 S1","S1 N3 D2 P M1 G3 R2 S0 "],
+                                        [ "Hindustani-kapi","Kharaharapriya janya, hindustani","S0 R2 M1 P N2 S1","S1 N2 D2 N2 P M1 G2 M1 D2 P G2 R2 S0 N2 S1 "],
+                                        [ "Hindusthani-todi","Shubhapanthuvarali janya, hindustani","N3 R1 G2 M2 D1 N3 S1","S1 N3 D1 P M2 G2 R1 S0 "],
                                         [ "Hrdhini","Vachaspathi janya","S0 G3 M2 P N2 S1","S1 N2 P M2 G3 S0 "],
                                         [ "Hrudkamali","Gowrimanohari janya","S0 R2 M1 D2 N3 S1","S1 N3 D2 M1 R2 S0 "],
                                         [ "Huseni","Kharaharapriya janya","S0 R2 G2 M1 P N2 D2 N2 S1","S1 N2 D1 P M1 G2 R2 S0 "],
@@ -684,7 +692,7 @@
                                         [ "Narmada","Namanarayani janya","S0 R1 G3 M2 D1 N2 S1","S1 N2 D1 M2 P M2 G3 R1 S0 "],
                                         [ "Nasamani","Nasikabhooshani janya","S0 R3 G3 M2 P D2 N2 S1","S1 N3 D2 P M2 G3 R3 S0 "],
                                         [ "Nasikabhooshani","Melakarta 70","S0 R3 G3 M2 P D2 N2 S1","S1 N2 D2 P M2 G3 R3 S0 "],
-                                        [ "Natabhairavi","Melakarta 20","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "]                                       
+                                        [ "Natabhairavi","Melakarta 20","S0 R2 G3 M1 P D1 N2 S1","S1 N2 D1 P M1 G3 R2 S0 "],                                       
                                         [ "Natabharanam","Natakapriya janya","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
                                         [ "Natakapriya","Melakarta 10","S0 R1 G2 M1 P D2 N2 S1","S1 N2 D2 P M1 G2 R1 S0 "],
                                         [ "Nattai","Chalanatta janya","S0 R2 G3 M1 D2 N2 D2 S1","S1 N2 D2 P M1 G3 M1 R2 S0 "],
@@ -734,7 +742,7 @@
                                         [ "Poornagowla","Dheera-shankarabharanam janya","S0 R2 G3 M1 P N3 D2 N3 P D2 N3 S1","S1 N3 D2 N3 P M1 G3 R2 S0 "],
                                         [ "Poornakalanidhi","Kharaharapriya janya","S0 G2 M1 P D2 N2 S1","S1 D2 P M1 G2 R2 S0 "],
                                         [ "Poornakambhoji","Harikambhoji Janya","S0 R2 G3 M1 P N2 S1","S1 D2 P M1 G3 R2 S0 "],
-                                        [ "Poornalalita","Jhankaradhvani janya","S0 G2 R2 M1 P S1","S1 N1 D1 P M1 G2 R2 S0 "]                                       
+                                        [ "Poornalalita","Jhankaradhvani janya","S0 G2 R2 M1 P S1","S1 N1 D1 P M1 G2 R2 S0 "],                                       
                                         [ "Poornapanchamam","Chakravakam janya","P M1 S0 R1 S0 M1 P D2","D2 P M1 G3 R1 S0 N2-"],
                                         [ "Poornasaveri","Rishabhapriya janya","S0 R2 M2 P D1 S1","S1 N2 D1 P M2 G3 R2 S0 "],
                                         [ "Poornashadjam","Natabhairavi janya","S0 R2 G2 M1 N2 S1","S1 N2 P M1 G2 R2 S0 "],
@@ -931,7 +939,7 @@
                                         [ "Soma","","S0 R1 P M1 D1 N2 S1","S1 N2 D1 M1 P M1 G3 R1 S0 "],
                                         [ "Sooryakantam","Melakarta 17","S0 R1 G3 M1 P D2 N3 S1","S1 N3 D2 P M1 G3 R1 S0 "],
                                         [ "Sowgandhini","Salagam janya","S0 R1 M2 P D1 S1","S1 N1 D1 P M2 G1 R1 S0 "],
-                                        [ "Sowjanya","Hanumatodi janya","S0 R1 M1 D1 S1","S1 D1 M1 R1 S0  "],
+                                        [ "Sowjanya","Hanumatodi janya","S0 R1 M1 D1 S1","S1 D1 M1 R1 S0 "],
                                         [ "Sowrasena","Sarasangi janya","S0 R2 M1 P D1 S1","S1 N3 D1 P M1 G3 R2 S0 "],
                                         [ "Sowrashtram","Suryakantam janya","S0 R1 G3 M1 P M1 D2 N3 S1","S1 N3 D2 N2 D2 P M1 G3 R1 S0 "],
                                         [ "Sowveeram","Suvarnangi janya","S0 R1 G2 M2 P D2 N3 S1","S1 N3 D2 P M2 G2 R1 S0 "],
@@ -1083,6 +1091,8 @@
                                         [ "Yaman","","S0 R2 G3 M2 P D2 N3 S1","S1 N3 D2 P M2 G3 R2 S0 "],
                                         [ "Yamuna","","S0 R2 G3 P M2 P D2 S1","S1 D2 P M2 P G3 R2 S0 "]
 		];
+		var hindustani = false;
+		var carnatic = false;
 		var chosenArohana = "";
 		var chosenAvarohana = "";
 		var button = document.getElementById("playragam");
@@ -1090,35 +1100,22 @@
 		function populate() {
 			getAAnotes();
 		}
-		function getAAnotes() {
-            var ragaselect = document.querySelector('#raganame').value;
-			console.log(ragas[0].length);
-			var notesText="";
-			var notesText2="";
-			var info="";
-			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
-			if (pattern.test(ragaselect[0])) {
-				for (var i=0; i<ragas.length; i++) {
-				if (ragas[i][0].localeCompare(ragaselect)==0) {
-						console.log(ragaselect+"\n");
-						console.log(ragas[i][1]+"\n");
-						console.log(ragas[i][2]+"\n");
-						console.log(ragas[i][3]+"\n");
-						document.getElementById("info").value = ragas[i][1];
-						document.getElementById("Arohanam").value = ragas[i][2];
-						document.getElementById("Avarohanam").value = ragas[i][3];
-						break;
-				} else {
-					console.log("shove it");
-				}					
-				}
-			}
-		}
-		function getRaga() {			
+		function getRaga() {
+			//var notesText = "";
+			//var notesText2 = "";		
             var arohana = document.getElementById("Arohanam").value;
 			var avarohana = document.getElementById("Avarohanam").value;
 			console.log("\n");
 			console.log("User input:\n");
+			if (arohana[0] == ' ') {
+				arohana = arohana.substring(1, arohana.length);
+			}
+			if (avarohana[0] == ' ') {
+				avarohana = avarohana.substring(1, avarohana.length);
+			}
+			if (arohana[arohana.length-1] == ' ') {
+				arohana = arohana.substring(0, arohana.length-1);
+			}
 			console.log(arohana);
 			console.log(avarohana);			
 			var raga = "";
@@ -1126,33 +1123,144 @@
 			var pattern=new RegExp("[ABCDEFGHIJKLabcdefghijkl]");
 			if (pattern.test(arohana) && pattern.test(avarohana)) {
 				for (var i=0; i<ragas.length; i++) {
-				if (!ragas[i][2].localeCompare(arohana) && !ragas[i][3].localeCompare(avarohana)) {
-						console.log(ragas[i][0]+"\n");
-						console.log(ragas[i][1]+"\n");
-						console.log(ragas[i][2]+"\n");
-						console.log(ragas[i][3]+"\n");
-						raga = ragas[i][0];
-						info = ragas[i][1];
-						notesText = ragas[i][2];
-						notesText2 = ragas[i][3];
-						break;
-				} else {
-					console.log("shove it")
-				}					
-				}
+					if (!ragas[i][2].localeCompare(arohana) && !ragas[i][3].localeCompare(avarohana)) {
+						//if (ragas[i][1].includes("hindustani") && hindustani==true) {
+							console.log(document.getElementById("Hindustani").value);
+							console.log(ragas[i][0],"\n");
+							console.log(ragas[i][1],"\n");
+							console.log(ragas[i][2],"\n");
+							console.log(ragas[i][3],"\n");
+							raga = ragas[i][0];
+							info = ragas[i][1];
+							document.getElementById("Arohanam").value = ragas[i][2];
+							document.getElementById("Avarohanam").value = ragas[i][3];
+							break;
+						//}
+					} 	
+					count = i;					
+				}			
+				if (count==ragas.length-1) {
+						console.log(document.getElementById("Hindustani").value);
+						console.log("count=", count);
+						console.log("shove it. no such raga.");
+						raga = "No such raga.";
+						info = "";
+				}	
 			}
 			document.getElementById("raganame").value = raga;
 			document.getElementById("info").value = info;
-			document.getElementById("Arohanam").value = notesText;
-			document.getElementById("Avarohanam").value = notesText2;
+			//document.getElementById("Arohanam").value = notesText;
+			//document.getElementById("Avarohanam").value = notesText2;
+		}
+		function playNote(swara) {
+			var context = null;
+			var usingWebAudio = true;	
+			//this section is code for setting frequency
+			if (typeof AudioContext !== 'undefined') {
+				context = new AudioContext();
+			} else if (typeof webkitAudioContext !== 'undefined') {
+				if (navigator.appCodeName == "Firefox" || navigator.appCodeName == "Chrome") {
+					context = new webkitAudioContext();
+				} 
+			} else {
+				usingWebAudio = false;
+			}
+			var playing = false;
+			var osc = null;
+			var duration = parseFloat(document.getElementById("Duration").value);
+			var freq = getSruthiFrequency();
+			switch (swara) {
+				case "S0":
+					freq2= getSruthiFrequency(); break;
+				case "R1":
+					freq2= freq*16/15; break;
+				case "R1+":
+					freq2= freq*31/15; break;
+				case "R2":
+					freq2= freq*9/8; break;
+				case "R2+":
+					freq2= freq*17/8; break;
+				case "R3":
+					freq2= freq*6/5; break;
+				case "R3+":
+					freq2= freq*11/5; break;
+				case "G1":
+					freq2= freq*9/8; break;
+				case "G2":
+					freq2= freq*6/5; break;
+				case "G3":
+					freq2= freq*5/4; break;
+				case "G1+":
+					freq2= freq*17/8; break;
+				case "G2+":
+					freq2= freq*11/5; break;
+				case "G3+":
+					freq2= freq*9/4; break;
+				case "M1-":
+					freq2= freq*1/3; break;
+				case "M1":
+					freq2= freq*4/3; break;
+				case "M1+":
+					freq2= freq*7/3; break;
+				case "M2-":
+					freq2= freq*5/12; break;
+				case "M2":
+					freq2= freq*17/12; break;
+				case "M2+":
+					freq2= freq*29/12; break;
+				case "P-":
+					freq2= freq*1/2; break;
+				case "P":
+					freq2= freq*3/2; break;
+				case "P+":
+					freq2= freq*5/2; break;
+				case "D1":
+					freq2= freq*8/5; break;
+				case "D2":
+					freq2= freq*5/3; break;
+				case "D3":
+					freq2= freq*9/5; break;
+				case "D1-":
+					freq2= freq*3/5; break;
+				case "D2-":
+					freq2= freq*2/3; break;
+				case "D3-":
+					freq2= freq*4/5; break;
+				case "N1":
+					freq2= freq*5/3; break;
+				case "N1-":
+					freq2= freq*2/3; break;
+				case "N2":
+					freq2= freq*9/5; break;
+				case "N2-":
+					freq2= freq*4/5; break;
+				case "N3":
+					freq2= freq*15/8; break;
+				case "N3-":
+					freq2= freq*7/8; break;
+				case "S1":
+					freq2= freq*2; break;
+				case "zz":
+					freq2 = 0;break;
+				default:
+					break;
+			}                    
+			console.log("here");
+			osc = context.createOscillator();
+			osc.connect(context.destination);
+			osc.frequency.value = freq2;
+			osc.start(0);
+			osc.stop(duration);
 		}
 		function addToArohana(swara) {
 			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.concat(" ");
 			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.concat(swara);
+			playNote(swara);
 		}
 		function addToAvarohana(swara) {
 			document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(" ");
 			document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(swara);
+			playNote(swara);
 		}
         function getSruthiFrequency() {
             var sruthiletter = document.getElementById("Sruthi").value;
@@ -1202,7 +1310,6 @@
 			var context = null;
 			var usingWebAudio = true;	
 			//this section is code for setting frequency
-			
 			if (typeof AudioContext !== 'undefined') {
 				context = new AudioContext();
 			} else if (typeof webkitAudioContext !== 'undefined') {
@@ -1218,7 +1325,7 @@
 			var noteslist = "";
 			var duration = parseFloat(document.getElementById("Duration").value);
 			
-			getAAnotes();
+			getRaga();
 			console.log("entering toggle");
 			var freq = getSruthiFrequency();
 			var chosenArohana = document.getElementById("Arohanam").value;
@@ -1326,7 +1433,32 @@
 			}
         }
     //END OF CODE TO GENERATE FREQUENCY TONE
-		
+		function clearUp() {
+			document.getElementById("Arohanam").value = "";
+		}
+		function clearDown() {
+			document.getElementById("Avarohanam").value = "";
+		}
+		function reverseScale() {
+			const arohana_notes = document.getElementById("Arohanam").value.split(" ");
+			document.getElementById("Avarohanam").value = "";
+			for (var i=arohana_notes.length-1; i>0; i--) {
+				console.log(arohana_notes[i]);
+				document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(arohana_notes[i]);
+				document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.concat(" ");
+			}
+		}
+		/*document.getElementById("Hindustani").addEventListener("click", (event) => {
+			if (event.detail%2==1) {
+				hindustani = true;
+			}
+			console.log(document.getElementById("Hindustani").value);
+		});
+		document.getElementById("Carnatic").addEventListener("click", (event) => {
+			if (event.detail%2==1) {
+				carnatic = true;
+			}
+		});*/
     </script>
 	
 </body>
