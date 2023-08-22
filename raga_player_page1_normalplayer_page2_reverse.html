@@ -43,14 +43,18 @@
 		}
 		
 		.big-btn {
-			width: 90px;
-			height: 40px;
+			width: 140px;
+			height: 80px;
 		}
 	</style>
 </head>
 <body>
     <h2>RagaPedia</h2>
 	<label style="text-align: center; font-size: 18px;">RagaPedia is a web app that helps to learn about ragas in Carnatic music. </label>
+	<br>
+	<label>To find a raga based on selected notes:</label>	
+	<input type="submit" style="font-size: 18px" onclick="window.location.href = 'https://vultimate1.github.io/Ragam-Player-App/reverse_raga.html';" width="48" height="48" value="Click here">
+	</input><br>
 	<br>
 	<label style="text-align: center; font-size: 18px;">Instructions: Select your raga and sruthi, then hit the play button.</label><br><br>
     <label for="Sruthi">Select sruthi:</label>
@@ -1023,11 +1027,8 @@
 
 	<label>Raga Info:</label><input name="info" id="info" text="Info" size=80><br>
 	<br>
-        <div class="button big-btn" id="playragam" type="button" style="font-size: 30px" onclick="toggle()">Play</div>
+        <input class="button big-btn" id="playragam" type="button" style="font-size: 30px" onclick="toggle()" value="Play">
 	<br>
-	<label>To find a raga based on selected notes:</label>	
-	<input type="submit" style="font-size: 15px" onclick="location.href = 'reverse_raga.html'" width="48" height="48" value="Go to next page">
-	</input>
 
 
     <script type="text/JavaScript"> 
@@ -1996,18 +1997,18 @@
 						console.log(ragas[i][1]+"\n");
 						console.log(ragas[i][2]+"\n");
 						console.log(ragas[i][3]+"\n");
-						info = ragas[i][1];
-						notesText = ragas[i][2];
-						notesText2 = ragas[i][3];
+						document.getElementById("info").value  = ragas[i][1];
+						document.getElementById("Arohanam").value = ragas[i][2];
+						document.getElementById("Avarohanam").value = ragas[i][3];
 						print("looking");
 						break;
 				} else {
 					console.log("shove it");
 				}					
 				}
-				document.getElementById("info").value = info;
-				document.getElementById("Arohanam").value = notesText;
-				document.getElementById("Avarohanam").value = notesText2;
+				//document.getElementById("info").value = info;
+				//document.getElementById("Arohanam").value = notesText;
+				//document.getElementById("Avarohanam").value = notesText2;
 			}
 		}
 		
@@ -2059,7 +2060,6 @@
 			var context = null;
 			var usingWebAudio = true;	
 			//this section is code for setting frequency
-			
 			if (typeof AudioContext !== 'undefined') {
 				context = new AudioContext();
 			} else if (typeof webkitAudioContext !== 'undefined') {
