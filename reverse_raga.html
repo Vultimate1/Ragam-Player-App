@@ -19,6 +19,13 @@
             font-size: 50px;
 			color: #000000
         }
+		h3 {
+			border-top: 0px;
+			text-align: left;
+            font-size: 20px;
+			border-spacing: 0px;
+			color: #000000
+		}
         img {
             src: "C:\Users\srira\Documents\Raga Player App\violin.jpg";
 			alt: "violin"
@@ -52,8 +59,8 @@
 </head>
 <body>
     <h2>RagaPedia</h2>
+	<h3>Raga Identification</h3>
 	<label style="text-align: center; font-size: 18px;">Identify a ragam with its notes.</label>
-	<br>
 	<label>To listen to and get info on any raga:</label>	
 	<input type="submit" style="font-size: 15px" onclick="window.history.back();" width="48" height="48" value="Click here"><br>
 	</input>
@@ -62,8 +69,22 @@
     <label style="text-align: center; font-size: 18px;">   2. Press the button "Search Raga".</label><br><br>
 	<label style="text-align: center; font-size: 18px;">   3. Select your sruti.</label><br><br>
 	<label style="text-align: center; font-size: 18px;">   4. Press the "Play".</label><br><br>
-	<br>
-	<br>
+
+	<label for="Sruthi">Select sruthi:</label>
+    <select name="Sruthi" id="Sruthi" onclick=getSruthiFrequency()>
+        <option value="A">A</option>
+        <option value="A#">A#</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="C#">C#</option>
+        <option value="D">D</option>
+        <option value="D#">D#</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#</option>
+        <option value="G">G</option>
+        <option value="G#">G#</option>
+    </select>
 
 	<div>
 	<br><label>Arohana:</label>   <button type="button" onclick="addToArohana('S0')" class="btn btn-success">S0</button> 
@@ -85,7 +106,7 @@
 	<button type="button" onclick="addToArohana('S1')" class="btn btn-success">S1</button>
 		&nbsp;&nbsp;&nbsp;
 	<button type="button" onclick="clearUp()" class="btn btn-success">Clear entry</button> 
-	<button type="button" onclick="clearOneUp()" class="btn btn-success">Delete</button> 
+	<button type="button" onclick="clearOneUp()" class="btn btn-success">Delete last swara</button> 
 	<br>
 
 		<input name = "Arohana" id = "Arohanam" text="Arohanam" size=80><br> 
@@ -103,38 +124,24 @@
 	<button type="button" onclick="addToAvarohana('G3')" class="btn btn-success">G3</button>
 	<button type="button" onclick="addToAvarohana('G2')" class="btn btn-success">G2</button>
 	<button type="button" onclick="addToAvarohana('G1')" class="btn btn-success">G1</button>
+	<button type="button" onclick="addToAvarohana('R3')" class="btn btn-success">R3</button>
 	<button type="button" onclick="addToAvarohana('R2')" class="btn btn-success">R2</button>
 	<button type="button" onclick="addToAvarohana('R1')" class="btn btn-success">R1</button>
-	<button type="button" onclick="addToAvarohana('S0 ')" class="btn btn-success">S0</button> 
+	<button type="button" onclick="addToAvarohana('S0')" class="btn btn-success">S0</button> 
 	&nbsp;&nbsp;&nbsp;
 	<button type="button" onclick="clearDown()" class="btn btn-success">Clear entry</button> 
-	<button type="button" onclick="clearOneDown().value)" class="btn btn-success">Delete</button> 
-	<button type="button" onclick="reverseScale()" class="btn btn-success">Set avarohanam to reverse of arohanam</button> 
+	<button type="button" onclick="clearOneDown()" class="btn btn-success">Delete last swara</button> 
 	<br>
-		<input name = "Avarohana" id = "Avarohanam" text="Avarohanam" size=80><br> 
+		<input name = "Avarohana" id = "Avarohanam" text="Avarohanam" size=80> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		<button type="button" onclick="reverseScale()" class="btn btn-success">Set avarohanam to reverse of arohanam</button> 
+		<br> 
 	</div>
 	<div>
 		
         <div class="button medium-btn" id="search_raga" type="button" style="font-size: 15px" onclick="getRaga()">Search raga</div><br>
-        <label>Raga: </label><input type="text" name="raganame" id="raganame" text="Matched raga appears here">    
-		&nbsp;&nbsp;<label>Raga Info:</label><input name="info" id="info" text="Info" size=80>
+        <label>Raga: </label><input type="text" name="raganame" id="raganame" text="Matched raga appears here" size=80>    
+		<br><label>Raga Info:</label><input name="info" id="info" text="Info" size=80>
 	</div>
-	<label for="Sruthi">Select sruthi:</label>
-    <select name="Sruthi" id="Sruthi" onclick=getSruthiFrequency()>
-        <option value="A">A</option>
-        <option value="A#">A#</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
-        <option value="C#">C#</option>
-        <option value="D">D</option>
-        <option value="D#">D#</option>
-        <option value="E">E</option>
-        <option value="F">F</option>
-        <option value="F#">F#</option>
-        <option value="G">G</option>
-        <option value="G#">G#</option>
-    </select>
-	
 	<br>
 	<label>Note duration (seconds):</label> 
 	<input id="Duration" type="range" class="Slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="durationchange()" /> 
@@ -224,7 +231,7 @@
 					["Bhogi","Senavati janya","S0 G2 M1 P D1 N1 D1 S1", "S1 N1 D1 P M1 G2 S0 "],
 					["Bhoopalam","Hanumatodi janya, morning raga","S0 R1 G2 P D1 S1", "S1 D1 P G2 R1 S0 "],
 					["Bhoopalapanchamam","Jhalavarali janya","S0 G1 R1 G1 P M2 D1 S1", "S1 P D1 M G1 R1 S0 "],
-					//["Bhoopali","","S0 R2 G3 P D2 S1", "S1 D2 P G3 R2 S0 "],
+					["Bhoopali","","S0 R2 G3 P D2 S1", "S1 D2 P G3 R2 S0 "],
 					["Bhoopkalyani","Mechakalyani janya","S0 R2 G3 P D2 S1", "S1 N3 D2 P M2 G3 R2 S0 "],
 					["Bhooshavali","Vachaspathi janya","S0 R2 G3 M2 P D2 S1", "S1 N2 D2 P M2 G3 R2 S0 "],
 					["Bhooshavathi","aka Vachaspathi","S0 R2 G3 M2 P D2 N2 S1", "S1 N2 D2 P M2 G3 R2 S0 "],
@@ -1139,24 +1146,25 @@
 							info = info.concat(ragas[i][1]);
 							info = info.concat(", ");
 							document.getElementById("Arohanam").value = ragas[i][2];
+							console.log(raga);
 							document.getElementById("Avarohanam").value = ragas[i][3];
 							
 						//}
 					} 	
 					count = i;					
 				}			
-				raga = document.getElementById("raganame").value;
-				info = document.getElementById("info").value;
+				//raga = document.getElementById("raganame").value;
+				//info = document.getElementById("info").value;
 				if (count==ragas.length-1 && !raga.localeCompare("")) {
 						//console.log(document.getElementById("Hindustani").value);
 						raga = "No such raga.";
 						info = "";
 				}
 				if (!raga.substring(raga.length-2, raga.length).localeCompare(", ")) {
-					raga = raga.slice(0, raga.length-3);
+					raga = raga.slice(0, raga.length-2);
 				}
 				if (!info.substring(info.length-2, info.length).localeCompare(", ")) {
-					info = info.slice(0, info.length-3);
+					info = info.slice(0, info.length-2);
 				}
 			}
 			document.getElementById("raganame").value = raga;
@@ -1183,7 +1191,7 @@
 			var freq = getSruthiFrequency();
 			switch (swara) {
 				case "S0":
-					freq2= getSruthiFrequency(); break;
+					freq2= freq; break;
 				case "R1":
 					freq2= freq*16/15; break;
 				case "R1+":
@@ -1253,7 +1261,7 @@
 				case "S1":
 					freq2= freq*2; break;
 				case "zz":
-					freq2 = 0;
+					freq2 = 0; break;
 				default:
 					break;
 			}                    
@@ -1286,7 +1294,7 @@
                     freq= 124;
                     break;
                 case "C":
-                    freq= 131;
+                    freq= 130;
                     break;
                 case "C#":
                     freq= 138;
@@ -1316,7 +1324,7 @@
 			return freq;
         }      
 		function durationchange() {
-				document.getElementById("Durationvalue").innerHTML = document.getElementById("Duration").value;
+			document.getElementById("Durationvalue").innerHTML = document.getElementById("Duration").value;
 		}
 		function toggle() {
 			var context = null;
@@ -1462,19 +1470,24 @@
 		}
 		function clearOneUp() {
 			var i = document.getElementById("Arohanam").value.length-1;
-			while (i>=0 && document.getElementById("Arohanam").value.charCodeAt(i)<65 && document.getElementById("Arohanam").value.charCodeAt(i)>90) {
-				document.getElementById("Arohanam").value[i]="";
+			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.substring(0,i);
+			i=i-1;
+			while (i>=0 && document.getElementById("Arohanam").value[i]!=" ") {
+				document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.substring(0,i);
 				i--;
 			}
-			document.getElementById("Arohanam").value[i]="";
+			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.substring(0,i);
 		}
 		function clearOneDown() {
-			var i = document.getElementById("Avarohanam").value.length-1;
-			while (i>=0 && document.getElementById("Avarohanam").value.charCodeAt(i)<65 && document.getElementById("Avarohanam").value.charCodeAt(i)>90) {
-				document.getElementById("Avarohanam").value[i]="";
+			var i = document.getElementById("Avarohanam").value.length;
+			document.getElementById("Arohanam").value[i]= document.getElementById("Avarohanam").value.substring(0,i);
+			i=i-1;
+			while (i>=0 && document.getElementById("Avarohanam").value[i]!=" ") {
+				console.log(document.getElementById("Avarohanam").value.charCodeAt(i));
+				document.getElementById("Avarohanam").value = document.getElementById("Avarohanam").value.substring(0,i);
 				i--;
 			}
-			document.getElementById("Avarohanam").value[i]="";
+			document.getElementById("Arohanam").value = document.getElementById("Arohanam").value.substring(0,i);
 		}
 		/*document.getElementById("Hindustani").addEventListener("click", (event) => {
 			if (event.detail%2==1) {
