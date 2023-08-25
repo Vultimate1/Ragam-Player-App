@@ -69,11 +69,10 @@
         <option value="F#">F#</option>
         <option value="G">G</option>
         <option value="G#">G#</option>
-
     </select>
 	<br>
     <label for="raga">Type and select raga:</label>
-    <input type="text" name="raganame" id="raganame" list="raga" oninput = "populate()"><br>    
+    <input type="text" name="raganame" id="raganame" list="raga" oninput = "populate()">    
     <datalist id="raga">
         <option value= "Abheri">Abheri</option>
         <option value= "Abhiramam">Abhiramam</option>
@@ -1016,7 +1015,7 @@
 
 	<br>
 	<label>Note duration (seconds):</label> 
-	<input id="Duration" type="range" class="Slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="Durationchange()" /> 
+	<input id="Duration" type="range" class="Slider"  min="0.1" max="1" value="0.5" step="0.1" onchange="durationchange()" /> 
 	<label id="Durationvalue" type="text" text="0.5">0.5</label>  
 	<br>
 	<br>
@@ -1042,7 +1041,7 @@
 			if (pattern.test(ragaselect[0])) {
 				//console.log("A to l");
 				switch (ragaselect) {
-									case "Abheri": var info="Kharaharapriya janya, audava-sampoorna"; var notesText="S0 G2 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
+					case "Abheri": var info="Kharaharapriya janya, audava-sampoorna"; var notesText="S0 G2 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
 					case "Abhiramam": var info="Dhavalambari janya"; var notesText="S0 R1 M2 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M2 G2 R1 S0 ";break;
 					case "Abhiru": var info="Suvarnangi janya"; var notesText="S0 R1 G2 R1 M2 P N3 S1"; var notesText2 = "S1 D2 P M2 G2 R1 G2 S0 ";break;
 					case "Abhogi": var info="Kharaharapriya janya"; var notesText="S0 R2 G2 M1 D2 S1"; var notesText2 = "S1 D2 M1 G2 R2 S0 ";break;
@@ -1080,7 +1079,7 @@
 					case "Bahudari": var info="Harikambhoji janya"; var notesText="S0 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 P M1 G3 S0 ";break;
 					case "Balachandrika": var info="Kharaharapriya janya"; var notesText="S0 G2 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G2 R2 S0 ";break;
 					case "Balahamsa": var info="Harikambhoji janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 R2 M1 G3 S0 ";break;
-					case "Bandhuvarali": var info="Shubhapanthuvarali janya"; var notesText="S0 M2 S0 N3 D1 P M2 D1 M2 G2 R1 S0 ";break;
+					case "Bandhuvarali": var info="Shubhapanthuvarali janya"; var notesText="S0 M2 S1"; var notesText2="S1 N3 D1 P M2 D1 M2 G2 R1 S0 ";break;
 					case "Bangala": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 M1 P M1 R2 P S1"; var notesText2 = "S1 N3 P M1 R2 G3 R2 S0 ";break;
 					case "Basant-bahar": var info="Kharaharapriya janya"; var notesText="S0 M2 P G3 M2 N3 D1 N3 S1"; var notesText2 = "S1 R2+ S1 N2 D2 P M1 G2 M1 G2 R2 S0 ";break;
 					case "Begada": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 R2 G3 M1 P D2 N2 D2 P S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
@@ -1096,7 +1095,7 @@
 					case "Bhairavi": var info="Natabhairavi janya"; var notesText="S0 G2 R2 G2 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R2 S0 ";break;
 					case "Bhakthapriya": var info="Chakravakam janya"; var notesText="S0 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 R1 M1 G3 S0 ";break;
 					case "Bhanuchandrika": var info="Hanumatodi janya"; var notesText="S0 M1 D1 N2 S1"; var notesText2 = "S1 N2 D1 M1 G1 S0 ";break;
-					case "Bhanudhanyasi": var info="Shubhapanthuvarali janya"; var notesText="S0 R1 G2 M2 N3 D1 N3 D1 P M2 G2 R1 S0 N3 S0 ";break;
+					case "Bhanudhanyasi": var info="Shubhapanthuvarali janya"; var notesText="S0 R1 G2 M2 N3 D1 N3 D1 P M2 G2 R1 S0 N3- S0 ";break;
 					case "Bhanukeeravani": var info="Shubhapanthuvarali janya"; var notesText="S0 R1 G2 M2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 M2 G2 R1 S0 ";break;
 					case "Bhanumanjari": var info="Vagadeeshwari janya"; var notesText="S0 R3 G3 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 R3 G3 R3 S0 ";break;
 					case "Bhanumati": var info="Vanaspati janya"; var notesText="N2 S0 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
@@ -1111,14 +1110,14 @@
 					case "Bhinnapanchamam": var info="Ganamurti janya"; var notesText="S0 R1 G1 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G1 R1 S0 ";break;
 					case "Bhinnapauarali": var info="Dhavalambari janya"; var notesText="S0 M2 P D1 N1 D1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 S0 ";break;
 					case "Bhinnashadjam": var info="Dhenuka janya"; var notesText="S0 R1 G2 R1 P M1 P N3 S1"; var notesText2 = "S1 D1 P M1 G2 R1 S0 ";break;
-					case "Bhogachaya-nattai": var info="Vagadeeshwari janya"; var notesText="S0 R3 G3 R3 G3 Mi P N2 N2 S1"; var notesText2 = "S1 N2 D2 N2 P S0 N2 P M1 M1 R3 S0 ";break;
+					case "Bhogachaya-nattai": var info="Vagadeeshwari janya"; var notesText="S0 R3 G3 R3 G3 Mi P N2 N2 S1"; var notesText2 = "S1 N2 D2 N2 P S1 N2 P M1 M1 R3 S0 ";break;
 					case "Bhogasaveri": var info="Salagam janya"; var notesText="S0 R1 M2 D1 N1 D1 P M2 G1 R1 S0 ";break;
 					case "Bhogavasantha": var info="Panthuvarali janya"; var notesText="S0 R1 G3 M2 D1 N3 S1"; var notesText2 = "S1 N3 D1 M2 G3 R1 S0 ";break;
 					case "Bhogeeshwari": var info="Vachaspathi janya"; var notesText="S0 R2 G3 P D2 N2 D2 S1"; var notesText2 = "S1 N2 D2 P M2 G3 R2 S0 ";break;
 					case "Bhogi": var info="Senavati janya"; var notesText="S0 G2 M1 P D1 N1 D1 S1"; var notesText2 = "S1 N1 D1 P M1 G2 S0 ";break;
 					case "Bhoopalam": var info="Hanumatodi janya, morning raga"; var notesText="S0 R1 G2 P D1 S1"; var notesText2 = "S1 D1 P G2 R1 S0 ";break;
 					case "Bhoopalapanchamam": var info="Jhalavarali janya"; var notesText="S0 G1 R1 G1 P M2 D1 S1"; var notesText2 = "S1 P D1 M G1 R1 S0 ";break;
-					case "Bhoopali": var info=""; var notesText="S0 R2 G3 P D2 S1"; var notesText2 = "S1 D2 P G3 R2 S0 ";break;
+					//case "Bhoopali": var info=""; var notesText="S0 R2 G3 P D2 S1"; var notesText2 = "S1 D2 P G3 R2 S0 ";break;
 					case "Bhoopkalyani": var info="Mechakalyani janya"; var notesText="S0 R2 G3 P D2 S1"; var notesText2 = "S1 N3 D2 P M2 G3 R2 S0 ";break;
 					case "Bhooshavali": var info="Vachaspathi janya"; var notesText="S0 R2 G3 M2 P D2 S1"; var notesText2 = "S1 N2 D2 P M2 G3 R2 S0 ";break;
 					case "Bhooshavathi": var info="aka Vachaspathi"; var notesText="S0 R2 G3 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G3 R2 S0 ";break;
@@ -1145,7 +1144,7 @@
 					case "Chandrarekha": var info="Hemavathi janya"; var notesText="S0 R2 G2 M2 P D2 S1"; var notesText2 = "S1 N2 D2 M2 G2 R2 S0 ";break;
 					case "Chandrika": var info="Keeravani janya"; var notesText="S0 R2 G2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P G2 R2 S0 ";break;
 					case "Chandrikatodi": var info="Hanumatodi janya"; var notesText="S0 G2 M1 P D1 S1"; var notesText2 = "S1 D1 P M1 G2 S0 ";break;
-					case "Chapagantarva": var info="Natabhairavi janya"; var notesText="S0 G2 M1 P N2 D1 M1 G2 R2 S0 N2 ";break;
+					case "Chapagantarva": var info="Natabhairavi janya"; var notesText="S0 G2 M1 P N2"; var notesText2="D1 M1 G2 R2 S0 N2 ";break;
 					case "Charukesi": var info="Melakarta 26"; var notesText="S0 R2 G3 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G3 R2 S0 ";break;
 					case "Charuvardhani": var info="Mayamalava-gowla janya"; var notesText="S0 R1 M1 P D1 N3 S1"; var notesText2 = "S1 D1 P M1 G3 R1 S0 ";break;
 					case "Chaturangini": var info="Chitrambari janya"; var notesText="S0 R2 G3 M2 P N3 S1"; var notesText2 = "S1 N3 D3 N3 P G3 M2 G3 R2 S0 ";break;
@@ -1157,7 +1156,7 @@
 					case "Chayashankarabharanam": var info="Dheera-shankarabharanam janya"; var notesText="S0 R1 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R1 S0 ";break;
 					case "Chayatarangini": var info="Harikambhoji janya"; var notesText="S0 R2 M1 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Chayavathi": var info="Suryakantam janya"; var notesText="S0 R1 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R1 S0 ";break;
-					case "Chenjurutti": var info="Harikambhoji Janya"; var notesText="D2 S0 R2 G3 M1 P D2 N2"; var notesText2 = "N2 D2 P M1 G3 R2 S0 N2- D2- P- D2 S0 ";break;
+					case "Chenjurutti": var info="Harikambhoji Janya"; var notesText="D2 S0 R2 G3 M1 P D2 N2"; var notesText2 = "N2 D2 P M1 G3 R2 S0 N2- D2- P- D2- S0 ";break;
 					case "Chintamani": var info="Shanmukhapriya janya"; var notesText="S0 G2 R2 G2 M2 G2 R2 G2 P M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R2 S0 ";break;
 					case "Chintaramani": var info="Ramapriya janya"; var notesText="S0 G3 M2 P D2 N2 S1"; var notesText2 = "S1 D2 P M2 G3 R1 S0 ";break;
 					case "Chirswaroopi": var info="Charukesi janya"; var notesText="S0 R2 G3 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G3 R2 S0 ";break;
@@ -1169,7 +1168,7 @@
 					case "Chitthakarshani": var info="Senavati janya"; var notesText="S0 R1 G2 M1 D1 S1"; var notesText2 = "S1 D1 M1 G2 R1 S0 ";break;
 					case "Churnikavinodhini": var info="Chitrambari janya"; var notesText="S0 R2 G3 M2 P D3 N3 S1"; var notesText2 = "S1 N3 D3 N3 P M2 G3 R2 S0 ";break;
 					case "Damarugapriya": var info="Yagapriya janya"; var notesText="S0 R3 G3 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P G3 R3 S0 ";break;
-					case "Darbar": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 N2 S1"; var notesText2 = "S1 R2+ S0 N2 S0 D2 P M1 R2 G2 G2 R2 S0 ";break;
+					case "Darbar": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 N2 S1"; var notesText2 = "S1 R2+ S1 N2 S0 D2 P M1 R2 G2 G2 R2 S0 ";break;
 					case "Darbari-kanada": var info="Natabhairavi janya"; var notesText="N2 S0 R2 G2 R2 S0 M1 P D1 N2 S1"; var notesText2 = "S1 D1 N2 P M1 P G2 M1 R2 S0 ";break;
 					case "Dasharatipriya": var info="Harikambhoji janya"; var notesText="S0 M1 G3 M1 P D2 N2 D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 S0 ";break;
 					case "Dayaranjani": var info="Harikambhoji janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 M1 G3 S0 ";break;
@@ -1210,7 +1209,7 @@
 					case "Dhavalambari": var info="Melakarta 49"; var notesText="S0 R1 G3 M2 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 R1 S0 ";break;
 					case "Dhavalangam": var info="Dhavalambari janya"; var notesText="S0 R1 G3 M2 P D1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 R1 S0 ";break;
 					case "Dheerahindolam": var info="Shulini janya"; var notesText="S0 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R3 S0 ";break;
-					case "Dheera-shankarabharanam": var info=""; var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
+					case "Dheera-shankarabharanam": var info="Melakarta 29"; var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Dhenuka": var info="Melakarta 9"; var notesText="S0 R1 G2 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G2 R1 S0 ";break;
 					case "Dhowmya": var info="Ragavardhini janya"; var notesText="S0 R3 G3 M1 P D1 N2 P S1"; var notesText2 = "S1 N2 D1 P M1 G3 R3 S0 ";break;
 					case "Dhowreyani": var info="Shubhapanthuvarali janya"; var notesText="S0 R1 G2 M2 N3 S1"; var notesText2 = "S1 N3 D1 P M2 G2 R1 S0 ";break;
@@ -1225,8 +1224,8 @@
 					case "Divyamani": var info="Melakarta 48"; var notesText="S0 R1 G2 M2 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M2 G2 R1 S0 ";break;
 					case "Dundubi": var info="Divyamani janya"; var notesText="S0 R1 G2 M2 P D3 N3 S1"; var notesText2 = "S1 N3 P M2 G2 R1 S0 ";break;
 					case "Durga": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 M1 D2 P D2 S1"; var notesText2 = "S1 D2 P M1 R2 S0 ";break;
-					case "Dwigandharabhooshani": var info="Gamanasrama janya"; var notesText="S0 R1 G2 G3 G2 P D2 S1"; var notesText2 = "S1 D2 P G2 G3 G2 R1 S0 D2 S0 ";break;
-					case "Dwijavanthi": var info="Harikambhoji janya"; var notesText="S0 R2 M1 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 G2 R2 S0 N2 D2 N2 S0 ";break;
+					case "Dwigandharabhooshani": var info="Gamanasrama janya"; var notesText="S0 R1 G2 G3 G2 P D2 S1"; var notesText2 = "S1 D2 P G2 G3 G2 R1 S0 D2- S0 ";break;
+					case "Dwijavanthi": var info="Harikambhoji janya"; var notesText="S0 R2 M1 G3 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 R2 G2 R2 S0 N2- D2- N2- S0 ";break;
 					case "Eeshaivaridhi": var info="Harikambhoji janya"; var notesText="S0 R2 M1 D2 N2 S1"; var notesText2 = "S1 N2 P M1 R2 S0 ";break;
 					case "Eeshamanohari": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 R2 M1 G3 R2 S0 ";break;
 					case "Ekakshari": var info="Mayamalava-gowla janya"; var notesText="S0 R1 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N1 P M1 R1 G3 M1 R1 S0 ";break;
@@ -1247,7 +1246,7 @@
 					case "Ganavaridhi": var info="Shulini janya"; var notesText="S0 M1 R3 G3 M1 P D2 N2/N3 S1"; var notesText2 = "S1 D2 N2/N3 P M1 R3 S0 ";break;
 					case "Ganavaridhi": var info=""; var notesText="S0 M1 R3 G3 M1 P D2 N2/N3 S1"; var notesText2 = "S1 D2 N2/N3 P M1 R3 S0 ";break;
 					case "Gandharalola": var info="Harikambhoji janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 M1 G3 R2 S0 ";break;
-					case "Gandharva": var info="Raghupriya janya"; var notesText="M2 P D3 N3 S0 R1 G1 R1 S0 N3 P M2 P ";break;
+					case "Gandharva": var info="Raghupriya janya"; var notesText="M2 P D3 N3 S0 R1 G1"; var notesText2="R1 S1 N3 P M2 P ";break;
 					case "Gangatarangini": var info="Gangeyabhushani janya"; var notesText="S0 R3 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 M1 G3 M1 R3 S0 ";break;
 					case "Gangeyabhushani": var info="Melakarta 33"; var notesText="S0 R3 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G3 R3 S0 ";break;
 					case "Garigadya": var info="Shanmukhapriya janya"; var notesText="N2 S0 G2 M2 P D1 N2 D1 P M2 G2 R2 S0 ";break;
@@ -1310,7 +1309,7 @@
 					case "Haridasapriya": var info="Harikambhoji janya"; var notesText="S0 P M1 G3 M1 P N2 S1"; var notesText2 = "S1 N2 D2 N2 P M1 G2 R2 S0 ";break;
 					case "Harikambhoji": var info="Melakarta 28"; var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Harikedaragowla": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
-					case "Harikedaram": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P D2 N2 S0 N2 S1"; var notesText2 = "S1 N2 S0 D2 N2 D2 P M1 G3 R2 S0 ";break;
+					case "Harikedaram": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P D2 N2 S0 N2 S1"; var notesText2 = "S1 N2 S1 D2 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Harinarayani": var info="Kharaharapriya janya"; var notesText="S0 R2 G2 M1 P M1 D2 N2 S1"; var notesText2 = "S1 N2 P M1 G2 R2 S0 ";break;
 					case "Harini": var info="Harikambhoji janya"; var notesText="S0 G3 M1 P D2 N2 D2 S1"; var notesText2 = "S1 N2 S0 N2 D2 P M1 G3 M1 G2 R2 S0 ";break;
 					case "Haripriya": var info="Sarasangi janya"; var notesText="S0 R1 G3 M1 P S1"; var notesText2 = "S1 N3 D1 P M1 G3 S0 ";break;
@@ -1319,7 +1318,7 @@
 					case "Hejjajji": var info="Gayakapriya janya"; var notesText="S0 R1 G3 M1 P D1 S1"; var notesText2 = "S1 N1 D1 P M1 G3 R1 S0 ";break;
 					case "Hemambari": var info="Hemavathi janya"; var notesText="S0 R2 G2 M2 P D2 N2 S1"; var notesText2 = "S1 P M2 G2 R2 S0 ";break;
 					case "Hemangi": var info="Vishvambhari janya"; var notesText="S0 R1 G3 M2 D3 S1"; var notesText2 = "S1 D3 M2 G3 R1 S0 ";break;
-					case "Hemant": var info="Dheera-shankarabharanam janya"; var notesText="N3 S0 D2 N3 S0 G3 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
+					case "Hemant": var info="Dheera-shankarabharanam janya"; var notesText="N3 S0 D2- N3- S0 G3 G3 M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Hemapriya": var info="Hemavathi janya"; var notesText="S0 R2 G2 M2 D2 S1"; var notesText2 = "S1 D2 M2 G2 R2 S0 ";break;
 					case "Hemasaranga": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P D2 N2 D2 S1"; var notesText2 = "S1 P M1 G3 R2 S0 ";break;
 					case "Hemavati": case "Hemavathi": var info="Melakarta 58"; var notesText="S0 R2 G2 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R2 S0 ";break
@@ -1335,13 +1334,13 @@
 					case "Huseni": var info="Kharaharapriya janya"; var notesText="S0 R2 G2 M1 P N2 D2 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R2 S0 ";break;
 					case "Huseni": var info="Kharaharapriya janya"; var notesText="S0 R2 G3 M1 P N3 D2 M1 P N3 S1"; var notesText2 = "S1 N3 S0 P D2 M1 P G3 R2 S0 ";break;
 					case "Indhudhanyasi": var info="Sadvidhamargini janya"; var notesText="S0 G2 M2 D2 N2 S1"; var notesText2 = "S1 N2 D2 P D2 M2 G2 R1 S0 ";break;
-					case "Indughantarava": var info="Natabhairavi janya"; var notesText="S0 G2 M1 P D1 P N2 D1 P M1 G2 R2 S0 N2 ";break;
+					case "Indughantarava": var info="Natabhairavi janya"; var notesText="S0 G2 M1 P D1 P N2 D1 P M1 G2 R2 S0 N2- ";break;
 					case "Indumathi": var info="Panthuvarali janya"; var notesText="S0 G3 M2 D1 N3 S1"; var notesText2 = "S1 N3 D1 P M2 G3 S0 ";break;
 					case "Ishtarangini": var info="Rasikapriya janya"; var notesText="S0 R3 M2 P N3 S1"; var notesText2 = "S1 N3 D3 P M2 G3 R3 S0 ";break;
 					case "Jaganmohana": var info="Jalavarnam janya"; var notesText="S0 R1 G1 M2 P D2 S1"; var notesText2 = "S1 N2 D1 P M2 G1 R1 S0 ";break;
 					case "Jaganmohinam": var info="Jalavarnam janya"; var notesText="S0 R1 G1 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M2 G1 R1 S0 ";break;
 					case "Jaganmohini": var info="Mayamalava-gowla janya"; var notesText="S0 G3 M1 P N3 S1"; var notesText2 = "S1 N3 P M1 G3 R1 S0 ";break;
-					case "Jaijaivanthi": var info="Harikambhoji janya"; var notesText="S0 R2 G3 R2 S0 D2 N2 P R2 G3 M1 P N2 S1 N2 S0 N2 D2 P D2 M1 G3 R2 G3 R2 S0 ";break;
+					case "Jaijaivanthi": var info="Harikambhoji janya"; var notesText="S0 R2 G3 R2 S0 D2 N2 P R2 G3 M1 P N2 S1"; var notesText2="S1 N2 S0 N2 D2 P D2 M1 G3 R2 G3 R2 S0 ";break;
 					case "Jaithshree": var info="Harikambhoji janya"; var notesText="S0 R2 G3 P D2 S1"; var notesText2 = "S1 D2 P G3 R2 S0 ";break;
 					case "Jalakesari": var info="Shubhapanthuvarali janya"; var notesText="S0 R1 M2 P D1 N3 S1"; var notesText2 = "S1 D1 P M2 R1 S0 ";break;
 					case "Jalarnavam": var info="Melakarta 38"; var notesText="S0 R1 G1 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M2 G1 R1 S0 ";break;
@@ -1513,7 +1512,7 @@
 					case "Mallikavasantam": var info="Mayamalava-gowla janya"; var notesText="S0 G3 M1 P N3 S1"; var notesText2 = "S1 N3 D1 P M1 G3 R1 S0 ";break;
 					case "Manavati": var info="Melakarta 5"; var notesText="S0 R1 G1 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G1 R1 S0 ";break;
 					case "Mand": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 M1 P D2 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
-					case "Mandamari": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 S0 D2 P M1 G2 R2 S0 ";break;
+					case "Mandamari": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 S1 D2 P M1 G2 R2 S0 ";break;
 					case "Mandari": var info="Panthuvarali janya"; var notesText="S0 R1 G3 M2 P N2 S1"; var notesText2 = "S1 N2 P M2 G3 R1 S0 ";break;
 					case "Mangalakaishiki": var info="Mayamalava-gowla janya"; var notesText="S0 R1 M1 G3 D1 P S1"; var notesText2 = "S1 N3 D1 P M1 G3 R1 S0 ";break;
 					case "Mangalakari": var info="Vachaspathi janya"; var notesText="S0 R2 P M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P G3 R2 S0 ";break;
@@ -1570,7 +1569,7 @@
 					case "Nadavarangini": var info="Kharaharapriya janya"; var notesText="S0 P M1 N2 D2 N2 S1"; var notesText2 = "S1 P N2 D2 P M1 G2 R2 G2 S0 ";break;
 					case "Nadhabrahma": var info="Vachaspathi janya"; var notesText="S0 P M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G3 S0 ";break;
 					case "Nadhakalyani": var info=""; var notesText="S0 G3 M2 D2 N3 S1"; var notesText2 = "S1 N3 D2 M2 G3 M2 R2 S0 ";break;
-					case "Nadhanamakriya": var info="Mayamalava-gowla janya"; var notesText="S0 R1 G3 M1 P D1 N3 N3 D1 P M1 G3 R1 S0 N3 ";break;
+					case "Nadhanamakriya": var info="Mayamalava-gowla janya"; var notesText="S0 R1 G3 M1 P D1 N3 N3 D1 P M1 G3 R1 S0 N3- ";break;
 					case "Nadharanjani": var info="Ganamurti janya"; var notesText="S0 R1 M1 D1 N3 S1"; var notesText2 = "S1 N3 D1 M1 G1 R1 S0 ";break;
 					case "Nagabharanam": var info="Naganandini janya"; var notesText="S0 R2 G2 M1 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M1 G2 R2 S0 ";break;
 					case "Nagabhooshani": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 M1 P D2 N3 S1"; var notesText2 = "S1 D2 P M1 R2 S0 ";break;
@@ -1625,7 +1624,7 @@
 					case "Omkari": var info="Kharaharapriya janya"; var notesText="S0 R2 G2 M1 P D2 S1"; var notesText2 = "S1 D2 P M1 G2 R2 S0 ";break;
 					case "Padi": var info="Mayamalava-gowla janya"; var notesText="S0 R1 M1 P N3 S1"; var notesText2 = "S1 N3 P D1 P M1 R1 S0 ";break;
 					case "Padmakalyani": var info="Gamanasrama janya"; var notesText="S0 G3 P N3 S1"; var notesText2 = "S1 N3 D2 P M2 G3 S0 ";break;
-					case "Pahadi": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 P D2 P D2 S1 N3 D2 P G3 M1 G3 R2 S0 N3 D2 P D2 S0 ";break;
+					case "Pahadi": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 P D2 P D2 S1"; var notesText2="S1 N3 D2 P G3 M1 G3 R2 S0 N3 D2 P D2 S0 ";break;
 					case "Panchamam": var info="Kharaharapriya janya"; var notesText="S0 R2 D2 P N2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
 					case "Panthuvarali": var info="Melakarta 51, aka Kamavardhini"; var notesText="S0 R1 G3 M2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M2 G3 R1 S0 ";break;
 					case "Parameshwarapriya": var info="Harikambhoji janya"; var notesText="S0 R2 G3 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 R2 S0 ";break;
@@ -1727,7 +1726,7 @@
 					case "Rudrapriya": var info="Kharaharapriya janya"; var notesText="S0 R2 G2 M1 N2 S1"; var notesText2 = "S1 N2 P M1 G2 R2 S0 ";break;
 					case "Rukhmambari": var info="Mayamalava-gowla janya"; var notesText="S0 R1 G3 P N3 S1"; var notesText2 = "S1 N3 P G3 R1 S0 ";break;
 					case "Rupavati": var info="Melakarta 12"; var notesText="S0 R1 G2 M1 P D3 N3 S1"; var notesText2 = "S1 N3 D3 P M1 G2 R1 S0 ";break;
-					case "Sahana": var info="Kharaharapriya janya"; var notesText="S0 R2 G3 M1 P M1 D2 N2 S1"; var notesText2 = "S1 N2 S0 D2 N2 D2 P M1 G3 M1 R2 G3 R2 S0 ";break;
+					case "Sahana": var info="Kharaharapriya janya"; var notesText="S0 R2 G3 M1 P M1 D2 N2 S1"; var notesText2 = "S1 N2 S1 D2 N2 D2 P M1 G3 M1 R2 G3 R2 S0 ";break;
 					case "Saindhavi": var info="Kharaharapriya janya"; var notesText="N2 D2 N2 S0 R2 G2 M1 P D2 N2 D2 P M1 G2 R2 S0 N2 D2 N2 S0 ";break;
 					case "Sajjananandhi": var info="Lathangi janya"; var notesText="S0 R2 G3 M2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 M2 G3 R2 S0 ";break;
 					case "Salagabhairavi": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 N2 D2 P M1 G2 R2 S0 ";break;
@@ -1750,7 +1749,7 @@
 					case "Saranga": var info="Mechakalyani janya"; var notesText="S0 P M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 R2 G3 M1 R2 S0 ";break;
 					case "Saranga-kapi": var info="Natabhairavi janya"; var notesText="S0 R1 P M1 R1 P R1 M1 P N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R1 S0 ";break;
 					case "Saranga-mallar": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 R2 S0 N3 S0 ";break;
-					case "Saranga-nata": var info="Mayamalava-gowla janya"; var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 N3 S0 D1 P M1 G3 R1 S0 ";break;
+					case "Saranga-nata": var info="Mayamalava-gowla janya"; var notesText="S0 R1 M1 P D1 S1"; var notesText2 = "S1 N3 S1 D1 P M1 G3 R1 S0 ";break;
 					case "Sarasanana": var info="Sarasangi janya"; var notesText="S0 R2 G3 M1 D1 N3 S1"; var notesText2 = "S1 N3 D1 M1 G3 R2 S0 ";break;
 					case "Sarasangi": var info="Melakarta 27"; var notesText="S0 R2 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M1 G3 R2 S0 ";break;
 					case "Saraseeruha": var info="Sarasangi janya"; var notesText="S0 R2 G3 M1 D1 N1 D1 S1"; var notesText2 = "S1 N1 D1 M1 G3 R2 ";break;
@@ -1768,14 +1767,14 @@
 					case "Senavati": var info="Melakarta 7"; var notesText="S0 R1 G2 M1 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M1 G2 R1 S0 ";break;
 					case "Seshanadam": var info="Simhendramadhyamam janya"; var notesText="S0 R2 G2 M2 P D1 S1"; var notesText2 = "S1 N3 D1 P M2 G2 R2 S0 ";break;
 					case "Sadvidhamargini": var info="Melakarta 46"; var notesText="S0 R1 G2 M2 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M2 G2 R1 S0 ";break;
-					case "Shailadeshakshhi": var info="Shulini janya"; var notesText="S0 M1 G3 P D2 S1"; var notesText2 = "S1 N3 D2 S0 N3 P M1 G3 S0 ";break;
+					case "Shailadeshakshhi": var info="Shulini janya"; var notesText="S0 M1 G3 P D2 S1"; var notesText2 = "S1 N3 D2 S1 N3 P M1 G3 S0 ";break;
 					case "Shakthiroopini": var info="Hemavathi janya"; var notesText="S0 G2 M2 D2 S1"; var notesText2 = "S1 N2 D2 M2 G2 S0 ";break;
 					case "Shakunthala": var info="Harikambhoji Janya"; var notesText="S0 R2 G3 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G3 S0 ";break;
 					case "Shamalangi": var info="Melakarta 55"; var notesText="S0 R2 G2 M2 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M2 G2 R2 S0 ";break;
 					case "Shankara": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 P S1"; var notesText2 = "S1 N3 D2 P G3 P R2 G3 S0 ";break;
 					case "Shankarabharanam": var info="Melakartha 29"; var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
 					case "Shankaraharigowla": var info="Harikambhoji Janya"; var notesText="S0 R2 G3 M1 P D2 N3 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
-					case "Shankaramohana": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 P N3 D2 S0 N3 S1 D2 P G3 R2 S0 ";break;
+					case "Shankaramohana": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 P N3 D2 S0"; var notesText2="S1 N3 S1 D2 P G3 R2 S0 ";break;
 					case "Shankari": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 P N3 S1"; var notesText2 = "S1 N3 P G3 S0  ";break;
 					case "Shanmukhapriyaa": var info="Melakarta 56, evening raga"; var notesText="S0 R2 G2 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M2 G2 R2 S0 ";break;
 					case "Shanmukhi": var info="Shanmukhapriya janya"; var notesText="S0 R1 G2 M2 D1 N2 S1"; var notesText2 = "S1 N2 D1 M2 G2 R1 S0 ";break;
@@ -1811,7 +1810,7 @@
 					case "Shubhapanthuvarali": var info="Melakarta 45"; var notesText="S0 R1 G2 M2 P D1 N3 S1"; var notesText2 = "S1 N3 D1 P M2 G2 R1 S0 ";break;
 					case "Shuddha-desi": var info="Natabhairavi janya"; var notesText="S0 R2 G2 R2 M1 P D1 N2 S1"; var notesText2 = "S1 N2 D1 P M1 G2 R2 S0 ";break;
 					case "Shuddha-kamboji": var info="Vakulabharanam janya"; var notesText="S0 G3 R1 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 G3 R1 S0 ";break;
-					case "Shuddha-lallitha": var info="Kokilapriya janya"; var notesText="S0 P M1 D2 N3 S1"; var notesText2 = "S1 N3 S0 D2 P M1 G2 R1 S0 ";break;
+					case "Shuddha-lallitha": var info="Kokilapriya janya"; var notesText="S0 P M1 D2 N3 S1"; var notesText2 = "S1 N3 S1 D2 P M1 G2 R1 S0 ";break;
 					case "Shuddha-salavi": var info="Natabhairavi janya"; var notesText="S0 G2 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 R2 S0 ";break;
 					case "Shuddha-seemantini": var info="Hanumatodi janya"; var notesText="S0 R1 G2 M1 P D1 S1"; var notesText2 = "S1 D1 P M1 G2 R1 S0 ";break;
 					case "Shuddha-todi": var info="Hanumatodi janya"; var notesText="S0 R1 G2 M1 D1 N2 S1"; var notesText2 = "S1 N2 D1 M1 G2 R1 S0 ";break;
@@ -1836,7 +1835,7 @@
 					case "Sindhu-kannada": var info="Harikambhoji Janya"; var notesText="S0 M1 G3 M1 R2 G3 M1 P D2 P S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
 					case "Sindhu-mandari": var info="Dheera-shankarabharanam janya"; var notesText="S0 R2 G3 M1 P S1"; var notesText2 = "S1 N3 D2 P G3 M1 P M1 R2 S0 ";break;
 					case "Sindhu-ramakriya": var info="Mayamalava-gowla janya"; var notesText="S0 G3 M1 P D1 N3 S1"; var notesText2 = "S1 N3 P M1 G3 R1 G3 S0 ";break;
-					case "Sindhu-surutti": var info="Harikambhoji Janya"; var notesText="S0 R2 M1 P N2 S0 S0 N2 S1"; var notesText2 = "S1 N2 D2 P M1 R2 M1 G3 R2 S0 ";break;
+					case "Sindhu-surutti": var info="Harikambhoji Janya"; var notesText="S0 R2 M1 P N2 S0 S0 N2- S0"; var notesText2 = "S1 N2 D2 P M1 R2 M1 G3 R2 S0 ";break;
 					case "Skandamanorama": var info="Lathangi janya"; var notesText="S0 R2 M2 P N3 S1"; var notesText2 = "S1 N3 P M2 R2 S0 ";break;
 					case "Sohini": var info="Gamanasrama janya"; var notesText="S0 G3 M2 D2 N3 S1"; var notesText2 = "S1 N3 D2 M2 G3 R1 S0 ";break;
 					case "Soma": var info=""; var notesText="S0 R1 P M1 D1 N2 S1"; var notesText2 = "S1 N2 D1 M1 P M1 G3 R1 S0 ";break;
@@ -1847,7 +1846,7 @@
 					case "Sowrashtram": var info="Suryakantam janya"; var notesText="S0 R1 G3 M1 P M1 D2 N3 S1"; var notesText2 = "S1 N3 D2 N2 D2 P M1 G3 R1 S0 ";break;
 					case "Sowveeram": var info="Suvarnangi janya"; var notesText="S0 R1 G2 M2 P D2 N3 S1"; var notesText2 = "S1 N3 D2 P M2 G2 R1 S0 ";break;
 					case "Sthavarajam": var info="Sadvidhamargini janya"; var notesText="S0 R1 M2 P D2 S1"; var notesText2 = "S1 N2 D2 M2 G2 S0 ";break;
-					case "Subhashini": var info="Chakravakam janya"; var notesText="S0 D2 N2 D R1 G3 M1 P M1 G3 R1 S0 N2 D2 N2 S0 ";break;
+					case "Subhashini": var info="Chakravakam janya"; var notesText="S0 D2- N2- D- R1 G3 M1 P M1 G3 R1 S0 N2 D2 N2 S0 ";break;
 					case "Sucharitra": var info="Melakarta 67"; var notesText="S0 R3 G3 M2 P D1 N1 S1"; var notesText2 = "S1 N1 D1 P M2 G3 R3 S0 ";break;
 					case "Suddha": var info=""; var notesText="S0 G3 M2 P S1"; var notesText2 = "S1 N3 D2 M2 G3 R2 S0 ";break;
 					case "Suddha": var info="Simhendramadhyamam janya"; var notesText="S0 R2 G2 M2 P N3 S1"; var notesText2 = "S1 N3 P M2 G2 R2 S0 ";break;
@@ -1855,7 +1854,7 @@
 					case "Suddha-bangala": var info="Kharaharapriya janya"; var notesText="S0 R2 M1 P D2 S1"; var notesText2 = "S1 D2 P M1 R2 G2 R2 S0 ";break;
 					case "Suddha-bhairavi": var info="Kharaharapriya janya"; var notesText="S0 G2 M1 P N2 D2 S1"; var notesText2 = "S1 N2 D2 M1 G2 R2 S0 ";break;
 					case "Suddha-dhanyasi": var info="Kharaharapriya janya"; var notesText="S0 G2 M1 P N2 S1"; var notesText2 = "S1 N2 P M1 G2 S0 ";break;
-					case "Suddha-gandhari": var info="Divyamani janya"; var notesText="S0 R1 G2 M2 N3 S1"; var notesText2 = "S1 N3 D3 N3 S0 N3 P M2 R1 S0 ";break;
+					case "Suddha-gandhari": var info="Divyamani janya"; var notesText="S0 R1 G2 M2 N3 S1"; var notesText2 = "S1 N3 D3 N3 S1 N3 P M2 R1 S0 ";break;
 					case "Suddha-gowla": var info="Suryakantam janya"; var notesText="S0 R1 M1 P N3 S1"; var notesText2 = "S1 N3 P M1 R1 S0 ";break;
 					case "Suddha-hindolam": var info="Kharaharapriya janya"; var notesText="S0 G2 M1 D2 N2 S1"; var notesText2 = "S1 N2 D2 M1 G2 S0 ";break;
 					case "Suddha-khamas": var info="Harikambhoji Janya"; var notesText="S0 M1 G3 M1 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R2 S0 ";break;
@@ -1957,7 +1956,7 @@
 					case "Vasukari": var info="Shanmukhapriya janya"; var notesText="S0 G2 M2 P D1 N2 S1"; var notesText2 = "S1 N2 D1 M2 G2 S0 ";break;
 					case "Vatee-Vasantabhairavi": var info=""; var notesText="S0 R1 G3 M1 D1 N2 S1"; var notesText2 = "S1 N2 D1 M1 G3 R1 S0 ";break;
 					case "Vedhandhagamana": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 M1 P N3 S1"; var notesText2 = "S1 N3 P M1 G3 S0 ";break;
-					case "Vedhaswaroopi": var info="Ramapriya janya"; var notesText="S0 R1 G3 M2 P D2 N3 P S1"; var notesText2 = "S1 N3 D2 Pn3 P M2 G3 S0 ";break;
+					case "Vedhaswaroopi": var info="Ramapriya janya"; var notesText="S0 R1 G3 M2 P D2 N3 P S1"; var notesText2 = "S1 N3 D2 P N3 P M2 G3 S0 ";break;
 					case "Veenadhari": var info="Chakravakam janya"; var notesText="S0 R1 G3 P D2 N2 S1"; var notesText2 = "S1 N2 D2 P M1 G3 R1 S0 ";break;
 					case "Veenavadini": var info="Harikambhoji Janya"; var notesText="S0 R2 G3 P N2 S1"; var notesText2 = "S1 N2 P G2 R2 S0 ";break;
 					case "Veerapratapa": var info="Dheera-shankarabharanam janya"; var notesText="S0 G3 M1 P D2 S1"; var notesText2 = "S1 N3 D2 P M1 G3 R2 S0 ";break;
@@ -2005,45 +2004,45 @@
             var sruthiletter = document.getElementById("Sruthi").value;
             switch (sruthiletter) {
                 case "A":
-                    freq= 220;
+                    freq= 110;
                     break;
                 case "A#":
-                    freq= 233;
+                    freq= 117;
                 case "B":
-                    freq= 247;
+                    freq= 124;
                     break;
                 case "C":
-                    freq= 262;
+                    freq= 131;
                     break;
                 case "C#":
-                    freq= 277;
+                    freq= 138;
                     break;
                 case "D":
-                    freq= 294;
+                    freq= 147;
                     break;
                 case "D#":
-                    freq= 311;
+                    freq= 156;
                     break;
                 case "E":
-                    freq= 329;
+                    freq= 165;
                     break;
                 case "F":
-                    freq= 349;
+                    freq= 175;
                     break;
                 case "F#":
-                    freq= 370;
+                    freq= 185;
                     break;
                 case "G":
-                    freq= 392;
+                    freq= 196;
                     break;
                 case "G#":
-                    freq= 415;
+                    freq= 208;
                     break;
             }
 			return freq;
         }      
 		function durationchange() {
-				document.getElementById("Durationvalue").innerHTML = document.getElementById("Duration").value;
+			document.getElementById("Durationvalue").innerHTML = document.getElementById("Duration").value;
 		}
 		function toggle() {
 			var context = null;
